@@ -1,0 +1,272 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	margin:0px;
+	padding:0px;
+	background:#36F;
+	overflow:hidden;
+}
+#container{
+	margin:0px;
+	width:1300px;
+	margin:auto;
+	background:#39F;
+	height:667px;
+	
+}
+
+
+#logo{
+	width:30%;
+	height:60px;
+	background-image:url(image/logo.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	float:left;
+	
+}
+
+#panel-above{
+	width:70%;
+	background:#222;
+	height:60px;
+	float:left;
+	
+}
+
+header {
+    margin: 0;
+    padding: 0;
+}
+
+header:before,
+header:after {
+    content:"";
+    display:table;
+}
+header:after {
+    clear:both;
+}
+
+
+#main-nav{
+	width:7%;
+	background:red;
+	height:667px;
+	float:left;
+	overflow:hidden;
+}
+
+#second-nav{
+	width:23%;
+	background:yellow;
+	height:667px;
+	float:left;
+	overflow:hidden;
+	
+}
+#content{
+	width:70%;
+	background:green;
+	height:587px;
+	float:left;
+	
+}
+
+#slider{
+	
+}
+
+article{
+	
+}
+
+#map{
+	
+}
+
+#aside{
+	
+}
+
+footer{
+	
+}
+
+
+/*
+Responsive Setting Area
+========================
+*/
+
+@media screen and (max-width: 1366px){
+/* CSS styles */
+#container{
+width:100%;
+}
+}
+@media screen and (max-width: 1024px){
+/* CSS styles */
+
+}
+@media screen and (max-width: 992px){
+/* CSS styles */
+}
+@media screen and (max-width:880px){
+/* CSS styles */
+}
+@media screen and (max-width:768px){
+/* CSS styles */
+}
+@media screen and (max-width:600px){
+/* CSS styles */
+}
+@media screen and (max-width:480px){
+/* CSS styles */
+}
+@media screen and (max-width:320px){
+/* CSS styles */
+}
+@media screen and (max-width:240px){
+/* CSS styles */
+}
+
+
+#cari{
+	height:50%;
+	width:35%;
+	margin-left:10px;
+	margin-top:15px;
+}
+#tcari{
+	height:50%;
+	width:5%;
+	margin-top:12px;
+	margin-left:12px;
+	border:none;
+}
+
+input{
+	margin:12px;
+}
+#form_cari{
+	width:220px;
+	height:30px;
+	margin-left:10px;
+}
+#tombol_cari{
+	height:30px;
+	margin-left:10px;
+	background-color:orange;
+}
+
+
+/* Main-Nav Setting*/
+
+#main-nav{
+	background:#222;
+	padding:0em;
+}
+
+#home_icon{
+	background-image:url(image/Home_icon.png);
+	background-size:70px;
+	width:70px;
+	height:65px;
+	margin-top:5px;
+	margin-left:5px;
+}
+#carilokasi_icon{
+	background-image:url(image/CariLokasi_icon.png);
+	background-size:70px;
+	width:70px;
+	height:65px;
+	margin-top:5px;
+	margin-left:5px;
+	background-repeat:no-repeat;
+}
+#tambahlokasi_icon{
+	background-image:url(image/TambahLokasi_icon.png);
+	background-size:70px;
+	width:70px;
+	height:65px;
+	margin-top:5px;
+	margin-left:5px;
+}
+#kontak_icon{
+	background-image:url(image/Kontak_icon.png);
+	background-size:70px;
+	width:70px;
+	height:65px;
+	margin-top:5px;
+	margin-left:5px;
+}
+#tentangkami_icon{
+	background-image:url(image/Tentang_icon.png);
+	background-size:70px;
+	width:70px;
+	height:65px;
+	margin-top:5px;
+	margin-left:5px;
+}
+p{
+	margin-top:0px;
+	padding:0px;
+	text-align:center;
+}
+#main-nav div:hover{
+	background-color:red;
+	
+}
+#main-nav div a{
+	text-decoration:none;
+	color:#39F;
+}
+#main-nav div{
+	background-position:center;
+	margin-left:0.4em;
+}
+#judulsampinghome{
+	background-image:url(image/storyboard.png);
+	height:7%;
+	width:100%;
+	background-size:250px 40px;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-color:#444;
+}
+#content{
+	background-color:#99F;
+	overflow:scroll;
+	height:600px ;
+	width:69%;
+	margin-left:1%;
+}
+#aside-article{
+    margin: 0;
+    padding: 0;
+}
+
+#aside-article:before,
+#aside-article:after {
+    content:"";
+    display:table;
+}
+#aside-article:after {
+    clear:both;
+}
+taq{
+	padding:0px;
+}
+#taq p{
+	color:#FFF;
+}
+#isi p{
+	text-align:justify;
+	margin:1em;
+}
+#isi{
+	height:500px;
+}
