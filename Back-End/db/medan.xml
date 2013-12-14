@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+- phpMyAdmin XML Dump
+- version 3.5.2.2
+- http://www.phpmyadmin.net
+-
+- Host: 127.0.0.1
+- Generation Time: Dec 14, 2013 at 10:05 AM
+- Server version: 5.5.27
+- PHP Version: 5.4.7
+-->
+
+<pma_xml_export version="1.0" xmlns:pma="http://www.phpmyadmin.net/some_doc_url/">
+    <!--
+    - Structure schemas
+    -->
+    <pma:structure_schemas>
+        <pma:database name="medan" collation="latin1_swedish_ci" charset="latin1">
+            <pma:table name="admin">
+                CREATE TABLE `admin` (
+                  `id` varchar(10) NOT NULL,
+                  `pass` varchar(20) NOT NULL,
+                  `nama` varchar(25) NOT NULL,
+                  PRIMARY KEY (`id`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="artikel">
+                CREATE TABLE `artikel` (
+                  `idartikel` varchar(15) NOT NULL,
+                  `judul` varchar(50) NOT NULL,
+                  `artikel` text NOT NULL,
+                  `gambar` text NOT NULL,
+                  `lokasi` text NOT NULL,
+                  `maps` text NOT NULL,
+                  PRIMARY KEY (`idartikel`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="kategori">
+                CREATE TABLE `kategori` (
+                  `idkategori` varchar(15) NOT NULL,
+                  `kategori` varchar(50) NOT NULL,
+                  PRIMARY KEY (`idkategori`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="komentar">
+                CREATE TABLE `komentar` (
+                  `idkomentar` varchar(15) NOT NULL,
+                  `idartikel` varchar(15) NOT NULL,
+                  `iduser` varchar(15) NOT NULL,
+                  `komentar` text NOT NULL,
+                  PRIMARY KEY (`idkomentar`),
+                  KEY `idartikel` (`idartikel`),
+                  KEY `iduser` (`iduser`),
+                  CONSTRAINT `komentar_ibfk_1` FOREIGN KEY (`idartikel`) REFERENCES `artikel` (`idartikel`) ON DELETE CASCADE ON UPDATE CASCADE,
+                  CONSTRAINT `komentar_ibfk_2` FOREIGN KEY (`iduser`) REFERENCES `user` (`iduser`) ON DELETE CASCADE ON UPDATE CASCADE
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="sub_kategori">
+                CREATE TABLE `sub_kategori` (
+                  `idsub` varchar(15) NOT NULL,
+                  `idkategori` varchar(15) NOT NULL,
+                  `idartikel` varchar(15) NOT NULL,
+                  `subkategori` varchar(50) NOT NULL,
+                  PRIMARY KEY (`idsub`),
+                  KEY `idkategori` (`idkategori`),
+                  KEY `idartikel` (`idartikel`),
+                  CONSTRAINT `sub_kategori_ibfk_2` FOREIGN KEY (`idartikel`) REFERENCES `artikel` (`idartikel`) ON DELETE CASCADE ON UPDATE CASCADE,
+                  CONSTRAINT `sub_kategori_ibfk_1` FOREIGN KEY (`idkategori`) REFERENCES `kategori` (`idkategori`) ON DELETE CASCADE ON UPDATE CASCADE
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="tam_lok">
+                CREATE TABLE `tam_lok` (
+                  `idtambah` varchar(15) NOT NULL,
+                  `judul` varchar(50) NOT NULL,
+                  `artikel` text NOT NULL,
+                  `lokasi` text NOT NULL,
+                  PRIMARY KEY (`idtambah`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+            <pma:table name="user">
+                CREATE TABLE `user` (
+                  `iduser` varchar(15) NOT NULL,
+                  `pass` varchar(15) NOT NULL,
+                  `nama` varchar(25) NOT NULL,
+                  `email` varchar(35) NOT NULL,
+                  PRIMARY KEY (`iduser`)
+                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+            </pma:table>
+        </pma:database>
+    </pma:structure_schemas>
+
+    <!--
+    - Database: 'medan'
+    -->
+    <database name="medan">
+        <!-- Table admin -->
+        <table name="admin">
+            <column name="id">ad01</column>
+            <column name="pass">deja94</column>
+            <column name="nama">deja</column>
+        </table>
+        <!-- Table artikel -->
+        <!-- Table kategori -->
+        <!-- Table komentar -->
+        <!-- Table sub_kategori -->
+        <!-- Table tam_lok -->
+        <!-- Table user -->
+        <table name="user">
+            <column name="iduser">u101</column>
+            <column name="pass">deja</column>
+            <column name="nama">Dezha</column>
+            <column name="email">deja@gmail.com</column>
+        </table>
+        <table name="user">
+            <column name="iduser">u102</column>
+            <column name="pass">medan</column>
+            <column name="nama">Yudha</column>
+            <column name="email">medan@yahoo.com</column>
+        </table>
+        <table name="user">
+            <column name="iduser">u103</column>
+            <column name="pass">jdankdn</column>
+            <column name="nama">kjandka</column>
+            <column name="email">jnadka</column>
+        </table>
+        <table name="user">
+            <column name="iduser">u104</column>
+            <column name="pass">njadasdn </column>
+            <column name="nama">nmadnas</column>
+            <column name="email">nkankas</column>
+        </table>
+        <table name="user">
+            <column name="iduser">u105</column>
+            <column name="pass">ssvs</column>
+            <column name="nama">hrthfgbdf</column>
+            <column name="email">sdfsdjhfbjhs</column>
+        </table>
+        <table name="user">
+            <column name="iduser">u106</column>
+            <column name="pass">jhkejdecn</column>
+            <column name="nama">nfkjwenfk</column>
+            <column name="email">kjnjkc</column>
+        </table>
+        <table name="user">
+            <column name="iduser">u107</column>
+            <column name="pass">nmkjebckwdew</column>
+            <column name="nama">unsdjkcnsjk</column>
+            <column name="email">njbsdjcbs</column>
+        </table>
+        <table name="user">
+            <column name="iduser">u108</column>
+            <column name="pass">anasna</column>
+            <column name="nama">mndasnm</column>
+            <column name="email">kjndakjna</column>
+        </table>
+        <table name="user">
+            <column name="iduser">u109</column>
+            <column name="pass">andakjndkxa</column>
+            <column name="nama">nmjdqwkj</column>
+            <column name="email">eidjkqndkq</column>
+        </table>
+        <table name="user">
+            <column name="iduser">u110</column>
+            <column name="pass">mnabjhda</column>
+            <column name="nama">jdnjkasdnka</column>
+            <column name="email">nkdnakjsd</column>
+        </table>
+        <table name="user">
+            <column name="iduser">user</column>
+            <column name="pass">user</column>
+            <column name="nama">medan</column>
+            <column name="email">user@gmail.com</column>
+        </table>
+    </database>
+</pma_xml_export>
