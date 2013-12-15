@@ -20,9 +20,10 @@ body{
 #logo{
 	width:30%;
 	height:60px;
-	background-image:url(image/logo.png);
+	/*background-image:url(image/logo.png);*/
+	background-color:#222;
 	background-repeat:no-repeat;
-	background-size:cover;
+	background-size:auto;
 	background-position:center;
 	float:left;
 	
@@ -152,7 +153,7 @@ input{
 	margin:12px;
 }
 #form_cari{
-	width:220px;
+	width:350px;
 	height:30px;
 	margin-left:10px;
 }
@@ -171,45 +172,55 @@ input{
 }
 
 #home_icon{
-	background-image:url(image/Home_icon.png);
+	background-image:url(image/t5.png);
+	background-repeat:no-repeat;
 	background-size:70px;
 	width:70px;
-	height:65px;
+	height:95px;
 	margin-top:5px;
-	margin-left:5px;
+	padding-bottom:10px;
+	/*margin-left:5px;*/
 }
 #carilokasi_icon{
 	background-image:url(image/CariLokasi_icon.png);
+	background-repeat:no-repeat;
 	background-size:70px;
 	width:70px;
-	height:65px;
+	height:95px;
 	margin-top:5px;
-	margin-left:5px;
+	padding-bottom:10px;
+	/*margin-left:5px;*/
 	background-repeat:no-repeat;
 }
 #tambahlokasi_icon{
 	background-image:url(image/TambahLokasi_icon.png);
+	background-repeat:no-repeat;
 	background-size:70px;
 	width:70px;
-	height:65px;
+	height:95px;
 	margin-top:5px;
-	margin-left:5px;
+	padding-bottom:10px;
+	/*margin-left:5px;*/
 }
 #kontak_icon{
 	background-image:url(image/Kontak_icon.png);
+	background-repeat:no-repeat;
 	background-size:70px;
 	width:70px;
-	height:65px;
+	height:95px;
 	margin-top:5px;
-	margin-left:5px;
+	padding-bottom:10px;
+	/*margin-left:5px;*/
 }
 #tentangkami_icon{
 	background-image:url(image/Tentang_icon.png);
+	background-repeat:no-repeat;
 	background-size:70px;
 	width:70px;
-	height:65px;
+	height:95px;
 	margin-top:5px;
-	margin-left:5px;
+	padding-bottom:10px;
+	/*margin-left:5px;*/
 }
 p{
 	margin-top:0px;
@@ -217,7 +228,8 @@ p{
 	text-align:center;
 }
 #main-nav div:hover{
-	background-color:red;
+	background-color:#141414;
+	
 	
 }
 #main-nav div a{
@@ -226,7 +238,9 @@ p{
 }
 #main-nav div{
 	background-position:center;
-	margin-left:0.4em;
+	padding-left: 0.4em;
+	padding-top: 0.2em;
+	/*padding-bottom: 0.2em;*/
 }
 #judulsampinghome{
 	background-image:url(image/storyboard.png);
