@@ -8,7 +8,7 @@
     float:right;
     font-size:12px;
 	margin-right:40px;
-	margin-top:10px;
+	margin-top:11px;
 }
 
 /* Login Button */
@@ -37,7 +37,13 @@
 }
 
 #loginButton:hover {
-	background:rgba(51, 153, 255, 1);
+	/*background:rgba(51, 153, 255, 1);*/
+	background:rgba(108,182,255,1);
+	-webkit-transition: all 0.1s ease; /* Google Chrome */
+	-moz-transition: all 0.5s ease; /* Mozilla Firefox */
+	-o-transition: all 0.5s ease; /* Browser Opera */
+	-ms-transition: all 0.5s ease; /* Internet Explorer 10 */
+	transition: all 0.5s ease; /* Global */
 }
 
 /* Login Box */

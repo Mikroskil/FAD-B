@@ -12,7 +12,7 @@ body{
 	width:1300px;
 	margin:auto;
 	background:#39F;
-	height:667px;
+	height:704px;
 	
 }
 
@@ -55,7 +55,7 @@ header:after {
 #main-nav{
 	width:7%;
 	background:red;
-	height:667px;
+	height:644px;
 	float:left;
 	overflow:hidden;
 }
@@ -63,7 +63,7 @@ header:after {
 #second-nav{
 	width:23%;
 	background:yellow;
-	height:667px;
+	height:644px;
 	float:left;
 	overflow:hidden;
 	
@@ -150,17 +150,27 @@ width:100%;
 }
 
 input{
-	margin:12px;
+	margin:15px;
 }
 #form_cari{
 	width:350px;
 	height:30px;
 	margin-left:10px;
+	border-width:0;
+	border-bottom-left-radius:5px;
+	border-top-left-radius:5px;
+	text-indent:5px;	
 }
+
 #tombol_cari{
+	font-family:Arial;
 	height:30px;
-	margin-left:10px;
+	width:50px;
+	margin-left:-19px;
 	background-color:orange;
+	border-width:0;
+	border-bottom-right-radius:5px;
+	border-top-right-radius:5px;
 }
 
 
@@ -254,7 +264,7 @@ p{
 #content{
 	background-color:#99F;
 	overflow:scroll;
-	height:600px ;
+	height:644px ;
 	width:69%;
 	margin-left:1%;
 }
