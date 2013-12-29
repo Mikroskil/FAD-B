@@ -150,7 +150,7 @@ width:100%;
 }
 
 input{
-	margin:15px;
+	margin:10px;
 }
 #form_cari{
 	width:350px;
@@ -164,6 +164,8 @@ input{
 
 #tombol_cari{
 	font-family:Arial;
+	font-size:16px;
+	color:#FFF;
 	height:30px;
 	width:50px;
 	margin-left:-19px;
@@ -263,11 +265,23 @@ p{
 }
 #content{
 	background-color:#99F;
-	overflow:scroll;
+	overflow:auto;
 	height:644px ;
 	width:69%;
 	margin-left:1%;
 }
+
+::-webkit-scrollbar {
+	width: 8px; 
+	background: #CCCCCC; 
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #706D6D; 
+	-moz-border-radius: 10px; 
+	border-radius: 10px;
+}
+
 #aside-article{
     margin: 0;
     padding: 0;
