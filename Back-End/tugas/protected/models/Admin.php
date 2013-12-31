@@ -4,9 +4,10 @@
  * This is the model class for table "admin".
  *
  * The followings are the available columns in table 'admin':
- * @property string $id
- * @property string $pass
- * @property string $nama
+ * @property integer $id
+ * @property string $password
+ * @property string $username
+ * @property string $salt
  */
 class Admin extends CActiveRecord
 {
@@ -26,13 +27,12 @@ class Admin extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id, pass, nama', 'required'),
-			array('id', 'length', 'max'=>10),
-			array('pass', 'length', 'max'=>20),
-			array('nama', 'length', 'max'=>25),
+			array('password, username, salt', 'required'),
+			array('password, username, salt', 'length', 'max'=>32),
+			array('username','unique','className'=>'Admin'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, pass, nama', 'safe', 'on'=>'search'),
+			array('id, password, username, salt', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -54,8 +54,9 @@ class Admin extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'pass' => 'Pass',
-			'nama' => 'Nama',
+			'password' => 'Password',
+			'username' => 'Username',
+			'salt' => 'Salt',
 		);
 	}
 
@@ -77,9 +78,10 @@ class Admin extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('id',$this->id,true);
-		$criteria->compare('pass',$this->pass,true);
-		$criteria->compare('nama',$this->nama,true);
+		$criteria->compare('id',$this->id);
+		$criteria->compare('password',$this->password,true);
+		$criteria->compare('username',$this->username,true);
+		$criteria->compare('salt',$this->salt,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -96,4 +98,36 @@ class Admin extends CActiveRecord
 	{
 		return parent::model($className);
 	}
+	
+	
+	// hash password
+	public function hashPassword($password, $salt)
+	{
+		return md5($salt.$password);
+	}
+			
+	// password validation
+	public function validatePassword($password)
+	{
+		return $this->hashPassword($password,$this->salt)===$this->password;
+	}
+			
+	//generate salt
+	public function generateSalt()
+	{
+		return uniqid('',true);
+	}
+			
+	public function beforeValidate()
+	{
+		$this->salt = $this->generateSalt();
+		return parent::beforeValidate();
+	}
+			
+	public function beforeSave()
+	{
+		$this->password = $this->hashPassword($this->password, $this->salt);
+		return parent::beforeSave();
+	}
+	
 }

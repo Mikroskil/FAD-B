@@ -7,6 +7,7 @@
  */
 class UserIdentity extends CUserIdentity
 {
+	private $_id;
 	/**
 	 * Authenticates a user.
 	 * The example implementation makes sure if the username and password
@@ -17,7 +18,7 @@ class UserIdentity extends CUserIdentity
 	 */
 	public function authenticate()
 	{	//$this->breadcrumbs=array('Users'=>array('index'),$model->id,);
-		$nama=array('nama');
+		/*$nama=array('nama');
 		$pass=array('pass');
 //		$pass=array('data'=>$model,'attributes'=>array('pass'));
 		
@@ -34,5 +35,25 @@ class UserIdentity extends CUserIdentity
 		else
 			$this->errorCode=self::ERROR_NONE;
 		return !$this->errorCode;
-	}
+	}*/
+	
+	$users= Admin::model()->findByAttributes(array('username'=>$this->username));
+            
+            if($users===null) {
+                $this->errorCode = self::ERROR_USERNAME_INVALID;                
+            }
+            else if(!$users->validatePassword($this->password)) {
+                $this->errorCode = self::ERROR_PASSWORD_INVALID;
+            }
+            else {           
+                $this->errorCode = self::ERROR_NONE;
+                $this->_id = $users->id;
+            }
+            return !$this->errorCode;
+        }
+        
+        public function getId() {
+            return $this->_id;
+        }
+	
 }

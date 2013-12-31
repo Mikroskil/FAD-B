@@ -29,7 +29,7 @@ class ArtikelController extends Controller
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
 				'actions'=>array('index','view'),
-				'users'=>array('*'),
+				'users'=>array('@'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
 				'actions'=>array('create','update'),
@@ -37,7 +37,7 @@ class ArtikelController extends Controller
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -62,7 +62,7 @@ class ArtikelController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Artikel;
+/*		$model=new Artikel;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -76,7 +76,58 @@ class ArtikelController extends Controller
 
 		$this->render('create',array(
 			'model'=>$model,
-		));
+		));*/
+		
+		
+		
+		/*$model=new Artikel;
+
+		// Uncomment the following line if AJAX validation is needed
+		// $this->performAjaxValidation($model);
+	
+		if(isset($_POST['Artikel']))
+		{
+		 $model->attributes=$_POST['Artikel'];
+							
+		 $myfile=CUploadedFile::getInstance($model,'image_path');
+		 if (is_object($myfile) && get_class($myfile)==='CUploadedFile') {
+				 $model->image_path="/../upload/";
+					}                                     
+		 if($model->save())    
+		 {
+			 if (is_object($myfile))
+			 $myfile->saveAs('/../upload/'.$myfile->name);
+			 $this->redirect(array('admin','id'=>$model->id));
+	  	}
+		}
+		$this->render('create',array(
+							'model'=>$model,
+					));
+*/
+		
+		$model=new Artikel;  // this is my model related to table
+        if(isset($_POST['Artikel']))
+        {
+            $rnd = rand(0,9999);  // generate random number between 0-9999
+            $model->attributes=$_POST['Artikel'];
+ 
+            $uploadedFile=CUploadedFile::getInstance($model,'gambar');
+            $fileName = "{$rnd}-{$uploadedFile}";  // random number + file name
+            $model->gambar = $fileName;
+ 
+            if($model->save())
+            {
+				if($uploadedFile != null){
+                $uploadedFile->saveAs(Yii::app()->basePath.'/../upload/'.$fileName); } // image will uplode to rootDirectory/banner/
+                //$this->redirect(array('admin'));
+				$this->redirect(array('view','id'=>$model->idartikel));
+            }
+        }
+        $this->render('create',array(
+            'model'=>$model,
+        ));
+		
+		
 	}
 
 	/**
@@ -86,7 +137,7 @@ class ArtikelController extends Controller
 	 */
 	public function actionUpdate($id)
 	{
-		$model=$this->loadModel($id);
+/*		$model=$this->loadModel($id);
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -100,7 +151,35 @@ class ArtikelController extends Controller
 
 		$this->render('update',array(
 			'model'=>$model,
-		));
+		));*/
+		
+		
+		$model=$this->loadModel($id);
+ 
+        if(isset($_POST['Artikel']))
+        {
+            $_POST['Artikel']['gambar'] = $model->gambar;
+            $model->attributes=$_POST['Artikel'];
+ 
+            $uploadedFile=CUploadedFile::getInstance($model,'gambar');
+ 
+            if($model->save())
+            {
+                if(!empty($uploadedFile))  // check if uploaded file is set or not
+                {
+                    $uploadedFile->saveAs(Yii::app()->basePath.'/../upload/'.$model->gambar);
+                }
+                //$this->redirect(array('admin'));
+				$this->redirect(array('view','id'=>$model->idartikel));
+            }
+ 
+        }
+ 
+        $this->render('update',array(
+            'model'=>$model,
+        ));
+		
+		
 	}
 
 	/**

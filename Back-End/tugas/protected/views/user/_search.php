@@ -16,10 +16,10 @@
 		<?php echo $form->textField($model,'iduser',array('size'=>15,'maxlength'=>15)); ?>
 	</div>
 
-	<div class="row">
+	<!--<div class="row">
 		<?php echo $form->label($model,'pass'); ?>
 		<?php echo $form->passwordField($model,'pass',array('size'=>15,'maxlength'=>15)); ?>
-	</div>
+	</div>-->
 
 	<div class="row">
 		<?php echo $form->label($model,'nama'); ?>

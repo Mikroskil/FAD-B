@@ -46,7 +46,7 @@ atau <b>=</b>) di awal setiap Pencarian Untuk melakukan Perbandingan.
 	'filter'=>$model,
 	'columns'=>array(
 		'iduser',
-		'pass',
+		//'pass',
 		'nama',
 		'email',
 		array(

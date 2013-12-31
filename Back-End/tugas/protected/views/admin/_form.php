@@ -18,24 +18,28 @@
 	<p class="note">Fields with <span class="required">*</span> are required.</p>
 
 	<?php echo $form->errorSummary($model); ?>
-
 	<div class="row">
-		<?php echo $form->labelEx($model,'id'); ?>
-		<?php echo $form->textField($model,'id',array('size'=>10,'maxlength'=>10)); ?>
-		<?php echo $form->error($model,'id'); ?>
+		<?php echo $form->labelEx($model,'username'); ?>
+		<?php echo $form->textField($model,'username',array('size'=>32,'maxlength'=>32)); ?>
+		<?php echo $form->error($model,'username'); ?>
+	</div>
+    
+	<div class="row">
+		<?php echo $form->labelEx($model,'password'); ?>
+		<?php echo $form->passwordField($model,'password',array('size'=>32,'maxlength'=>32)); ?>
+		<?php echo $form->error($model,'password'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'pass'); ?>
-		<?php echo $form->passwordField($model,'pass',array('size'=>20,'maxlength'=>20)); ?>
-		<?php echo $form->error($model,'pass'); ?>
-	</div>
+	
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'nama'); ?>
-		<?php echo $form->textField($model,'nama',array('size'=>25,'maxlength'=>25)); ?>
-		<?php echo $form->error($model,'nama'); ?>
-	</div>
+	<!--<div class="row">
+		<?php echo $form->labelEx($model,'salt'); ?>
+		<?php echo $form->textField($model,'salt',array('size'=>32,'maxlength'=>32)); ?>
+		<?php echo $form->error($model,'salt'); ?>
+	</div>-->
+
+
+
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>

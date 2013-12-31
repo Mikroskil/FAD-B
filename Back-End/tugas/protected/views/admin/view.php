@@ -22,7 +22,8 @@ $this->menu=array(
 	'data'=>$model,
 	'attributes'=>array(
 		'id',
-		'pass',
-		'nama',
+		'password',
+		'username',
+		//'salt',
 	),
 )); ?>

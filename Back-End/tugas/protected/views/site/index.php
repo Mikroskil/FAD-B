@@ -2,11 +2,16 @@
 /* @var $this SiteController */
 
 $this->pageTitle=Yii::app()->name;
+/*require_once "Yii::app()->theme->baseUrl/themes/blackboot/views/layouts/main2.php";*/
 ?>
 
 <h1>Welcome to <i><?php echo CHtml::encode(Yii::app()->name); ?></i></h1>
 
-<p>Hi...., Broo...</p>
+<!--<p>Hi....,Bro....</p>-->
+<center><p style="font-size:xx-large; padding-bottom:10px; padding-top:40px">Hi....,</p>
+<p style="font-size:xx-large; padding-bottom:10px;">Selamat Datang,</p>
+<p style="font-size:xx-large; padding-bottom:10px;">Administrator</p></center>
+
 <!--<p>Congratulations! You have successfully created your Yii application.</p>
 
 <p>You may change the content of this page by modifying the following two files:</p>

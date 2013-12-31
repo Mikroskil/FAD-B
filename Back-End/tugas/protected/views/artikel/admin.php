@@ -30,7 +30,8 @@ $('.search-form form').submit(function(){
 
 <p>
 Gunakan operator ini(<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
-atau <b>=</b>) di awal setiap Pencarian Untuk melakukan Perbandingan.</p>
+atau <b>=</b>) di awal setiap Pencarian Untuk melakukan Perbandingan.
+</p>
 
 <?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
 <div class="search-form" style="display:none">
@@ -46,10 +47,10 @@ atau <b>=</b>) di awal setiap Pencarian Untuk melakukan Perbandingan.</p>
 	'columns'=>array(
 		'idartikel',
 		'judul',
-		'artikel',
+		'artikel:html',
 		'gambar',
 		'lokasi',
-		'maps',
+		//'maps:html',
 		array(
 			'class'=>'CButtonColumn',
 		),

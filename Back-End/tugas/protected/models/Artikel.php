@@ -12,8 +12,8 @@
  * @property string $maps
  *
  * The followings are the available model relations:
- * @property Kategori[] $kategoris
  * @property Komentar[] $komentars
+ * @property SubKategori[] $subKategoris
  */
 class Artikel extends CActiveRecord
 {
@@ -35,10 +35,14 @@ class Artikel extends CActiveRecord
 		return array(
 			array('idartikel, judul, artikel, gambar, lokasi, maps', 'required'),
 			array('idartikel', 'length', 'max'=>15),
+			array('idartikel','unique','className'=>'Artikel'),
 			array('judul', 'length', 'max'=>50),
+			array('gambar', 'length', 'max'=>255, 'allowEmpty' => true, 'on'=>'insert,update'),
+			//array('gambar','allowEmpty' => false, 'on'=>'insert'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('idartikel, judul, artikel, gambar, lokasi, maps', 'safe', 'on'=>'search'),
+			array('gambar', 'file','types'=>'jpg, gif, png', 'allowEmpty'=>true, 'on'=>'update'),
 		);
 	}
 
@@ -50,8 +54,8 @@ class Artikel extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'kategoris' => array(self::HAS_MANY, 'Kategori', 'idartikel'),
 			'komentars' => array(self::HAS_MANY, 'Komentar', 'idartikel'),
+			'subKategoris' => array(self::HAS_MANY, 'SubKategori', 'idartikel'),
 		);
 	}
 

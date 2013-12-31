@@ -7,7 +7,7 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	/*array('label'=>'Create TamLok', 'url'=>array('create')),*/
+	array('label'=>'Create TamLok', 'url'=>array('create')),
 	array('label'=>'Manage Tambah Lokasi', 'url'=>array('admin')),
 );
 ?>

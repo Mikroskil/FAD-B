@@ -31,6 +31,8 @@ class Kategori extends CActiveRecord
 			array('idkategori, kategori', 'required'),
 			array('idkategori', 'length', 'max'=>15),
 			array('kategori', 'length', 'max'=>50),
+			array('kategori','unique','className'=>'Kategori'),
+			array('idkategori','unique','className'=>'Kategori'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('idkategori, kategori', 'safe', 'on'=>'search'),

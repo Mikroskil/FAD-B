@@ -29,15 +29,16 @@ class KategoriController extends Controller
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
 				'actions'=>array('index','view'),
-				'users'=>array('*'),
+				'users'=>array('@'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
+				//'actions'=>array('create','update','dynamiccities'),
 				'actions'=>array('create','update'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -170,4 +171,21 @@ class KategoriController extends Controller
 			Yii::app()->end();
 		}
 	}
+	
+	
+	
+	/*public function actionDynamiccities()
+	{
+		$data=subkategori2::model()->findAllByAttributes(array('kategori'=>$_POST['kategori2']['kategori']));
+		//findAll('parent_id=:parent_id', 
+					  //array(':parent_id'=>$_POST['kategori']));
+	 
+		$data=CHtml::listData($data,'subkategori','subkategori');
+		foreach($data as $value=>$name)
+		{
+			echo CHtml::tag('option',
+					   array('value'=>$value),CHtml::encode($name),true);
+		}
+	}*/
+	
 }

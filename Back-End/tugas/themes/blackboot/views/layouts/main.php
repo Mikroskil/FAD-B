@@ -53,13 +53,19 @@
 						'items'=>array(
 							array('label'=>'Home', 'url'=>array('/site/index')),
 							array('label'=>'User', 'url'=>array('/user/index')),
-							array('label'=>'Artikel', 'url'=>array('/artikel/index')),
+							array('label'=>'Artikel', 'url'=>array('/artikel2/index')),
+							//array('label'=>'Artikel-2', 'url'=>array('/artikel/index')),
+							//array('label'=>'Kategori', 'url'=>array('/kategori/index')),
+							//array('label'=>'Sub_Kategori', 'url'=>array('/subKategori/index')),
 							array('label'=>'Kategori', 'url'=>array('/kategori/index')),
-							array('label'=>'Sub_Kategori', 'url'=>array('/subKategori/index')),
+							array('label'=>'Sub Kategori', 'url'=>array('/subkategori2/index')),
 							array('label'=>'Tambah Lokasi', 'url'=>array('/tamLok/index')),
 							array('label'=>'Komentar', 'url'=>array('/komentar/index')),
-							/*array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-							array('label'=>'Contact', 'url'=>array('/site/contact')),*/
+							array('label'=>'Admin', 'url'=>array('/admin/index')),
+
+
+							//array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
+							//array('label'=>'Contact', 'url'=>array('/site/contact')),
 							array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 							array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 						),

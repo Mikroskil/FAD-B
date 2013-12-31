@@ -34,6 +34,9 @@ class User extends CActiveRecord
 			array('iduser, pass', 'length', 'max'=>15),
 			array('nama', 'length', 'max'=>25),
 			array('email', 'length', 'max'=>35),
+			array('nama','unique','className'=>'User'),
+			array('iduser','unique','className'=>'User'),
+			array('email','unique','className'=>'User'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('iduser, pass, nama, email', 'safe', 'on'=>'search'),

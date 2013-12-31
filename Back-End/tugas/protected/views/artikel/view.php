@@ -17,15 +17,21 @@ $this->menu=array(
 ?>
 
 <h1>View Artikel #<?php echo $model->idartikel; ?></h1>
+<center><img src="<?php echo Yii::app()->request->baseUrl.'/upload/'.$model->gambar;?> "  width="300" style="margin-left:0px;"/></center>
+<br />
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
 		'idartikel',
 		'judul',
-		'artikel',
-		'gambar',
+		'artikel:html',
+		//'gambar',
 		'lokasi',
-		'maps',
+		//'maps',
 	),
 )); ?>
+<br /><center>
+<?php echo $model->maps; ?></center>
+
+    

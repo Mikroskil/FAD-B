@@ -11,6 +11,10 @@ class AdminController extends Controller
 	/**
 	 * @return array action filters
 	 */
+	 
+	 
+	 
+	 
 	public function filters()
 	{
 		return array(
@@ -29,11 +33,11 @@ class AdminController extends Controller
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
 				'actions'=>array('index','view'),
-				'users'=>array('*'),
+				'users'=>array('@'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
 				'actions'=>array('create','update'),
-				'users'=>array('@'),
+				'users'=>array('admin'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
@@ -170,4 +174,40 @@ class AdminController extends Controller
 			Yii::app()->end();
 		}
 	}
+	
+	
+	
+	
+	
+		public function hashPassword($password, $salt)
+	{
+		return md5($salt.$password);
+	}
+			
+	// password validation
+	public function validatePassword($password)
+	{
+		return $this->hashPassword($password,$this->salt)===$this->password;
+	}
+			
+	//generate salt
+	public function generateSalt()
+	{
+		return uniqid('',true);
+	}
+			
+	public function beforeValidate()
+	{
+		$this->salt = $this->generateSalt();
+		return parent::beforeValidate();
+	}
+			
+	public function beforeSave()
+	{
+		$this->password = $this->hashPassword($this->password, $this->salt);
+		return parent::beforeSave();
+	}
+
+	
+	
 }

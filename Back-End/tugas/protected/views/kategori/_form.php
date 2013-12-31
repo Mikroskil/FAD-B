@@ -26,8 +26,28 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'kategori'); ?>
-		<?php echo $form->textField($model,'kategori',array('size'=>50,'maxlength'=>50)); ?>
+		<?php echo $form->labelEx($model,'kategori');?>
+		<?php echo $form->textField($model,'kategori',array('size'=>50,'maxlength'=>50)); 
+		//echo $form->dropDownList($model, 'kategori', CHtml::listData(subkategori2::model()->findAll(),'kategori','kategori'),
+		//array('prompt' => '-- None --'));
+		//echo $form->dropDownList($model, 'kategori', CHtml::listData(subkategori2::model()->findAllByAttributes(array(
+        //'kategori'=>'Kampus')),'subkategori','subkategori'),array('prompt' => '-- None --'));
+		
+		/*echo CHtml::dropDownList('country_id','', array(1=>'USA',2=>'France',3=>'Japan'),
+		array(
+		'ajax' => array(
+		'type'=>'POST', //request type
+		'url'=>CController::createUrl('currentController/dynamiccities'), //url to call.
+		//Style: CController::createUrl('currentController/methodToCall')
+		'update'=>'#city_id', //selector to update
+		//'data'=>'js:javascript statement' 
+		//leave out the data key to pass all form values through
+		))); 
+		 
+		//empty since it will be filled by the other dropdown
+		echo CHtml::dropDownList('city_id','', array());*/
+		
+		 ?>
 		<?php echo $form->error($model,'kategori'); ?>
 	</div>
 
