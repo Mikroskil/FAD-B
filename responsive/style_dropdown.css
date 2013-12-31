@@ -1,20 +1,19 @@
-body {
-    font-size: 100%;
-    background:#32373d;
-}
 a {
     text-decoration: none;
 }
+
 ul, ul ul {
     margin: 0;
     padding: 0;
     list-style: none;
 }
+
 #wrapper {   
     width: 220px;
     margin: 100px auto;
     font-size: 0.8125em;
 }
+
 .menu {
     width: auto;
     height: auto;
@@ -22,6 +21,7 @@ ul, ul ul {
     -moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,.73), 0px 0px 18px 0px rgba(0,0,0,.13);
     box-shadow: 0px 1px 3px 0px rgba(0,0,0,.73), 0px 0px 18px 0px rgba(0,0,0,.13);
 }
+
 .menu > li > a {
     background-color: #616975;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(114, 122, 134)),to(rgb(80, 88, 100)));
@@ -46,6 +46,7 @@ ul, ul ul {
     color: #fff;
     text-shadow: 0px 1px 0px rgba(0,0,0,.5);
 }
+
 .menu ul li a {
     background: #fff;
     border-bottom: 1px solid #efeff0;
@@ -60,9 +61,11 @@ ul, ul ul {
     font-weight: 400;
     color: #878d95;
 }
+
 .menu ul li:last-child a {
     border-bottom: 1px solid #33373d;
 }
+
 .menu > li > a:hover, .menu > li > a.active {
     background-color: #35afe3;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(69, 199, 235)),to(rgb(38, 152, 219)));
@@ -77,9 +80,11 @@ ul, ul ul {
     -moz-box-shadow: inset 0px 1px 0px 0px #6ad2ef;
     box-shadow: inset 0px 1px 0px 0px #6ad2ef;
 }
+
 .menu > li > a.active {
     border-bottom: 1px solid #1a638f;
 }
+
 .menu > li > a:before {
     content: '';
     background-image: url(../images/sprite.png);
@@ -92,18 +97,23 @@ ul, ul ul {
     top: 50%;
     margin: -.5em 0 0 0;
 }
+
 .item1 > a:before {
     background-position: 0 0;
 }
+
 .item2 > a:before {
     background-position: -38px 0;
 }
+
 .item3 > a:before {
     background-position: 0 -38px;
 }
+
 .item4 > a:before {
     background-position: -38px -38px;
 }
+
 .item5 > a:before {
     background-position: -76px 0;
 }
@@ -133,14 +143,16 @@ ul, ul ul {
 .menu > li > a:hover span, .menu > li a.active span {
     background: #2173a1;
 }
+
 .menu > li > ul li a:before{
-    content: '▶';
+    content: url(image/arrow1.png);
     font-size: 8px;
     color: #bcbcbf;
     position: absolute;
     width: 1em;
     height: 1em;
-    top: 0;
+	padding-top:1px;
+    top: ;
     left: -2.7em;
 }
 
