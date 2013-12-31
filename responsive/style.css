@@ -13,7 +13,6 @@ body{
 	margin:auto;
 	background:#39F;
 	height:704px;
-	
 }
 
 
@@ -26,7 +25,6 @@ body{
 	background-size:auto;
 	background-position:center;
 	float:left;
-	
 }
 
 #panel-above{
@@ -34,7 +32,6 @@ body{
 	background:#222;
 	height:60px;
 	float:left;
-	
 }
 
 header {
@@ -65,15 +62,84 @@ header:after {
 	background:yellow;
 	height:644px;
 	float:left;
-	overflow:hidden;
-	
+	overflow:auto;
 }
+
 #content{
 	width:70%;
 	background:green;
 	height:587px;
 	float:left;
-	
+}
+
+#sub_menu,#sub_menu_cari {
+	margin:0;
+	width:100%;
+}
+
+.submenu, .submenucari {
+	width:100%;
+	height:90px;
+	border-bottom:2px solid #333;
+	background:#6C6C6C;
+	list-style:none;
+	padding:0;
+	margin:0 0 0 -40px;
+	float:left;
+}
+
+.submenucari > p {
+	color:#F00;
+	text-align:left;
+	padding:11px 0 0px 10px;
+	margin:0;
+	font-size:1em;
+	font-weight:bold;
+	font-family:Arial, sans-serif;
+}
+
+#sub_menu_cari > a {
+	text-decoration:none;
+}
+
+.submenucari {
+	height:40px;
+}
+
+.image, .info {
+	float:left;
+}
+
+.image {
+	width:70px;
+	height:70px;
+	background:#C4530F;
+	border:2px solid #009;
+	border-radius:5px;
+	margin:8px 10px 10px 10px;
+	padding:0;
+}
+
+.info, .info2 {
+	height:70px;
+	color:#F00;
+	padding:0;
+	margin:21px 0 20px 0;
+}
+
+.info2 {
+	margin:18px 0 20px 0;
+}
+
+.info > p {
+	text-align:left;
+	margin:0 0 5px 0;
+}
+
+.info2 > p {
+	height:20px;
+	text-align:left;
+	margin:0 0 5px 0;	
 }
 
 #slider{
@@ -150,8 +216,9 @@ width:100%;
 }
 
 input{
-	margin:10px;
+	margin:14px 10px 10px 10px;
 }
+
 #form_cari{
 	width:350px;
 	height:30px;
@@ -166,15 +233,13 @@ input{
 	font-family:Arial;
 	font-size:16px;
 	color:#FFF;
-	height:33px;
+	height:30px;
 	width:50px;
 	margin-left:-14px;
 	background-color:orange;
 	border-width:0;
 	border-bottom-right-radius:5px;
 	border-top-right-radius:5px;
-	padding-bottom: 4px;
-	padding-top: 2px;
 }
 
 
@@ -259,8 +324,9 @@ p{
 	padding-top: 0.2em;
 	/*padding-bottom: 0.2em;*/
 }
-#judulsampinghome{
-	background-image:url(image/storyboard.png);
+#judulsampinghome1,
+#judulsampinghome2 {
+	/*background-image:url(image/storyboard.png);*/
 	height:7%;
 	width:100%;
 	background-size:250px 40px;
@@ -268,17 +334,26 @@ p{
 	background-position:center;
 	background-color:#444;
 }
+
+#judulsampinghome1 {
+	background-image:url(image/storyboard.png);
+}
+
+#judulsampinghome2 {
+	background-image:url(image/pilihkategori.png);
+}
+
 #content{
 	background-color:#99F;
-	overflow:auto;
 	height:644px ;
 	width:69%;
 	margin-left:1%;
+	overflow:auto;
 }
 
 ::-webkit-scrollbar {
 	width: 8px; 
-	background: #CCCCCC; 
+	background: #CCCCCC;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -311,5 +386,15 @@ taq{
 	margin:1em;
 }
 #isi{
+	background:#FFF;
 	height:500px;
+}
+
+#aside-article h3 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:25px;
+}
+
+#text {
+	font-family:"Calibri";
 }

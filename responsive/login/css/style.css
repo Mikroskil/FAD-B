@@ -23,22 +23,6 @@
     z-index:30;
     cursor:pointer;
 	border-radius:5px;
-}
-
-/* Login Button Text */
-#loginButton span {
-    color:#445058; 
-    font-size:14px; 
-    font-weight:bold; 
-    text-shadow:1px 1px #fff; 
-    padding:7px 29px 9px 10px;
-	background:rgba(51, 153, 255, 1);
-    background:url(../images/loginArrow.png) no-repeat 53px 7px;
-    display:block
-}
-
-#loginButton:hover {
-	background:rgba(108,182,255,1);
 	-webkit-transition: all 0.1s ease; /* Google Chrome */
 	-moz-transition: all 0.5s ease; /* Mozilla Firefox */
 	-o-transition: all 0.5s ease; /* Browser Opera */
@@ -46,10 +30,29 @@
 	transition: all 0.5s ease; /* Global */
 }
 
+#loginButton:hover {
+	background:rgba(108,182,255,1);
+}
+
+/* Login Button Text */
+#loginButton span {
+    color:#445058; 
+    font-size:14px; 
+    font-weight:bold;  
+    padding:7px 29px 9px 10px;
+	background:rgba(51, 153, 255, 1);
+    background:url(../images/loginArrow.png) no-repeat 53px 7px;
+    display:block
+}
+
+#loginButton span:hover {
+	color:#FFF;
+}
+
 /* Login Box */
 #loginBox {
     position:absolute;
-    top:40px;
+    top:45px;
     right:0;
     display:none;
     z-index:29;
@@ -57,7 +60,7 @@
 
 /* If the Login Button has been clicked */    
 #loginButton.active {
-    border-radius:3px 3px 0 0;
+    border-radius:5px;
 }
 
 #loginButton.active span {
