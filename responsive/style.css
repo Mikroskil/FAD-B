@@ -112,7 +112,7 @@ header:after {
 	width:70px;
 	height:70px;
 	background:#C4530F;
-	border:3px solid #009;
+	border:3px solid #C4C4C4;
 	border-radius:5px;
 	margin:7px 10px 10px 10px;
 	padding:0;
@@ -209,6 +209,33 @@ footer{
 	box-shadow:#0F3;
 	border-bottom-left-radius:10px;
 	border-bottom-right-radius:10px;
+}
+
+#img_container {
+	width: 85%;
+	height:250px;
+	background:#FFF;
+	float:left;
+	display:inline-block;
+	margin:2% 10% 0 7.5%;
+}
+
+.img_about{
+	width:28%;
+	height:95.8%;
+	margin:0;
+	padding:0;
+	float:left;
+	display:inline-block;
+	border:5px solid #333;
+	border-radius:5px;
+}
+
+.img_about > img {
+	width:100%; 
+	height:100%; 
+	margin:0; 
+	padding:0;
 }
 
 
