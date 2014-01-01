@@ -3,13 +3,13 @@
 /* @var $model TamLok */
 
 $this->breadcrumbs=array(
-	'Tam Loks'=>array('index'),
+	'Tambah Lokasis'=>array('index'),
 	'Manage',
 );
 
 $this->menu=array(
 	array('label'=>'List Tambah Lokasi', 'url'=>array('index')),
-	array('label'=>'Create TamLok', 'url'=>array('create')),
+	//array('label'=>'Create Tambah Lokasi', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -45,8 +45,10 @@ atau <b>=</b>) di awal setiap Pencarian Untuk melakukan Perbandingan.</p>
 	'filter'=>$model,
 	'columns'=>array(
 		'idtambah',
+		'nama',
+		'email',
 		'judul',
-		'artikel',
+		//'artikel',
 		'lokasi',
 		array(
 			'class'=>'CButtonColumn',

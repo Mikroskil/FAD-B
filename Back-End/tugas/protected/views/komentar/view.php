@@ -9,7 +9,7 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'List Komentar', 'url'=>array('index')),
-	array('label'=>'Create Komentar', 'url'=>array('create')),
+	//array('label'=>'Create Komentar', 'url'=>array('create')),
 	array('label'=>'Update Komentar', 'url'=>array('update', 'id'=>$model->idkomentar)),
 	array('label'=>'Delete Komentar', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->idkomentar),'confirm'=>'Are you sure you want to delete this item?')),
 	array('label'=>'Manage Komentar', 'url'=>array('admin')),

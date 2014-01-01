@@ -61,6 +61,7 @@ class Artikel2 extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'komentars' => array(self::HAS_MANY, 'Komentar', 'idartikel'),
 		);
 	}
 

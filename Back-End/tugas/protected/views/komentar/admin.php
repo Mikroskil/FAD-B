@@ -9,7 +9,7 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'List Komentar', 'url'=>array('index')),
-	array('label'=>'Create Komentar', 'url'=>array('create')),
+	//array('label'=>'Create Komentar', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -46,7 +46,7 @@ atau <b>=</b>) di awal setiap Pencarian Untuk melakukan Perbandingan.</p>
 	'columns'=>array(
 		'idkomentar',
 		'idartikel',
-		'iduser',
+		//'iduser',
 		'komentar',
 		array(
 			'class'=>'CButtonColumn',

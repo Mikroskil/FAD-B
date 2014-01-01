@@ -7,7 +7,7 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create Komentar', 'url'=>array('create')),
+	//array('label'=>'Create Komentar', 'url'=>array('create')),
 	array('label'=>'Manage Komentar', 'url'=>array('admin')),
 );
 ?>

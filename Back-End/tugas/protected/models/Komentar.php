@@ -4,13 +4,13 @@
  * This is the model class for table "komentar".
  *
  * The followings are the available columns in table 'komentar':
- * @property string $idkomentar
- * @property string $idartikel
+ * @property integer $idkomentar
+ * @property integer $idartikel
  * @property string $iduser
  * @property string $komentar
  *
  * The followings are the available model relations:
- * @property Artikel $idartikel0
+ * @property Artikel2 $idartikel0
  * @property User $iduser0
  */
 class Komentar extends CActiveRecord
@@ -31,8 +31,9 @@ class Komentar extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('idkomentar, idartikel, iduser, komentar', 'required'),
-			array('idkomentar, idartikel, iduser', 'length', 'max'=>15),
+			array('idartikel, iduser, komentar', 'required'),
+			array('idartikel', 'numerical', 'integerOnly'=>true),
+			array('iduser', 'length', 'max'=>15),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
 			array('idkomentar, idartikel, iduser, komentar', 'safe', 'on'=>'search'),
@@ -47,7 +48,7 @@ class Komentar extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'idartikel0' => array(self::BELONGS_TO, 'Artikel', 'idartikel'),
+			'idartikel0' => array(self::BELONGS_TO, 'Artikel2', 'idartikel'),
 			'iduser0' => array(self::BELONGS_TO, 'User', 'iduser'),
 		);
 	}
@@ -83,8 +84,8 @@ class Komentar extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('idkomentar',$this->idkomentar,true);
-		$criteria->compare('idartikel',$this->idartikel,true);
+		$criteria->compare('idkomentar',$this->idkomentar);
+		$criteria->compare('idartikel',$this->idartikel);
 		$criteria->compare('iduser',$this->iduser,true);
 		$criteria->compare('komentar',$this->komentar,true);
 

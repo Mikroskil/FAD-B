@@ -20,14 +20,8 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'idkomentar'); ?>
-		<?php echo $form->textField($model,'idkomentar',array('size'=>15,'maxlength'=>15)); ?>
-		<?php echo $form->error($model,'idkomentar'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->labelEx($model,'idartikel'); ?>
-		<?php echo $form->textField($model,'idartikel',array('size'=>15,'maxlength'=>15)); ?>
+		<?php echo $form->textField($model,'idartikel'); ?>
 		<?php echo $form->error($model,'idartikel'); ?>
 	</div>
 

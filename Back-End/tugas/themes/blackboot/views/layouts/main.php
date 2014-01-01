@@ -33,6 +33,7 @@
 <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/bootstrap.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/bootstrap-responsive.css" />
 <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->baseUrl; ?>/css/style.css" />
+<link rel="shortcut icon" href="<?php echo Yii::app()->theme->baseUrl; ?>/img/t5-2.png">
 <!-- Le fav and touch icons -->
 </head>
 

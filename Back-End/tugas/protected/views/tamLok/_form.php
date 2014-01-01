@@ -26,6 +26,18 @@
 	</div>
 
 	<div class="row">
+		<?php echo $form->labelEx($model,'nama'); ?>
+		<?php echo $form->textField($model,'nama',array('size'=>25,'maxlength'=>25)); ?>
+		<?php echo $form->error($model,'nama'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'email'); ?>
+		<?php echo $form->textField($model,'email',array('size'=>35,'maxlength'=>35)); ?>
+		<?php echo $form->error($model,'email'); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->labelEx($model,'judul'); ?>
 		<?php echo $form->textField($model,'judul',array('size'=>50,'maxlength'=>50)); ?>
 		<?php echo $form->error($model,'judul'); ?>

@@ -9,6 +9,14 @@
 	<?php echo CHtml::link(CHtml::encode($data->idtambah), array('view', 'id'=>$data->idtambah)); ?>
 	<br />
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('nama')); ?>:</b>
+	<?php echo CHtml::encode($data->nama); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('email')); ?>:</b>
+	<?php echo CHtml::encode($data->email); ?>
+	<br />
+
 	<b><?php echo CHtml::encode($data->getAttributeLabel('judul')); ?>:</b>
 	<?php echo CHtml::encode($data->judul); ?>
 	<br />

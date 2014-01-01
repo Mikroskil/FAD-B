@@ -5,6 +5,8 @@
  *
  * The followings are the available columns in table 'tam_lok':
  * @property string $idtambah
+ * @property string $nama
+ * @property string $email
  * @property string $judul
  * @property string $artikel
  * @property string $lokasi
@@ -27,12 +29,15 @@ class TamLok extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('idtambah, judul, artikel, lokasi', 'required'),
+			array('idtambah, nama, email', 'required'),
 			array('idtambah', 'length', 'max'=>15),
+			array('nama', 'length', 'max'=>25),
+			array('email', 'length', 'max'=>35),
 			array('judul', 'length', 'max'=>50),
+			array('artikel, lokasi', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('idtambah, judul, artikel, lokasi', 'safe', 'on'=>'search'),
+			array('idtambah, nama, email, judul, artikel, lokasi', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -54,6 +59,8 @@ class TamLok extends CActiveRecord
 	{
 		return array(
 			'idtambah' => 'Idtambah',
+			'nama' => 'Nama',
+			'email' => 'Email',
 			'judul' => 'Judul',
 			'artikel' => 'Artikel',
 			'lokasi' => 'Lokasi',
@@ -79,6 +86,8 @@ class TamLok extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('idtambah',$this->idtambah,true);
+		$criteria->compare('nama',$this->nama,true);
+		$criteria->compare('email',$this->email,true);
 		$criteria->compare('judul',$this->judul,true);
 		$criteria->compare('artikel',$this->artikel,true);
 		$criteria->compare('lokasi',$this->lokasi,true);

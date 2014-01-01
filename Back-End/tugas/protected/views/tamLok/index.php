@@ -3,16 +3,16 @@
 /* @var $dataProvider CActiveDataProvider */
 
 $this->breadcrumbs=array(
-	'Tam Loks',
+	'Tambah Lokasis',
 );
 
 $this->menu=array(
-	array('label'=>'Create TamLok', 'url'=>array('create')),
+	//array('label'=>'Create Tambah Lokasi', 'url'=>array('create')),
 	array('label'=>'Manage Tambah Lokasi', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Tambah Lokasi</h1>
+<h1>Tambah Lokasis</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

@@ -13,12 +13,12 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'idkomentar'); ?>
-		<?php echo $form->textField($model,'idkomentar',array('size'=>15,'maxlength'=>15)); ?>
+		<?php echo $form->textField($model,'idkomentar'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'idartikel'); ?>
-		<?php echo $form->textField($model,'idartikel',array('size'=>15,'maxlength'=>15)); ?>
+		<?php echo $form->textField($model,'idartikel'); ?>
 	</div>
 
 	<div class="row">
