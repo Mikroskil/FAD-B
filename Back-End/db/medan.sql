@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 31, 2013 at 09:10 PM
+-- Generation Time: Jan 01, 2014 at 06:57 PM
 -- Server version: 5.5.27
 -- PHP Version: 5.4.7
 
@@ -87,17 +87,14 @@ CREATE TABLE IF NOT EXISTS `artikel2` (
   `modify_date` date NOT NULL,
   `modify_by` varchar(25) NOT NULL,
   PRIMARY KEY (`idartikel`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
 
 --
 -- Dumping data for table `artikel2`
 --
 
 INSERT INTO `artikel2` (`idartikel`, `kategori`, `subkategori`, `judul`, `artikel`, `gambar`, `lokasi`, `maps`, `create_date`, `create_by`, `modify_date`, `modify_by`) VALUES
-(1, 'Hotel', 'Antares', 'test', '<span style="color: rgb(0, 0, 0); font-family: arial; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none;">Dis\r\n ac phasellus odio, magna, natoque, et tincidunt! Augue pulvinar, \r\naliquet elementum porta etiam risus, cras, placerat lorem, auctor, quis \r\nplacerat ultrices, etiam vel? Duis nunc sit cursus, eros nisi! Mus \r\nsagittis urna enim, vel tortor vel phasellus? Amet, magnis?<br><br><span style="font-weight: bold;"><span style="background-color: rgb(255, 255, 0);"><span style="color: rgb(102, 0, 204);">Porta scelerisque aenean. Ultricies! </span></span></span>Purus\r\n dapibus magnis tristique? Urna risus augue tempor turpis lacus \r\nsagittis? Ultricies. Est integer facilisis in. Nascetur augue cras, \r\nrhoncus! Augue sit. <span style="text-decoration: underline;"><span style="font-style: italic;">Arcu magna duis porta nunc enim! Platea porta sociis mid est, lundium lacus sagittis.</span></span><br><br>Magnis\r\n eu magna odio, nec urna urna nisi? Sed purus? Lacus, sed eu eros enim \r\nturpis, est nisi augue risus urna velit sit ridiculus elit sed turpis \r\nrhoncus, in. Porttitor? A aliquet rhoncus, lacus ut vel mauris integer \r\naugue magna.</span>', '8299-Tulips.jpg', 'dkamdkasm', '<iframe width="600" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.id/maps?f=q&amp;source=s_q&amp;hl=id&amp;geocode=&amp;q=Thamrin+Plaza+Medan,+Medan,+Sumatera+Utara&amp;aq=0&amp;oq=Thamri&amp;sll=-2.44565,117.8888&amp;sspn=25.857592,43.286133&amp;ie=UTF8&amp;hq=Thamrin+Plaza&amp;hnear=Medan,+Sumatera+Utara&amp;t=m&amp;ll=3.586323,98.691559&amp;spn=0.029982,0.051498&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.co.id/maps?f=q&amp;source=embed&amp;hl=id&amp;geocode=&amp;q=Thamrin+Plaza+Medan,+Medan,+Sumatera+Utara&amp;aq=0&amp;oq=Thamri&amp;sll=-2.44565,117.8888&amp;sspn=25.857592,43.286133&amp;ie=UTF8&amp;hq=Thamrin+Plaza&amp;hnear=Medan,+Sumatera+Utara&amp;t=m&amp;ll=3.586323,98.691559&amp;spn=0.029982,0.051498&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left">Lihat Peta Lebih Besar</a></small>', '2013-12-31', '6', '2013-12-31', 'admin'),
-(2, 'Kampus', 'Mikroskil', 'test2', '<span style="color: rgb(0, 0, 0); font-family: arial; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none;">Amet risus eros, montes natoque. Aenean phasellus. A vut, et vel mattis? Integer elementum, nisi eu tincidunt cras phasellus? Facilisis sed porttitor rhoncus, cursus turpis, magnis. Magnis amet! Duis? Placerat pellentesque! Dignissim magna pid egestas odio phasellus? Eros nisi, sed. Vut, mus dolor tortor pellentesque dapibus integer.<br><br><span style="font-weight: bold;">Urna nec nascetur enim. Natoque placerat nec elit, amet turpis placerat pid tincidunt nisi tincidunt massa. Vut purus ultricies, est natoque augue odio dapibus, parturient penatibus dolor </span>pellentesque integer pellentesque! Augue phasellus auctor turpis placerat a purus. Cursus augue, vut, habitasse tortor nunc magna habitasse nunc mauris sed. Amet quis porttitor nascetur! Nascetur, nec nec elit, urna diam ultricies est auctor lundium eros nascetur tortor dolor. Tincidunt integer turpis in ultricies lacus.</span>', '9943-Chrysanthemum.jpg', 'sfmsdkm', '<iframe width="600" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.id/maps?f=q&amp;source=s_q&amp;hl=id&amp;geocode=&amp;q=Thamrin+Plaza+Medan,+Medan,+Sumatera+Utara&amp;aq=0&amp;oq=Thamri&amp;sll=-2.44565,117.8888&amp;sspn=25.857592,43.286133&amp;ie=UTF8&amp;hq=Thamrin+Plaza&amp;hnear=Medan,+Sumatera+Utara&amp;t=m&amp;ll=3.586323,98.691559&amp;spn=0.029982,0.051498&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.co.id/maps?f=q&amp;source=embed&amp;hl=id&amp;geocode=&amp;q=Thamrin+Plaza+Medan,+Medan,+Sumatera+Utara&amp;aq=0&amp;oq=Thamri&amp;sll=-2.44565,117.8888&amp;sspn=25.857592,43.286133&amp;ie=UTF8&amp;hq=Thamrin+Plaza&amp;hnear=Medan,+Sumatera+Utara&amp;t=m&amp;ll=3.586323,98.691559&amp;spn=0.029982,0.051498&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left">Lihat Peta Lebih Besar</a></small>', '2013-12-31', 'admin', '2013-12-31', 'deja'),
-(3, 'Hotel', 'USU', 'tesssst', 'kanxkasnkasjnkjasx', '269-', 'jnaxkasnxska', 'axkasxkasx', '2013-12-31', 'admin', '0000-00-00', ''),
-(4, 'Kampus', 'IBBI', 'kmlmzsa', 'HSBAHJBSJA', '6412-Jellyfish.jpg', 'axasxasx', 'asxasxasx', '2013-12-31', 'admin', '0000-00-00', '');
+(6, 'Universitas', 'Mikroskil', 'Test tt tttt', '<span style="color: rgb(0, 0, 0); font-family: arial; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none;">Dictumst tincidunt, natoque! Dictumst! Arcu parturient, dis aliquam odio sed? Non duis ultrices phasellus ac odio. Risus ridiculus, enim. Porta placerat dignissim arcu lundium porta est velit etiam! Sed est. <span style="font-style: italic;"><span style="font-weight: bold;">Lundium ac! </span></span><br><br>Ultrices nisi, pid duis? Arcu habitasse amet montes habitasse velit vel proin adipiscing, enim a nisi, scelerisque nec augue augue, phasellus velit elementum dictumst? Ac placerat, et nunc, pellentesque nunc cursus! Aenean. Mattis vel ridiculus dis vut? Enim. <span style="font-weight: bold;"><span style="background-color: rgb(255, 255, 0);"><span style="color: rgb(255, 0, 0);">Sed elementum? Amet nec a, a? Placerat etiam?</span></span></span> <br><br>Cras egestas, pulvinar duis elementum aenean est platea! Etiam in elit natoque integer et et sit sed mauris. Ultrices ridiculus dolor sit amet et tempor sit placerat? Nisi parturient risus! Dictumst tincidunt quis egestas, cum phasellus urna dignissim nisi pulvinar sociis pellentesque.</span>', '3091-Tulips.jpg', 'yasnajsna', '<iframe width="600" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.id/maps?f=q&amp;source=s_q&amp;hl=id&amp;geocode=&amp;q=Thamrin+Plaza+Medan,+Medan,+Sumatera+Utara&amp;aq=0&amp;oq=Thamri&amp;sll=-2.44565,117.8888&amp;sspn=25.857592,43.286133&amp;ie=UTF8&amp;hq=Thamrin+Plaza&amp;hnear=Medan,+Sumatera+Utara&amp;t=m&amp;ll=3.586323,98.691559&amp;spn=0.029982,0.051498&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.co.id/maps?f=q&amp;source=embed&amp;hl=id&amp;geocode=&amp;q=Thamrin+Plaza+Medan,+Medan,+Sumatera+Utara&amp;aq=0&amp;oq=Thamri&amp;sll=-2.44565,117.8888&amp;sspn=25.857592,43.286133&amp;ie=UTF8&amp;hq=Thamrin+Plaza&amp;hnear=Medan,+Sumatera+Utara&amp;t=m&amp;ll=3.586323,98.691559&amp;spn=0.029982,0.051498&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left">Lihat Peta Lebih Besar</a></small>', '2014-01-01', 'admin', '0000-00-00', '');
 
 -- --------------------------------------------------------
 
@@ -119,7 +116,8 @@ INSERT INTO `kategori` (`idkategori`, `kategori`) VALUES
 ('k01', 'Hotel'),
 ('k02', 'Sekolah'),
 ('k03', 'Plaza'),
-('k04', 'Tempat Ibadah');
+('k04', 'Tempat Ibadah'),
+('k05', 'Restoran');
 
 -- --------------------------------------------------------
 
@@ -128,14 +126,21 @@ INSERT INTO `kategori` (`idkategori`, `kategori`) VALUES
 --
 
 CREATE TABLE IF NOT EXISTS `komentar` (
-  `idkomentar` varchar(15) NOT NULL,
-  `idartikel` varchar(15) NOT NULL,
+  `idkomentar` int(5) NOT NULL AUTO_INCREMENT,
+  `idartikel` int(5) NOT NULL,
   `iduser` varchar(15) NOT NULL,
   `komentar` text NOT NULL,
   PRIMARY KEY (`idkomentar`),
-  KEY `idartikel` (`idartikel`),
-  KEY `iduser` (`iduser`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  KEY `iduser` (`iduser`),
+  KEY `idartikel` (`idartikel`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+
+--
+-- Dumping data for table `komentar`
+--
+
+INSERT INTO `komentar` (`idkomentar`, `idartikel`, `iduser`, `komentar`) VALUES
+(4, 6, 'u1001', 'test');
 
 -- --------------------------------------------------------
 
@@ -148,7 +153,7 @@ CREATE TABLE IF NOT EXISTS `subkategori2` (
   `kategori` varchar(25) NOT NULL,
   `subkategori` varchar(25) NOT NULL,
   PRIMARY KEY (`idsub`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=7 ;
 
 --
 -- Dumping data for table `subkategori2`
@@ -159,7 +164,8 @@ INSERT INTO `subkategori2` (`idsub`, `kategori`, `subkategori`) VALUES
 (2, 'Kampus', 'IBBI'),
 (3, 'Universitas', 'USU'),
 (4, 'Hotel', 'Antares'),
-(5, 'Tempat Ibadah', 'Mesjid');
+(5, 'Tempat Ibadah', 'Mesjid'),
+(6, 'Restoran', 'padang');
 
 -- --------------------------------------------------------
 
@@ -185,9 +191,11 @@ CREATE TABLE IF NOT EXISTS `sub_kategori` (
 
 CREATE TABLE IF NOT EXISTS `tam_lok` (
   `idtambah` varchar(15) NOT NULL,
-  `judul` varchar(50) NOT NULL,
-  `artikel` text NOT NULL,
-  `lokasi` text NOT NULL,
+  `nama` varchar(25) NOT NULL,
+  `email` varchar(35) NOT NULL,
+  `judul` varchar(50) DEFAULT NULL,
+  `artikel` text,
+  `lokasi` text,
   PRIMARY KEY (`idtambah`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -195,8 +203,9 @@ CREATE TABLE IF NOT EXISTS `tam_lok` (
 -- Dumping data for table `tam_lok`
 --
 
-INSERT INTO `tam_lok` (`idtambah`, `judul`, `artikel`, `lokasi`) VALUES
-('t01', 'test1', 'bla bla...', 'bla bla...');
+INSERT INTO `tam_lok` (`idtambah`, `nama`, `email`, `judul`, `artikel`, `lokasi`) VALUES
+('t01', '', '', 'test1', 'bla bla...', 'bla bla...'),
+('t02', 'nasnak', 'samskama', 'asnknak', 'kmaskka', 'asknkana');
 
 -- --------------------------------------------------------
 
@@ -217,6 +226,7 @@ CREATE TABLE IF NOT EXISTS `user` (
 --
 
 INSERT INTO `user` (`iduser`, `pass`, `nama`, `email`) VALUES
+('u1001', 'test', 'deja', 'yuda@gmail.com'),
 ('u101', 'deja', 'Dezha', 'deja@gmail.com'),
 ('u102', 'medan', 'Yudha', 'medan@yahoo.com'),
 ('u103', 'jdankdn', 'kjandka', 'jnadka'),
@@ -238,7 +248,7 @@ INSERT INTO `user` (`iduser`, `pass`, `nama`, `email`) VALUES
 -- Constraints for table `komentar`
 --
 ALTER TABLE `komentar`
-  ADD CONSTRAINT `komentar_ibfk_1` FOREIGN KEY (`idartikel`) REFERENCES `artikel` (`idartikel`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `komentar_ibfk_3` FOREIGN KEY (`idartikel`) REFERENCES `artikel2` (`idartikel`) ON DELETE CASCADE ON UPDATE CASCADE,
   ADD CONSTRAINT `komentar_ibfk_2` FOREIGN KEY (`iduser`) REFERENCES `user` (`iduser`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --

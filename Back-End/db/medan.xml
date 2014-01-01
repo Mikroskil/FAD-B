@@ -5,7 +5,7 @@
 - http://www.phpmyadmin.net
 -
 - Host: 127.0.0.1
-- Generation Time: Dec 31, 2013 at 09:11 PM
+- Generation Time: Jan 01, 2014 at 06:58 PM
 - Server version: 5.5.27
 - PHP Version: 5.4.7
 -->
@@ -52,7 +52,7 @@
                   `modify_date` date NOT NULL,
                   `modify_by` varchar(25) NOT NULL,
                   PRIMARY KEY (`idartikel`)
-                ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+                ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
             </pma:table>
             <pma:table name="kategori">
                 CREATE TABLE `kategori` (
@@ -63,16 +63,16 @@
             </pma:table>
             <pma:table name="komentar">
                 CREATE TABLE `komentar` (
-                  `idkomentar` varchar(15) NOT NULL,
-                  `idartikel` varchar(15) NOT NULL,
+                  `idkomentar` int(5) NOT NULL AUTO_INCREMENT,
+                  `idartikel` int(5) NOT NULL,
                   `iduser` varchar(15) NOT NULL,
                   `komentar` text NOT NULL,
                   PRIMARY KEY (`idkomentar`),
-                  KEY `idartikel` (`idartikel`),
                   KEY `iduser` (`iduser`),
-                  CONSTRAINT `komentar_ibfk_1` FOREIGN KEY (`idartikel`) REFERENCES `artikel` (`idartikel`) ON DELETE CASCADE ON UPDATE CASCADE,
+                  KEY `idartikel` (`idartikel`),
+                  CONSTRAINT `komentar_ibfk_3` FOREIGN KEY (`idartikel`) REFERENCES `artikel2` (`idartikel`) ON DELETE CASCADE ON UPDATE CASCADE,
                   CONSTRAINT `komentar_ibfk_2` FOREIGN KEY (`iduser`) REFERENCES `user` (`iduser`) ON DELETE CASCADE ON UPDATE CASCADE
-                ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+                ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
             </pma:table>
             <pma:table name="subkategori2">
                 CREATE TABLE `subkategori2` (
@@ -80,7 +80,7 @@
                   `kategori` varchar(25) NOT NULL,
                   `subkategori` varchar(25) NOT NULL,
                   PRIMARY KEY (`idsub`)
-                ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+                ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
             </pma:table>
             <pma:table name="sub_kategori">
                 CREATE TABLE `sub_kategori` (
@@ -98,9 +98,11 @@
             <pma:table name="tam_lok">
                 CREATE TABLE `tam_lok` (
                   `idtambah` varchar(15) NOT NULL,
-                  `judul` varchar(50) NOT NULL,
-                  `artikel` text NOT NULL,
-                  `lokasi` text NOT NULL,
+                  `nama` varchar(25) NOT NULL,
+                  `email` varchar(35) NOT NULL,
+                  `judul` varchar(50) DEFAULT NULL,
+                  `artikel` text,
+                  `lokasi` text,
                   PRIMARY KEY (`idtambah`)
                 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
             </pma:table>
@@ -150,68 +152,15 @@
         </table>
         <!-- Table artikel2 -->
         <table name="artikel2">
-            <column name="idartikel">1</column>
-            <column name="kategori">Hotel</column>
-            <column name="subkategori">Antares</column>
-            <column name="judul">test</column>
-            <column name="artikel">&lt;span style=&quot;color: rgb(0, 0, 0); font-family: arial; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none;&quot;&gt;Dis
- ac phasellus odio, magna, natoque, et tincidunt! Augue pulvinar, 
-aliquet elementum porta etiam risus, cras, placerat lorem, auctor, quis 
-placerat ultrices, etiam vel? Duis nunc sit cursus, eros nisi! Mus 
-sagittis urna enim, vel tortor vel phasellus? Amet, magnis?&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-weight: bold;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 0);&quot;&gt;&lt;span style=&quot;color: rgb(102, 0, 204);&quot;&gt;Porta scelerisque aenean. Ultricies! &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;Purus
- dapibus magnis tristique? Urna risus augue tempor turpis lacus 
-sagittis? Ultricies. Est integer facilisis in. Nascetur augue cras, 
-rhoncus! Augue sit. &lt;span style=&quot;text-decoration: underline;&quot;&gt;&lt;span style=&quot;font-style: italic;&quot;&gt;Arcu magna duis porta nunc enim! Platea porta sociis mid est, lundium lacus sagittis.&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;br&gt;Magnis
- eu magna odio, nec urna urna nisi? Sed purus? Lacus, sed eu eros enim 
-turpis, est nisi augue risus urna velit sit ridiculus elit sed turpis 
-rhoncus, in. Porttitor? A aliquet rhoncus, lacus ut vel mauris integer 
-augue magna.&lt;/span&gt;</column>
-            <column name="gambar">8299-Tulips.jpg</column>
-            <column name="lokasi">dkamdkasm</column>
-            <column name="maps">&lt;iframe width=&quot;600&quot; height=&quot;350&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; marginheight=&quot;0&quot; marginwidth=&quot;0&quot; src=&quot;https://maps.google.co.id/maps?f=q&amp;amp;source=s_q&amp;amp;hl=id&amp;amp;geocode=&amp;amp;q=Thamrin+Plaza+Medan,+Medan,+Sumatera+Utara&amp;amp;aq=0&amp;amp;oq=Thamri&amp;amp;sll=-2.44565,117.8888&amp;amp;sspn=25.857592,43.286133&amp;amp;ie=UTF8&amp;amp;hq=Thamrin+Plaza&amp;amp;hnear=Medan,+Sumatera+Utara&amp;amp;t=m&amp;amp;ll=3.586323,98.691559&amp;amp;spn=0.029982,0.051498&amp;amp;z=14&amp;amp;iwloc=A&amp;amp;output=embed&quot;&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;small&gt;&lt;a href=&quot;https://maps.google.co.id/maps?f=q&amp;amp;source=embed&amp;amp;hl=id&amp;amp;geocode=&amp;amp;q=Thamrin+Plaza+Medan,+Medan,+Sumatera+Utara&amp;amp;aq=0&amp;amp;oq=Thamri&amp;amp;sll=-2.44565,117.8888&amp;amp;sspn=25.857592,43.286133&amp;amp;ie=UTF8&amp;amp;hq=Thamrin+Plaza&amp;amp;hnear=Medan,+Sumatera+Utara&amp;amp;t=m&amp;amp;ll=3.586323,98.691559&amp;amp;spn=0.029982,0.051498&amp;amp;z=14&amp;amp;iwloc=A&quot; style=&quot;color:#0000FF;text-align:left&quot;&gt;Lihat Peta Lebih Besar&lt;/a&gt;&lt;/small&gt;</column>
-            <column name="create_date">2013-12-31</column>
-            <column name="create_by">6</column>
-            <column name="modify_date">2013-12-31</column>
-            <column name="modify_by">admin</column>
-        </table>
-        <table name="artikel2">
-            <column name="idartikel">2</column>
-            <column name="kategori">Kampus</column>
+            <column name="idartikel">6</column>
+            <column name="kategori">Universitas</column>
             <column name="subkategori">Mikroskil</column>
-            <column name="judul">test2</column>
-            <column name="artikel">&lt;span style=&quot;color: rgb(0, 0, 0); font-family: arial; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none;&quot;&gt;Amet risus eros, montes natoque. Aenean phasellus. A vut, et vel mattis? Integer elementum, nisi eu tincidunt cras phasellus? Facilisis sed porttitor rhoncus, cursus turpis, magnis. Magnis amet! Duis? Placerat pellentesque! Dignissim magna pid egestas odio phasellus? Eros nisi, sed. Vut, mus dolor tortor pellentesque dapibus integer.&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-weight: bold;&quot;&gt;Urna nec nascetur enim. Natoque placerat nec elit, amet turpis placerat pid tincidunt nisi tincidunt massa. Vut purus ultricies, est natoque augue odio dapibus, parturient penatibus dolor &lt;/span&gt;pellentesque integer pellentesque! Augue phasellus auctor turpis placerat a purus. Cursus augue, vut, habitasse tortor nunc magna habitasse nunc mauris sed. Amet quis porttitor nascetur! Nascetur, nec nec elit, urna diam ultricies est auctor lundium eros nascetur tortor dolor. Tincidunt integer turpis in ultricies lacus.&lt;/span&gt;</column>
-            <column name="gambar">9943-Chrysanthemum.jpg</column>
-            <column name="lokasi">sfmsdkm</column>
+            <column name="judul">Test tt tttt</column>
+            <column name="artikel">&lt;span style=&quot;color: rgb(0, 0, 0); font-family: arial; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none;&quot;&gt;Dictumst tincidunt, natoque! Dictumst! Arcu parturient, dis aliquam odio sed? Non duis ultrices phasellus ac odio. Risus ridiculus, enim. Porta placerat dignissim arcu lundium porta est velit etiam! Sed est. &lt;span style=&quot;font-style: italic;&quot;&gt;&lt;span style=&quot;font-weight: bold;&quot;&gt;Lundium ac! &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;br&gt;Ultrices nisi, pid duis? Arcu habitasse amet montes habitasse velit vel proin adipiscing, enim a nisi, scelerisque nec augue augue, phasellus velit elementum dictumst? Ac placerat, et nunc, pellentesque nunc cursus! Aenean. Mattis vel ridiculus dis vut? Enim. &lt;span style=&quot;font-weight: bold;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 0);&quot;&gt;&lt;span style=&quot;color: rgb(255, 0, 0);&quot;&gt;Sed elementum? Amet nec a, a? Placerat etiam?&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; &lt;br&gt;&lt;br&gt;Cras egestas, pulvinar duis elementum aenean est platea! Etiam in elit natoque integer et et sit sed mauris. Ultrices ridiculus dolor sit amet et tempor sit placerat? Nisi parturient risus! Dictumst tincidunt quis egestas, cum phasellus urna dignissim nisi pulvinar sociis pellentesque.&lt;/span&gt;</column>
+            <column name="gambar">3091-Tulips.jpg</column>
+            <column name="lokasi">yasnajsna</column>
             <column name="maps">&lt;iframe width=&quot;600&quot; height=&quot;350&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; marginheight=&quot;0&quot; marginwidth=&quot;0&quot; src=&quot;https://maps.google.co.id/maps?f=q&amp;amp;source=s_q&amp;amp;hl=id&amp;amp;geocode=&amp;amp;q=Thamrin+Plaza+Medan,+Medan,+Sumatera+Utara&amp;amp;aq=0&amp;amp;oq=Thamri&amp;amp;sll=-2.44565,117.8888&amp;amp;sspn=25.857592,43.286133&amp;amp;ie=UTF8&amp;amp;hq=Thamrin+Plaza&amp;amp;hnear=Medan,+Sumatera+Utara&amp;amp;t=m&amp;amp;ll=3.586323,98.691559&amp;amp;spn=0.029982,0.051498&amp;amp;z=14&amp;amp;iwloc=A&amp;amp;output=embed&quot;&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;small&gt;&lt;a href=&quot;https://maps.google.co.id/maps?f=q&amp;amp;source=embed&amp;amp;hl=id&amp;amp;geocode=&amp;amp;q=Thamrin+Plaza+Medan,+Medan,+Sumatera+Utara&amp;amp;aq=0&amp;amp;oq=Thamri&amp;amp;sll=-2.44565,117.8888&amp;amp;sspn=25.857592,43.286133&amp;amp;ie=UTF8&amp;amp;hq=Thamrin+Plaza&amp;amp;hnear=Medan,+Sumatera+Utara&amp;amp;t=m&amp;amp;ll=3.586323,98.691559&amp;amp;spn=0.029982,0.051498&amp;amp;z=14&amp;amp;iwloc=A&quot; style=&quot;color:#0000FF;text-align:left&quot;&gt;Lihat Peta Lebih Besar&lt;/a&gt;&lt;/small&gt;</column>
-            <column name="create_date">2013-12-31</column>
-            <column name="create_by">admin</column>
-            <column name="modify_date">2013-12-31</column>
-            <column name="modify_by">deja</column>
-        </table>
-        <table name="artikel2">
-            <column name="idartikel">3</column>
-            <column name="kategori">Hotel</column>
-            <column name="subkategori">USU</column>
-            <column name="judul">tesssst</column>
-            <column name="artikel">kanxkasnkasjnkjasx</column>
-            <column name="gambar">269-</column>
-            <column name="lokasi">jnaxkasnxska</column>
-            <column name="maps">axkasxkasx</column>
-            <column name="create_date">2013-12-31</column>
-            <column name="create_by">admin</column>
-            <column name="modify_date">0000-00-00</column>
-            <column name="modify_by"></column>
-        </table>
-        <table name="artikel2">
-            <column name="idartikel">4</column>
-            <column name="kategori">Kampus</column>
-            <column name="subkategori">IBBI</column>
-            <column name="judul">kmlmzsa</column>
-            <column name="artikel">HSBAHJBSJA</column>
-            <column name="gambar">6412-Jellyfish.jpg</column>
-            <column name="lokasi">axasxasx</column>
-            <column name="maps">asxasxasx</column>
-            <column name="create_date">2013-12-31</column>
+            <column name="create_date">2014-01-01</column>
             <column name="create_by">admin</column>
             <column name="modify_date">0000-00-00</column>
             <column name="modify_by"></column>
@@ -233,7 +182,17 @@ augue magna.&lt;/span&gt;</column>
             <column name="idkategori">k04</column>
             <column name="kategori">Tempat Ibadah</column>
         </table>
+        <table name="kategori">
+            <column name="idkategori">k05</column>
+            <column name="kategori">Restoran</column>
+        </table>
         <!-- Table komentar -->
+        <table name="komentar">
+            <column name="idkomentar">4</column>
+            <column name="idartikel">6</column>
+            <column name="iduser">u1001</column>
+            <column name="komentar">test</column>
+        </table>
         <!-- Table subkategori2 -->
         <table name="subkategori2">
             <column name="idsub">1</column>
@@ -260,15 +219,36 @@ augue magna.&lt;/span&gt;</column>
             <column name="kategori">Tempat Ibadah</column>
             <column name="subkategori">Mesjid</column>
         </table>
+        <table name="subkategori2">
+            <column name="idsub">6</column>
+            <column name="kategori">Restoran</column>
+            <column name="subkategori">padang</column>
+        </table>
         <!-- Table sub_kategori -->
         <!-- Table tam_lok -->
         <table name="tam_lok">
             <column name="idtambah">t01</column>
+            <column name="nama"></column>
+            <column name="email"></column>
             <column name="judul">test1</column>
             <column name="artikel">bla bla...</column>
             <column name="lokasi">bla bla...</column>
         </table>
+        <table name="tam_lok">
+            <column name="idtambah">t02</column>
+            <column name="nama">nasnak</column>
+            <column name="email">samskama</column>
+            <column name="judul">asnknak</column>
+            <column name="artikel">kmaskka</column>
+            <column name="lokasi">asknkana</column>
+        </table>
         <!-- Table user -->
+        <table name="user">
+            <column name="iduser">u1001</column>
+            <column name="pass">test</column>
+            <column name="nama">deja</column>
+            <column name="email">yuda@gmail.com</column>
+        </table>
         <table name="user">
             <column name="iduser">u101</column>
             <column name="pass">deja</column>
