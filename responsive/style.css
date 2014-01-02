@@ -287,8 +287,12 @@ footer{
 	color:#000;
 }
 
+.story a:hover {
+	font-weight:bold;
+}
+
 .story a:active {
-	color:#000;
+	color:#F00;
 }
 
 .story:first-child {
@@ -517,14 +521,25 @@ input{
 #tombol_cari{
 	font-family:Arial;
 	font-size:16px;
+	font-weight:bold;
 	color:#FFF;
 	height:30px;
 	width:50px;
 	margin-left:-14px;
-	background-color:orange;
+	background:linear-gradient(rgba(253,65,2,1),rgba(252,108,3,1));
 	border-width:0;
 	border-bottom-right-radius:5px;
 	border-top-right-radius:5px;
+	cursor:pointer;
+}
+
+#tombol_cari:hover {
+	background:linear-gradient(rgba(245,44,44,1),rgba(240,69,19,1));
+	transition:all 2s ease;
+	-webkit-transition:all 2s ease;
+	-moz-transition:all 2s ease;
+	-o-transition:all 2s ease;
+	-ms-transition:all 2s ease;
 }
 
 
