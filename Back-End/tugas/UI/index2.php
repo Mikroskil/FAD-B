@@ -1,3 +1,13 @@
+<?php
+session_start();
+include "koneksi.php";
+if ($_SESSION['username'] && $_SESSION['password']){
+    //$sql = mysql_query("SELECT * FROM user WHERE nama='".$_SESSION['username']."' AND pass='".$_SESSION['password']."'");
+    //$hasil = mysql_fetch_assoc($sql);
+	//echo "Selamat Datang <b>".$hasil['nama']."</b> | <a href='logout.php'>Logout</a>";
+	
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,8 +47,7 @@
             </form>
         
           <ul class="nav pull-right">
-            <li><a href="index.php?lihat=register">Register</a></li>
-            <li><a href="index.php?lihat=login">Login</a></li>            
+            <li><a href="logout.php">Logout</a></li>            
           </ul>
         </div>
       </div>
@@ -88,7 +97,7 @@
 
           <ul id="nav">
             <!-- Main menu -->
-            <li><a href="index.php?lihat=home" class="open br-red"><i class="icon-home"></i> Home</a></li>
+            <li><a href="index2.php?lihat=home" class="open br-red"><i class="icon-home"></i> Home</a></li>
 
             <li class="has_sub"><a href="#" class="br-blue"><i class="icon-list-alt"></i> Cari Lokasi  <span class="pull-right"><i class="icon-chevron-right"></i></span></a>
               <ul>
@@ -97,13 +106,12 @@
 						$tampil=mysql_query("select * from kategori");
 						$data=mysql_num_rows($tampil);
 						while($baris=mysql_fetch_array($tampil)){
-                        echo"<li><a href=index.php?lihat=carikt&cari=$baris[1]>$baris[1]</a></li>";
+                        echo"<li><a href=#>$baris[1]</a></li>";
 						}?>
-
               </ul>
             </li>  
 
-            <li><a href="index.php?lihat=tamlok" class="br-yellow"><i class="icon-envelope-alt"></i> Tambah Lokasi</a></li>
+            <li><a href="index2.php?lihat=tamlok" class="br-yellow"><i class="icon-envelope-alt"></i> Tambah Lokasi</a></li>
           </ul>
 
         </div>
@@ -182,6 +190,7 @@
     <!-- About Us -->
 
 
+
 	<?php
 		include "koneksi.php";
 		if ($_GET['lihat']=="home"){
@@ -190,8 +199,6 @@
 		include "tamlok.php";}
 		else if($_GET['lihat']=="cari"){
 		include "cari.php";}
-		else if($_GET['lihat']=="carikt"){
-		include "carikategori.php";}
 		else if($_GET['lihat']=="login"){
 		include "login.php";}
 		else if($_GET['lihat']=="login2"){
@@ -200,12 +207,11 @@
 		include "register.php";}
 		else if($_GET['lihat']=="makasi"){
 		include "makasi.php";}
-		else if($_GET['lihat']=="artikel"){
-		include "viewartikelnolog.php";}
 		else{
 		require_once "home.php";}
 	?>
     
+
   </div>
   <!-- Mainbar -->
 <div class="clearfix"></div>
@@ -246,3 +252,10 @@
 <script src="js/custom.js"></script> <!-- Main js file -->
 </body>
 </html>
+
+<?php
+}else{
+    //header("location:login.php");
+	header('location:index.php?lihat=login');
+}
+?>

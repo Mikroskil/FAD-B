@@ -25,7 +25,7 @@
 	<div class="row">
 		<?php echo $form->labelEx($model,'kategori'); ?>
 		<?php //echo $form->textField($model,'kategori',array('size'=>25,'maxlength'=>25));
-		echo $form->dropDownList($model, 'kategori', CHtml::listData(subkategori2::model()->findAll(),'kategori','kategori'),
+		echo $form->dropDownList($model, 'kategori', CHtml::listData(kategori::model()->findAll(),'kategori','kategori'),
 		array('prompt' => '-- Pilih Kategori --'));
 		
 		/*echo CHtml::dropDownList('kategori','', 
@@ -96,7 +96,7 @@
 	</div>
     
     <?php if($model->isNewRecord!='1'){ ?>
-	<div class="row">
+	<div class="row" style="margin-left:130px;">
      <?php echo CHtml::image(Yii::app()->request->baseUrl.'/upload/'.$model->gambar,"gambar",array("width"=>200)); ?> 
 	</div>
     <?php }?>

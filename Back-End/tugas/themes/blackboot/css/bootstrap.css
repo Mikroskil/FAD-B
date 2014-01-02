@@ -68,7 +68,7 @@ sub {
 
 img {
   width: auto\9;
-  margin-left:145px;
+  /*margin-left:145px;*/
   height: auto;
   max-width: 100%;
   vertical-align: middle;

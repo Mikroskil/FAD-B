@@ -13,41 +13,24 @@
                   <div class="flexslider">
                     <ul class="slides">
                        
+                        <?php
+						include "koneksi.php";
+						$tampil=mysql_query("select * from artikel2");
+						$data=mysql_num_rows($tampil);
+						while($baris=mysql_fetch_array($tampil)){
+                        echo"
+                      <li>
                         
-                        <!-- Slide #1 -->
-                      <li>
-                        <!-- Image -->
-                        <img src="img/photos/1.jpg" alt=""/>
+                        <img src=../upload/$baris[5]>
                         <!-- Caption -->
-                        <div class="flex-caption">
-                          <div class="bor"></div>
+                        <div class=flex-caption>
+                          <div class=bor></div>
                            <!-- Title -->
-                           <h3>Cool Features</h3>
-                           <!-- Para -->
-                           <p>Ut commodo ullamcer risus nec mattis. Fusce imperdiet ornare dignissim. Donec aliquet convallis tortor, et placerat. </p>
+                           <h3>$baris[3]</h3>
+                           
                         </div>
-                      </li>
-                      
-                        <!-- Slide #2 -->
-                      <li>
-                        <img src="img/photos/2.jpg" alt=""/>
-                        <div class="flex-caption">
-                          <div class="bor"></div>
-                           <h3>Lots of Pages</h3>
-                           <p>Ut commodo ullamcer risus nec mattis. Fusce imperdiet ornare dignissim. Donec aliquet convallis tortor, et placerat. </p>
-                        </div>                  
-                      </li>
-                      
-                      <li>
-                        <img src="img/photos/3.jpg" alt=""/>
-                        <div class="flex-caption">
-                          <div class="bor"></div>
-                           <h3>Amazing Design</h3>
-                           <p>Ut commodo ullamcer risus nec mattis. Fusce imperdiet ornare dignissim. Donec aliquet convallis tortor, et placerat. </p>
-                        </div>                  
-                      </li>
-                      
-
+                      </li>";
+						}?>
                       
                     </ul>
                   </div>
@@ -80,79 +63,25 @@
               </div>
               <div class="clearfix"></div>
               <ul class="rps-carousel">
+                	<?php
+					include "koneksi.php";
+					$tampil=mysql_query("select * from artikel2");
+					$data=mysql_num_rows($tampil);
+					while($baris=mysql_fetch_array($tampil)){
+                    echo"              
                   <li>
-                      <div class="rp-item"> 
-                        <!-- Image. -->
-                        <div class="rp-image">        
-                          <a href="#"><img src="img/photos/s1.jpg" alt=""/></a>
+                      <div class=rp-item> 
+                        <div class=rp-image>        
+                          <a href=index.php?lihat=artikel&id=$baris[0]><img src=../upload/$baris[5]></a>
                         </div>
-                        <div class="rp-details">
-                          <!-- Title and para -->
-                          <h6><a href="#">Vitae molestie </a></h6>
-                          <p>Travel far away to a space station. Aliquam erat volutpat. Maecenas quis tristique turpis.</p>         
+                        <div class=rp-details>
+                          <h6><a href=index.php?lihat=artikel&id=$baris[0]>$baris[3] </a></h6>
+                          <p>Lokasi : $baris[6]</p>         
                         </div>                
                       </div>        
-                  </li>
-
-                  <li>
-                      <div class="rp-item"> 
-                        <div class="rp-image">        
-                          <a href="#"><img src="img/photos/s2.jpg" alt=""/></a>
-                        </div>
-                        <div class="rp-details">
-                          <h6><a href="#">Sed diam nisi</a></h6>
-                          <p>Travel far away to a space station. Aliquam erat volutpat. Maecenas quis tristique turpis.</p>         
-                        </div>                
-                      </div>        
-                  </li>
-
-                  <li>
-                      <div class="rp-item"> 
-                        <div class="rp-image">        
-                          <a href="#"><img src="img/photos/s3.jpg" alt=""/></a>
-                        </div>
-                        <div class="rp-details">
-                          <h6><a href="#">Nisi vitaetie </a></h6>
-                          <p>Travel far away to a space station. Aliquam erat volutpat. Maecenas quis tristique turpis.</p>         
-                        </div>                
-                      </div>        
-                  </li>
-
-                  <li>
-                      <div class="rp-item"> 
-                        <div class="rp-image">        
-                          <a href="#"><img src="img/photos/s4.jpg" alt=""/></a>
-                        </div>
-                        <div class="rp-details">
-                          <h6><a href="#">Diam nisivitae </a></h6>
-                          <p>Travel far away to a space station. Aliquam erat volutpat. Maecenas quis tristique turpis.</p>         
-                        </div>                
-                      </div>        
-                  </li>
-
-                  <li>
-                      <div class="rp-item"> 
-                        <div class="rp-image">        
-                          <a href="#"><img src="img/photos/s5.jpg" alt=""/></a>
-                        </div>
-                        <div class="rp-details">
-                          <h6><a href="#">Diam nisivitae </a></h6>
-                          <p>Travel far away to a space station. Aliquam erat volutpat. Maecenas quis tristique turpis.</p>         
-                        </div>                
-                      </div>        
-                  </li>    
-
-                  <li>
-                      <div class="rp-item"> 
-                        <div class="rp-image">        
-                          <a href="#"><img src="img/photos/s6.jpg" alt=""/></a>
-                        </div>
-                        <div class="rp-details">
-                          <h6><a href="#">Diam nisivitae </a></h6>
-                          <p>Travel far away to a space station. Aliquam erat volutpat. Maecenas quis tristique turpis.</p>         
-                        </div>                
-                      </div>        
-                  </li>                                                                                              
+                  </li>";
+				  }?>
+                                                                                             
               </ul>
 
             </div>

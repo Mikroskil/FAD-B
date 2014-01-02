@@ -18,31 +18,31 @@
                                           <div class="control-group">
                                             <label class="control-label" for="name">Nama</label>
                                             <div class="controls">
-                                              <input type="text" class="input-large" id="nama">
+                                              <input type="text" class="input-large" id="nama" name="nama">
                                             </div>
                                           </div>
                                           <div class="control-group">
                                             <label class="control-label" for="email">Email</label>
                                             <div class="controls">
-                                              <input type="email" class="input-large" id="email">
+                                              <input type="email" class="input-large" id="email" name="email">
                                             </div>
                                           </div>
                                           <div class="control-group">
                                             <label class="control-label" for="email">Judul</label>
                                             <div class="controls">
-                                              <input type="text" class="input-large" id="judul">
+                                              <input type="text" class="input-large" id="judul" name="judul">
                                             </div>
                                           </div>
                                           <div class="control-group">
                                             <label class="control-label" for="comment">Artikel</label>
                                             <div class="controls">
-                                              <textarea class="input-xlarge" id="artikel"></textarea>
+                                              <textarea class="input-xlarge" id="artikel" name="artikel"></textarea>
                                             </div>
                                           </div>
                                           <div class="control-group">
                                             <label class="control-label" for="comment">Lokasi</label>
                                             <div class="controls">
-                                              <textarea class="input-xlarge" id="lokasi"></textarea>
+                                              <textarea class="input-xlarge" id="lokasi" name="lokasi"></textarea>
                                             </div>
                                           </div>
                                           <div class="form-actions">

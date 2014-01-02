@@ -243,7 +243,7 @@
   [class*="span"] {
     float: left;
     min-height: 1px;
-    margin-left: 20px;
+    margin-right: 10px;
   }
   .container,
   .navbar-static-top .container,
@@ -344,7 +344,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     float: left;
-    margin-left: 2.7624309392265194%;
+    /*margin-left: 2.7624309392265194%;*/
     *margin-left: 2.709239449864817%;
   }
   .row-fluid [class*="span"]:first-child {
@@ -559,7 +559,7 @@
   [class*="span"] {
     float: left;
     min-height: 1px;
-    margin-left: 30px;
+    margin-right: 10px;
   }
   .container,
   .navbar-static-top .container,
@@ -660,7 +660,7 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     float: left;
-    margin-left: 2.564102564102564%;
+    /*margin-left: 2.564102564102564%;*/
     *margin-left: 2.5109110747408616%;
   }
   .row-fluid [class*="span"]:first-child {
