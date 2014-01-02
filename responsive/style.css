@@ -66,10 +66,11 @@ header:after {
 }
 
 #content{
+	background-color:#99F;
+	height:645px;
 	width:70%;
-	background:green;
-	height:590px;
-	float:left;
+	overflow:auto;
+	font-family:calibri;
 }
 
 #sub_menu{
@@ -159,8 +160,10 @@ article{
 	font-size:1em;	
 }
 
+
+
 #alamat{
-	height:150px; 
+	height:auto; 
 	width:100%; 
 	background-color:#FFF; 
 	float:right;
@@ -178,7 +181,7 @@ article{
 }
 
 #map {
-	height:350px; 
+	height:77%; 
 	width:100%;  
 	background-color:#FFF; 
 	float:right;
@@ -187,15 +190,11 @@ article{
 }
 
 #minimap {
-	width: 91%;
-	height: 40%;
+	width: 251px;
+	height: 140px;
 	border: 5px solid #CCC;
 	border-radius:5px;
 	margin: 3% 3% 3% 2.6%;
-}
-
-#aside{
-	
 }
 
 footer{
@@ -236,6 +235,111 @@ footer{
 	height:100%; 
 	margin:0; 
 	padding:0;
+}
+
+#kontak_admin {
+	width:94%;
+	height:200px;
+	background:#FFF;
+	padding:0;
+	margin:1% 5% 1% 3.5%;	
+}
+
+.admin {
+	float:left;
+	display:inline-block;
+	width:200px;
+	height:100%;
+	padding:0;
+	margin:0 10px 0 10px;
+	background:#FFF;
+}
+
+.admin > img {
+	width:120px;
+	height:150px;
+	padding:0;
+	margin:0 0 0 19%;
+}
+
+.admin > p {
+	width:100%;
+	height:20px;
+	border-top:2px solid #000;
+	margin:3% 0 0 0 !important;
+	padding:0;
+	text-align:center !important;
+	font-weight:bold;
+}
+
+#recent story {
+	width:100%;
+}
+
+.story {
+	width:90%; 
+	margin:0 3% 0.5% 3%;
+	border-top:1px solid #999;
+	border-bottom:1px solid #999;
+}
+
+.story a {
+	color:#000;
+}
+
+.story a:active {
+	color:#000;
+}
+
+.story:first-child {
+	border-top:none;
+}
+
+.story:last-child {
+	border-bottom:none;
+}
+
+#comment {
+	margin:20px 0 20px 20px;
+	border: 2px solid #848484;
+	border-radius:20px;
+	-moz-border-radius:20px;
+	max-height: 90%;
+	font-weight: bold;
+	color: #606060;
+	padding: 10px;
+	width: 440px;
+	background-color: #dcdcdc;
+}
+
+#publishcomment {
+	border: 2px solid #848484;
+	box-shadow: 12px 12px 7px #888888;
+	margin: 30px 0 50px 20px;
+	padding: 10px;
+	max-height: 100%;
+	color: #3d3d3d;
+	width: 550px;
+	font-size: 12px;
+	line-height: 15px;
+}
+
+#publishcomment hr {
+	color: #ccc;
+}
+
+#publishcomment a {
+	color: #da5700;
+	text-decoration: none;
+	font-weight:normal;
+}
+
+#publishcomment a:link {
+	font-weight: bold;
+}
+
+#publishcomment a:hover {
+	text-decoration: underline;
 }
 
 
@@ -416,13 +520,6 @@ p {
 	background-image:url(image/pilihkategori.png);
 }
 
-#content{
-	background-color:#99F;
-	height:644px ;
-	width:70%;
-	overflow:auto;
-}
-
 ::-webkit-scrollbar {
 	width: 8px; 
 	background: #CCCCCC;
@@ -435,6 +532,7 @@ p {
 #aside-article{
     margin: 0;
     padding: 0;
+	height:auto;
 }
 
 #aside-article:before,
@@ -450,7 +548,7 @@ p {
 	padding:0px;
 	font-family:sans-serif;
 	text-align:center;
-	height:45px; 
+	height:7%; 
 	width:100%; 
 	background:#333; 
 	margin:0;
@@ -469,6 +567,12 @@ p {
 	border-top:2px solid #333;
 	border-left:2px solid #333;
 	border-top-left-radius:10px;
+}
+
+#isi2 {
+	 width:29%;
+	 height:100%;
+	 float:right;
 }
 
 #aside-article h3 {

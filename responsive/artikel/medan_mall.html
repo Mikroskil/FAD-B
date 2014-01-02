@@ -249,12 +249,30 @@
                 <canvas id="myCanvas"></canvas>
             </div>
             <article id="aside-article">
-                <article id="isi" style="float:left; width:70.5%; height:520px">
+                <article id="isi" style="float:left; width:70.5%; height:auto">
                     <h3 style="text-align:left; margin-left:15px; font-size:2em;">Medan Mall</h3>
                     <p style="font-family:calibri;">Medan Mall adalah salah satu pusat perbelanjaan yang terletak di kota Medan, Indonesia. Ukurannya cukup luas dan dikelilingi oleh pasar besar bernama Pusat Pasar. Pusat perbelanjaan ini antara lain ditempati oleh Matahari Department Store dan Macan Yaohan Supermarket. Medan Mall sering sekali padat pengunjungnya karena lokasinya yang dekat dengan pasar tersebut.</p>
 					<p style="font-family:calibri;">Tepat di sebelah timur mal ini terdapat pula Plaza Olimpia yang telah lama ada jauh sebelum Medan Mall dibangun. Di sebelah Barat dan Barat Laut tedapat Gedung Uniland dan Stasiun Besar Kota Medan (sekitar 500m). Jalan-jalan di sekitar mal ini merupakan salah satu kawasan rawan macet. Kemacetan biasanya terjadi di ruas jalan Sutomo, MT Haryono, Thamrin, terutama pada saat jam-jam sekolah ditambah lagi dengan adanya Pusat Pasar yang tergabung dengan Terminal Sambu Pusat Pasar. Di sebelah timur terdapat sekolah Sutomo I Medan, dan Methodist.</p>
+                    
+                    <div style="width:100%; height:2px; border-top:2px solid #333; border-bottom:2px solid #333;"></div>
+                    
+                    <div style="width:100%; height:auto; display:inline-block">
+                        <div id="comment">
+                            <form name="submitcomment" method="post">Nama:<br>
+                            <input name="nama" type="text"><br>
+                            Komentar:<br><textarea style="margin-left:10px" name="komentar" rows="6" cols="50"></textarea>
+                            <input name="art_id" value="1" type="hidden">
+                            <input name="art_url" type="hidden">
+                            <input name="tombol" value="Kirim" type="submit"></form>
+                        </div>
+                        
+                        <div id="publishcomment">
+                            <?php include("publishcomment.php"); getcomment("1"); ?>
+                        </div>
+                    </div>
+                    
                 </article>
-                <aside style="width:29%; float:right; height:100%">
+                <aside id="isi2">
                     <div id="alamat" style="height:auto">
                     	<p style="padding-top:10px;">Alamat : Jalan M.T. Haryono, Medan</p>
                         <p>Nomor Telepon : - </p>
