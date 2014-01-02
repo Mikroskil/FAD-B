@@ -181,7 +181,7 @@ article{
 }
 
 #map {
-	height:77%; 
+	height:77.5%; 
 	width:100%;  
 	background-color:#FFF; 
 	float:right;
@@ -342,7 +342,99 @@ footer{
 	text-decoration: underline;
 }
 
+#tambah_lokasi {
+	width:90%;
+	height:500px;
+	margin:1% 5% 1% 7%;
+}
 
+.input {
+	width:80%;
+	margin:0 7% 0 7%;
+	padding:0;
+	float:left;
+	border:none;
+}
+
+.input > input[type=text],
+.input > input[type=email] {
+	width:304px;
+	height:22.5px;
+	margin:2% 1% 2% 1%;
+	padding:0;
+	border-radius:2px;
+	border:1px solid #999;
+	text-indent:5px !important;
+}
+
+.input > input[type=text]:invalid,
+.input > input[type=email]:invalid {
+	background:#FFAEAE;
+	transition:all 2s ease;
+	-webkit-transition:all 2s ease;
+	-moz-transition:all 2s ease;
+	-o-transition:all 2s ease;
+	-ms-transition:all 2s ease;
+}
+
+.input > input[type=text]:valid,
+.input > input[type=email]:valid {
+	background:rgba(143,247,140,1);
+	transition:all 2s ease;
+	-webkit-transition:all 2s ease;
+	-moz-transition:all 2s ease;
+	-o-transition:all 2s ease;
+	-ms-transition:all 2s ease;
+}
+
+.input > label {
+	width:10%;
+	margin:2% 1% 2% 10%;
+	padding:0;
+}
+
+.input > textarea {
+	width:450px;
+	height:100px;
+	resize:none;
+	overflow:auto;
+	border-radius:2px;
+	border:1px solid #999;
+}
+
+#button {
+	padding:0;
+	margin:0 15% 0 32.5%;
+}
+
+#button > input {
+	width:100px;
+	height:30px;
+	border:2px solid #000;
+	border-radius:3px;
+	background:rgba(153,153,153,1);
+	color:#FFF;
+	font-weight:bold;
+	transition:all 2s ease;
+	-webkit-transition:all 2s ease;
+	-moz-transition:all 2s ease;
+	-o-transition:all 2s ease;
+	-ms-transition:all 2s ease;
+}
+
+#button > input:hover {
+	width:110px;
+	height:40px;
+	border:2px solid #999;
+	border-radius:3px;
+	background:linear-gradient(rgba(77,219,219,1), rgba(74,181,221,1));
+	transition:all 2s ease;
+	-webkit-transition:all 2s ease;
+	-moz-transition:all 2s ease;
+	-o-transition:all 2s ease;
+	-ms-transition:all 2s ease;
+	cursor:pointer;
+}
 /*
 Responsive Setting Area
 ========================

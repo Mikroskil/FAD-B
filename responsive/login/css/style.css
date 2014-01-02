@@ -23,11 +23,11 @@
     z-index:30;
     cursor:pointer;
 	border-radius:5px;
-	-webkit-transition: all 0.1s ease; /* Google Chrome */
-	-moz-transition: all 0.5s ease; /* Mozilla Firefox */
-	-o-transition: all 0.5s ease; /* Browser Opera */
-	-ms-transition: all 0.5s ease; /* Internet Explorer 10 */
-	transition: all 0.5s ease; /* Global */
+	-webkit-transition: all 2s ease;
+	-moz-transition: all 2s ease;
+	-o-transition: all 2s ease;
+	-ms-transition: all 2s ease;
+	transition: all 2s ease;
 }
 
 #loginButton:hover {
