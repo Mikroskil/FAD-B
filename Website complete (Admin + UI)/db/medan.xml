@@ -5,7 +5,7 @@
 - http://www.phpmyadmin.net
 -
 - Host: 127.0.0.1
-- Generation Time: Jan 01, 2014 at 06:58 PM
+- Generation Time: Jan 03, 2014 at 08:01 AM
 - Server version: 5.5.27
 - PHP Version: 5.4.7
 -->
@@ -52,7 +52,7 @@
                   `modify_date` date NOT NULL,
                   `modify_by` varchar(25) NOT NULL,
                   PRIMARY KEY (`idartikel`)
-                ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+                ) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
             </pma:table>
             <pma:table name="kategori">
                 CREATE TABLE `kategori` (
@@ -70,9 +70,9 @@
                   PRIMARY KEY (`idkomentar`),
                   KEY `iduser` (`iduser`),
                   KEY `idartikel` (`idartikel`),
-                  CONSTRAINT `komentar_ibfk_3` FOREIGN KEY (`idartikel`) REFERENCES `artikel2` (`idartikel`) ON DELETE CASCADE ON UPDATE CASCADE,
-                  CONSTRAINT `komentar_ibfk_2` FOREIGN KEY (`iduser`) REFERENCES `user` (`iduser`) ON DELETE CASCADE ON UPDATE CASCADE
-                ) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+                  CONSTRAINT `komentar_ibfk_2` FOREIGN KEY (`iduser`) REFERENCES `user` (`iduser`) ON DELETE CASCADE ON UPDATE CASCADE,
+                  CONSTRAINT `komentar_ibfk_3` FOREIGN KEY (`idartikel`) REFERENCES `artikel2` (`idartikel`) ON DELETE CASCADE ON UPDATE CASCADE
+                ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
             </pma:table>
             <pma:table name="subkategori2">
                 CREATE TABLE `subkategori2` (
@@ -80,7 +80,7 @@
                   `kategori` varchar(25) NOT NULL,
                   `subkategori` varchar(25) NOT NULL,
                   PRIMARY KEY (`idsub`)
-                ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
+                ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=latin1;
             </pma:table>
             <pma:table name="sub_kategori">
                 CREATE TABLE `sub_kategori` (
@@ -153,14 +153,85 @@
         <!-- Table artikel2 -->
         <table name="artikel2">
             <column name="idartikel">6</column>
-            <column name="kategori">Universitas</column>
+            <column name="kategori">Plaza</column>
             <column name="subkategori">Mikroskil</column>
             <column name="judul">Test tt tttt</column>
             <column name="artikel">&lt;span style=&quot;color: rgb(0, 0, 0); font-family: arial; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none;&quot;&gt;Dictumst tincidunt, natoque! Dictumst! Arcu parturient, dis aliquam odio sed? Non duis ultrices phasellus ac odio. Risus ridiculus, enim. Porta placerat dignissim arcu lundium porta est velit etiam! Sed est. &lt;span style=&quot;font-style: italic;&quot;&gt;&lt;span style=&quot;font-weight: bold;&quot;&gt;Lundium ac! &lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;br&gt;Ultrices nisi, pid duis? Arcu habitasse amet montes habitasse velit vel proin adipiscing, enim a nisi, scelerisque nec augue augue, phasellus velit elementum dictumst? Ac placerat, et nunc, pellentesque nunc cursus! Aenean. Mattis vel ridiculus dis vut? Enim. &lt;span style=&quot;font-weight: bold;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 0);&quot;&gt;&lt;span style=&quot;color: rgb(255, 0, 0);&quot;&gt;Sed elementum? Amet nec a, a? Placerat etiam?&lt;/span&gt;&lt;/span&gt;&lt;/span&gt; &lt;br&gt;&lt;br&gt;Cras egestas, pulvinar duis elementum aenean est platea! Etiam in elit natoque integer et et sit sed mauris. Ultrices ridiculus dolor sit amet et tempor sit placerat? Nisi parturient risus! Dictumst tincidunt quis egestas, cum phasellus urna dignissim nisi pulvinar sociis pellentesque.&lt;/span&gt;</column>
             <column name="gambar">3091-Tulips.jpg</column>
             <column name="lokasi">yasnajsna</column>
-            <column name="maps">&lt;iframe width=&quot;600&quot; height=&quot;350&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; marginheight=&quot;0&quot; marginwidth=&quot;0&quot; src=&quot;https://maps.google.co.id/maps?f=q&amp;amp;source=s_q&amp;amp;hl=id&amp;amp;geocode=&amp;amp;q=Thamrin+Plaza+Medan,+Medan,+Sumatera+Utara&amp;amp;aq=0&amp;amp;oq=Thamri&amp;amp;sll=-2.44565,117.8888&amp;amp;sspn=25.857592,43.286133&amp;amp;ie=UTF8&amp;amp;hq=Thamrin+Plaza&amp;amp;hnear=Medan,+Sumatera+Utara&amp;amp;t=m&amp;amp;ll=3.586323,98.691559&amp;amp;spn=0.029982,0.051498&amp;amp;z=14&amp;amp;iwloc=A&amp;amp;output=embed&quot;&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;small&gt;&lt;a href=&quot;https://maps.google.co.id/maps?f=q&amp;amp;source=embed&amp;amp;hl=id&amp;amp;geocode=&amp;amp;q=Thamrin+Plaza+Medan,+Medan,+Sumatera+Utara&amp;amp;aq=0&amp;amp;oq=Thamri&amp;amp;sll=-2.44565,117.8888&amp;amp;sspn=25.857592,43.286133&amp;amp;ie=UTF8&amp;amp;hq=Thamrin+Plaza&amp;amp;hnear=Medan,+Sumatera+Utara&amp;amp;t=m&amp;amp;ll=3.586323,98.691559&amp;amp;spn=0.029982,0.051498&amp;amp;z=14&amp;amp;iwloc=A&quot; style=&quot;color:#0000FF;text-align:left&quot;&gt;Lihat Peta Lebih Besar&lt;/a&gt;&lt;/small&gt;</column>
+            <column name="maps">&lt;iframe width=&quot;300&quot; height=&quot;350&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; marginheight=&quot;0&quot; marginwidth=&quot;0&quot; src=&quot;https://maps.google.co.id/maps?f=q&amp;amp;source=s_q&amp;amp;hl=id&amp;amp;geocode=&amp;amp;q=Thamrin+Plaza+Medan,+Medan,+Sumatera+Utara&amp;amp;aq=0&amp;amp;oq=Thamri&amp;amp;sll=-2.44565,117.8888&amp;amp;sspn=25.857592,43.286133&amp;amp;ie=UTF8&amp;amp;hq=Thamrin+Plaza&amp;amp;hnear=Medan,+Sumatera+Utara&amp;amp;t=m&amp;amp;ll=3.586323,98.691559&amp;amp;spn=0.029982,0.051498&amp;amp;z=14&amp;amp;iwloc=A&amp;amp;output=embed&quot;&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;small&gt;&lt;a href=&quot;https://maps.google.co.id/maps?f=q&amp;amp;source=embed&amp;amp;hl=id&amp;amp;geocode=&amp;amp;q=Thamrin+Plaza+Medan,+Medan,+Sumatera+Utara&amp;amp;aq=0&amp;amp;oq=Thamri&amp;amp;sll=-2.44565,117.8888&amp;amp;sspn=25.857592,43.286133&amp;amp;ie=UTF8&amp;amp;hq=Thamrin+Plaza&amp;amp;hnear=Medan,+Sumatera+Utara&amp;amp;t=m&amp;amp;ll=3.586323,98.691559&amp;amp;spn=0.029982,0.051498&amp;amp;z=14&amp;amp;iwloc=A&quot; style=&quot;color:#0000FF;text-align:left&quot;&gt;Lihat Peta Lebih Besar&lt;/a&gt;&lt;/small&gt;</column>
             <column name="create_date">2014-01-01</column>
+            <column name="create_by">admin</column>
+            <column name="modify_date">2014-01-02</column>
+            <column name="modify_by">admin</column>
+        </table>
+        <table name="artikel2">
+            <column name="idartikel">7</column>
+            <column name="kategori">Restoran</column>
+            <column name="subkategori">padang</column>
+            <column name="judul">Rendang</column>
+            <column name="artikel">&lt;span style=&quot;color: rgb(0, 0, 0); font-family: arial; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none;&quot;&gt;&lt;span style=&quot;color: rgb(0, 153, 0);&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 0);&quot;&gt;&lt;span style=&quot;font-style: italic;&quot;&gt;&lt;span style=&quot;font-weight: bold;&quot;&gt;Et natoque diam urna ac placerat aliquam amet ut purus rhoncus? &lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;Enim pulvinar non mattis? Duis et dis amet porta, adipiscing in platea montes sit odio, placerat nunc in! Aenean magna turpis tempor dictumst integer. Phasellus, magna diam purus massa integer elementum pid vel nec. Aenean eu nunc. Porta dolor, facilisis augue lundium augue?&lt;br&gt;&lt;br&gt;Urna! Lundium etiam. Augue a hac ut porta lectus ridiculus nascetur ut, scelerisque pellentesque adipiscing aliquam risus montes adipiscing? Ut massa sit, in lacus est augue. Arcu lacus etiam proin! Ac cum, pellentesque nunc pulvinar, et, adipiscing adipiscing facilisis eu integer lectus? A. Sit, mid et. Urna proin, porta est et, vel non nisi? Magna scelerisque, egestas nisi? Rhoncus scelerisque porta nunc, massa dignissim integer, massa.&lt;/span&gt;</column>
+            <column name="gambar">8865-Jellyfish.jpg</column>
+            <column name="lokasi">blasmdas 
+asnakdskas</column>
+            <column name="maps">&lt;iframe width=&quot;300&quot; height=&quot;350&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; marginheight=&quot;0&quot; marginwidth=&quot;0&quot; src=&quot;https://maps.google.co.id/maps?f=q&amp;amp;source=s_q&amp;amp;hl=id&amp;amp;geocode=&amp;amp;q=Thamrin+Plaza+Medan,+Medan,+Sumatera+Utara&amp;amp;aq=0&amp;amp;oq=Thamri&amp;amp;sll=-2.44565,117.8888&amp;amp;sspn=25.857592,43.286133&amp;amp;ie=UTF8&amp;amp;hq=Thamrin+Plaza&amp;amp;hnear=Medan,+Sumatera+Utara&amp;amp;t=m&amp;amp;ll=3.586323,98.691559&amp;amp;spn=0.029982,0.051498&amp;amp;z=14&amp;amp;iwloc=A&amp;amp;output=embed&quot;&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;small&gt;&lt;a href=&quot;https://maps.google.co.id/maps?f=q&amp;amp;source=embed&amp;amp;hl=id&amp;amp;geocode=&amp;amp;q=Thamrin+Plaza+Medan,+Medan,+Sumatera+Utara&amp;amp;aq=0&amp;amp;oq=Thamri&amp;amp;sll=-2.44565,117.8888&amp;amp;sspn=25.857592,43.286133&amp;amp;ie=UTF8&amp;amp;hq=Thamrin+Plaza&amp;amp;hnear=Medan,+Sumatera+Utara&amp;amp;t=m&amp;amp;ll=3.586323,98.691559&amp;amp;spn=0.029982,0.051498&amp;amp;z=14&amp;amp;iwloc=A&quot; style=&quot;color:#0000FF;text-align:left&quot;&gt;Lihat Peta Lebih Besar&lt;/a&gt;&lt;/small&gt;</column>
+            <column name="create_date">2014-01-02</column>
+            <column name="create_by">admin</column>
+            <column name="modify_date">2014-01-02</column>
+            <column name="modify_by">admin</column>
+        </table>
+        <table name="artikel2">
+            <column name="idartikel">8</column>
+            <column name="kategori">Tempat Ibadah</column>
+            <column name="subkategori">Mesjid</column>
+            <column name="judul">Wow</column>
+            <column name="artikel">&lt;span style=&quot;color: rgb(0, 0, 0); font-family: arial; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none;&quot;&gt;Rhoncus ut sociis placerat tempor? Lectus platea vel scelerisque nascetur urna mauris sagittis platea dolor penatibus pid tincidunt integer, diam lorem eros sit, sociis elementum habitasse nec et nisi nec adipiscing.&lt;br&gt;&lt;br&gt;Sociis porttitor pulvinar mid risus platea turpis, integer. In, augue adipiscing placerat in, et ac a, et dolor nec! Tincidunt porttitor eros duis sociis, natoque nec vel placerat, natoque montes, ac amet etiam ultricies, ac platea hac, cursus? Dignissim adipiscing, dictumst tortor sociis a risus turpis enim aenean magnis cras amet mattis mauris, habitasse turpis pid dignissim, nisi, vut nisi mauris urna cum sed! Dignissim massa magnis, dictumst? Nisi dignissim pulvinar eu mauris mid mus auctor lectus vel magna, proin? Sed pulvinar, augue vel, pulvinar vel enim adipiscing.&lt;/span&gt;</column>
+            <column name="gambar">5677-2.jpg</column>
+            <column name="lokasi">Test lagi loh....</column>
+            <column name="maps">&lt;iframe width=&quot;300&quot; height=&quot;350&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; marginheight=&quot;0&quot; marginwidth=&quot;0&quot; src=&quot;https://maps.google.co.id/maps?f=q&amp;amp;source=s_q&amp;amp;hl=id&amp;amp;geocode=&amp;amp;q=Thamrin+Plaza+Medan,+Medan,+Sumatera+Utara&amp;amp;aq=0&amp;amp;oq=Thamri&amp;amp;sll=-2.44565,117.8888&amp;amp;sspn=25.857592,43.286133&amp;amp;ie=UTF8&amp;amp;hq=Thamrin+Plaza&amp;amp;hnear=Medan,+Sumatera+Utara&amp;amp;t=m&amp;amp;ll=3.586323,98.691559&amp;amp;spn=0.029982,0.051498&amp;amp;z=14&amp;amp;iwloc=A&amp;amp;output=embed&quot;&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;small&gt;&lt;a href=&quot;https://maps.google.co.id/maps?f=q&amp;amp;source=embed&amp;amp;hl=id&amp;amp;geocode=&amp;amp;q=Thamrin+Plaza+Medan,+Medan,+Sumatera+Utara&amp;amp;aq=0&amp;amp;oq=Thamri&amp;amp;sll=-2.44565,117.8888&amp;amp;sspn=25.857592,43.286133&amp;amp;ie=UTF8&amp;amp;hq=Thamrin+Plaza&amp;amp;hnear=Medan,+Sumatera+Utara&amp;amp;t=m&amp;amp;ll=3.586323,98.691559&amp;amp;spn=0.029982,0.051498&amp;amp;z=14&amp;amp;iwloc=A&quot; style=&quot;color:#0000FF;text-align:left&quot;&gt;Lihat Peta Lebih Besar&lt;/a&gt;&lt;/small&gt;</column>
+            <column name="create_date">2014-01-02</column>
+            <column name="create_by">admin</column>
+            <column name="modify_date">2014-01-02</column>
+            <column name="modify_by">admin</column>
+        </table>
+        <table name="artikel2">
+            <column name="idartikel">9</column>
+            <column name="kategori">Tempat Ibadah</column>
+            <column name="subkategori">Mesjid</column>
+            <column name="judul">Lanjut lagi....</column>
+            <column name="artikel">&lt;span style=&quot;color: rgb(0, 0, 0); font-family: arial; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none;&quot;&gt;Facilisis in velit? Magnis mauris! Etiam amet et dignissim? Purus eu magna? Nunc lorem odio scelerisque augue ac rhoncus augue magnis adipiscing vel dolor aliquet augue pulvinar parturient turpis, turpis in? Magna, est lacus, augue? Facilisis elementum lacus adipiscing? Augue magnis. Rhoncus egestas hac, natoque velit duis. In turpis adipiscing! Scelerisque elementum amet. Facilisis risus.&lt;br&gt;&lt;br&gt;Massa auctor nisi sit tristique platea! Aenean quis magna ut, lundium porta dignissim scelerisque et sed, ac, mattis vel egestas, tincidunt enim turpis sagittis! Mauris amet, ultricies augue! Ut enim et pulvinar scelerisque aenean urna, in eu eu elementum nisi! Elementum augue urna amet. Etiam? Dictumst, ac purus enim rhoncus turpis elementum! Tincidunt lundium placerat, nisi? Aliquet sit sed tincidunt odio hac ac magna.&lt;/span&gt;</column>
+            <column name="gambar">738-3.jpg</column>
+            <column name="lokasi">Gak tw...</column>
+            <column name="maps">&lt;iframe width=&quot;300&quot; height=&quot;350&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; marginheight=&quot;0&quot; marginwidth=&quot;0&quot; src=&quot;https://maps.google.co.id/maps?f=q&amp;amp;source=s_q&amp;amp;hl=id&amp;amp;geocode=&amp;amp;q=Thamrin+Plaza+Medan,+Medan,+Sumatera+Utara&amp;amp;aq=0&amp;amp;oq=Thamri&amp;amp;sll=-2.44565,117.8888&amp;amp;sspn=25.857592,43.286133&amp;amp;ie=UTF8&amp;amp;hq=Thamrin+Plaza&amp;amp;hnear=Medan,+Sumatera+Utara&amp;amp;t=m&amp;amp;ll=3.586323,98.691559&amp;amp;spn=0.029982,0.051498&amp;amp;z=14&amp;amp;iwloc=A&amp;amp;output=embed&quot;&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;small&gt;&lt;a href=&quot;https://maps.google.co.id/maps?f=q&amp;amp;source=embed&amp;amp;hl=id&amp;amp;geocode=&amp;amp;q=Thamrin+Plaza+Medan,+Medan,+Sumatera+Utara&amp;amp;aq=0&amp;amp;oq=Thamri&amp;amp;sll=-2.44565,117.8888&amp;amp;sspn=25.857592,43.286133&amp;amp;ie=UTF8&amp;amp;hq=Thamrin+Plaza&amp;amp;hnear=Medan,+Sumatera+Utara&amp;amp;t=m&amp;amp;ll=3.586323,98.691559&amp;amp;spn=0.029982,0.051498&amp;amp;z=14&amp;amp;iwloc=A&quot; style=&quot;color:#0000FF;text-align:left&quot;&gt;Lihat Peta Lebih Besar&lt;/a&gt;&lt;/small&gt;</column>
+            <column name="create_date">2014-01-02</column>
+            <column name="create_by">admin</column>
+            <column name="modify_date">2014-01-02</column>
+            <column name="modify_by">admin</column>
+        </table>
+        <table name="artikel2">
+            <column name="idartikel">10</column>
+            <column name="kategori">Hotel</column>
+            <column name="subkategori">Mikroskil</column>
+            <column name="judul">uji coba...</column>
+            <column name="artikel">&lt;p style=&quot;margin: 0px 0px 10px; padding: 0px; border: 0px; outline: 0px; font-size: 13px; vertical-align: baseline; background-color: transparent; color: rgb(0, 0, 0); font-family: arial; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-position: initial initial; background-repeat: initial initial;&quot;&gt;Cursus eros proin, augue augue scelerisque ridiculus purus pid porttitor mid porta, lacus nisi massa montes vut vel dis arcu? Facilisis in, arcu etiam, ac ultricies ridiculus duis, ac integer vel tortor eu! Enim, massa enim sed magna cras egestas dis turpis mid mid tempor, odio montes nascetur ridiculus, sagittis, sagittis, dignissim, eros diam facilisis sed? &lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 10px; padding: 0px; border: 0px; outline: 0px; font-size: 13px; vertical-align: baseline; background-color: transparent; color: rgb(0, 0, 0); font-family: arial; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-position: initial initial; background-repeat: initial initial;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 10px; padding: 0px; border: 0px; outline: 0px; font-size: 13px; vertical-align: baseline; background-color: transparent; color: rgb(0, 0, 0); font-family: arial; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-position: initial initial; background-repeat: initial initial;&quot;&gt;&lt;span style=&quot;font-style: italic;&quot;&gt;&lt;span style=&quot;font-weight: bold;&quot;&gt;Odio pellentesque nec risus, mid a? Ac habitasse?&lt;/span&gt;&lt;/span&gt; Nec, facilisis sit lundium turpis odio, ac odio, urna placerat. Lacus natoque lectus velit non pid! Arcu magna auctor diam! Etiam aliquam odio tortor. Phasellus etiam! Natoque mauris pellentesque egestas, aliquet pulvinar tristique ac nisi hac! Turpis natoque. Ridiculus est a. Odio risus porttitor! Nunc egestas integer tortor? Tortor odio velit dis eros, &lt;span style=&quot;font-weight: bold;&quot;&gt;&lt;span style=&quot;color: rgb(255, 0, 0);&quot;&gt;hac lectus in.&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;&lt;br class=&quot;Apple-interchange-newline&quot;&gt;</column>
+            <column name="gambar">182-1.jpg</column>
+            <column name="lokasi">bla bla...</column>
+            <column name="maps">&lt;iframe width=&quot;300&quot; height=&quot;350&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; marginheight=&quot;0&quot; marginwidth=&quot;0&quot; src=&quot;https://maps.google.co.id/maps?f=q&amp;amp;source=s_q&amp;amp;hl=id&amp;amp;geocode=&amp;amp;q=Thamrin+Plaza+Medan,+Medan,+Sumatera+Utara&amp;amp;aq=0&amp;amp;oq=Thamri&amp;amp;sll=-2.44565,117.8888&amp;amp;sspn=25.857592,43.286133&amp;amp;ie=UTF8&amp;amp;hq=Thamrin+Plaza&amp;amp;hnear=Medan,+Sumatera+Utara&amp;amp;t=m&amp;amp;ll=3.586323,98.691559&amp;amp;spn=0.029982,0.051498&amp;amp;z=14&amp;amp;iwloc=A&amp;amp;output=embed&quot;&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;small&gt;&lt;a href=&quot;https://maps.google.co.id/maps?f=q&amp;amp;source=embed&amp;amp;hl=id&amp;amp;geocode=&amp;amp;q=Thamrin+Plaza+Medan,+Medan,+Sumatera+Utara&amp;amp;aq=0&amp;amp;oq=Thamri&amp;amp;sll=-2.44565,117.8888&amp;amp;sspn=25.857592,43.286133&amp;amp;ie=UTF8&amp;amp;hq=Thamrin+Plaza&amp;amp;hnear=Medan,+Sumatera+Utara&amp;amp;t=m&amp;amp;ll=3.586323,98.691559&amp;amp;spn=0.029982,0.051498&amp;amp;z=14&amp;amp;iwloc=A&quot; style=&quot;color:#0000FF;text-align:left&quot;&gt;Lihat Peta Lebih Besar&lt;/a&gt;&lt;/small&gt;</column>
+            <column name="create_date">2014-01-03</column>
+            <column name="create_by">deja</column>
+            <column name="modify_date">0000-00-00</column>
+            <column name="modify_by"></column>
+        </table>
+        <table name="artikel2">
+            <column name="idartikel">11</column>
+            <column name="kategori">Hiburan</column>
+            <column name="subkategori">Makanan &amp; Minuman</column>
+            <column name="judul">capek loh...</column>
+            <column name="artikel">&lt;span style=&quot;color: rgb(0, 0, 0); font-family: arial; font-size: 13px; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: normal; line-height: normal; orphans: auto; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: auto; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); display: inline !important; float: none;&quot;&gt;Lectus etiam rhoncus et, turpis, nunc arcu porttitor! Odio ridiculus enim magna eros magna rhoncus dignissim turpis vel, elit! Sociis, eros duis! Elementum vut, tincidunt vut odio. Adipiscing. Sit porttitor, enim dignissim?&lt;br&gt;&lt;br&gt;&lt;span style=&quot;font-weight: bold;&quot;&gt;&lt;span style=&quot;background-color: rgb(255, 255, 102);&quot;&gt;Et! Vel sit amet? &lt;/span&gt;&lt;/span&gt;Magna magnis? Turpis dignissim, nunc ridiculus, scelerisque facilisis pid penatibus proin turpis, cras integer dis non penatibus facilisis eu cras, ultrices odio, nunc nisi urna mid, diam vel placerat pid massa ut phasellus lundium sit placerat, in placerat placerat, rhoncus est ut scelerisque. Risus, placerat, aliquet pulvinar sagittis. Facilisis in dignissim amet! Scelerisque pellentesque dictumst, dictumst in turpis dapibus risus, sit dis dignissim urna! Sed vut amet? Aliquam, penatibus aenean porta pellentesque? Integer vel, montes ridiculus duis penatibus, odio? &lt;span style=&quot;font-weight: bold;&quot;&gt;&lt;span style=&quot;color: rgb(255, 153, 0);&quot;&gt;Dapibus aenean quis, nascetur nec.&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;</column>
+            <column name="gambar">5112-3.jpg</column>
+            <column name="lokasi">hihihi</column>
+            <column name="maps">&lt;iframe width=&quot;300&quot; height=&quot;350&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; marginheight=&quot;0&quot; marginwidth=&quot;0&quot; src=&quot;https://maps.google.co.id/maps?f=q&amp;amp;source=s_q&amp;amp;hl=id&amp;amp;geocode=&amp;amp;q=Thamrin+Plaza+Medan,+Medan,+Sumatera+Utara&amp;amp;aq=0&amp;amp;oq=Thamri&amp;amp;sll=-2.44565,117.8888&amp;amp;sspn=25.857592,43.286133&amp;amp;ie=UTF8&amp;amp;hq=Thamrin+Plaza&amp;amp;hnear=Medan,+Sumatera+Utara&amp;amp;t=m&amp;amp;ll=3.586323,98.691559&amp;amp;spn=0.029982,0.051498&amp;amp;z=14&amp;amp;iwloc=A&amp;amp;output=embed&quot;&gt;&lt;/iframe&gt;&lt;br /&gt;&lt;small&gt;&lt;a href=&quot;https://maps.google.co.id/maps?f=q&amp;amp;source=embed&amp;amp;hl=id&amp;amp;geocode=&amp;amp;q=Thamrin+Plaza+Medan,+Medan,+Sumatera+Utara&amp;amp;aq=0&amp;amp;oq=Thamri&amp;amp;sll=-2.44565,117.8888&amp;amp;sspn=25.857592,43.286133&amp;amp;ie=UTF8&amp;amp;hq=Thamrin+Plaza&amp;amp;hnear=Medan,+Sumatera+Utara&amp;amp;t=m&amp;amp;ll=3.586323,98.691559&amp;amp;spn=0.029982,0.051498&amp;amp;z=14&amp;amp;iwloc=A&quot; style=&quot;color:#0000FF;text-align:left&quot;&gt;Lihat Peta Lebih Besar&lt;/a&gt;&lt;/small&gt;</column>
+            <column name="create_date">2014-01-03</column>
             <column name="create_by">admin</column>
             <column name="modify_date">0000-00-00</column>
             <column name="modify_by"></column>
@@ -186,12 +257,34 @@
             <column name="idkategori">k05</column>
             <column name="kategori">Restoran</column>
         </table>
+        <table name="kategori">
+            <column name="idkategori">k06</column>
+            <column name="kategori">Hiburan</column>
+        </table>
         <!-- Table komentar -->
         <table name="komentar">
             <column name="idkomentar">4</column>
             <column name="idartikel">6</column>
             <column name="iduser">u1001</column>
             <column name="komentar">test</column>
+        </table>
+        <table name="komentar">
+            <column name="idkomentar">5</column>
+            <column name="idartikel">7</column>
+            <column name="iduser">usr00003</column>
+            <column name="komentar">hehehehe</column>
+        </table>
+        <table name="komentar">
+            <column name="idkomentar">6</column>
+            <column name="idartikel">8</column>
+            <column name="iduser">usr00003</column>
+            <column name="komentar">haha...</column>
+        </table>
+        <table name="komentar">
+            <column name="idkomentar">7</column>
+            <column name="idartikel">9</column>
+            <column name="iduser">usr00003</column>
+            <column name="komentar">test lagi...</column>
         </table>
         <!-- Table subkategori2 -->
         <table name="subkategori2">
@@ -224,6 +317,11 @@
             <column name="kategori">Restoran</column>
             <column name="subkategori">padang</column>
         </table>
+        <table name="subkategori2">
+            <column name="idsub">7</column>
+            <column name="kategori">Hiburan</column>
+            <column name="subkategori">Makanan &amp; Minuman</column>
+        </table>
         <!-- Table sub_kategori -->
         <!-- Table tam_lok -->
         <table name="tam_lok">
@@ -242,6 +340,30 @@
             <column name="artikel">kmaskka</column>
             <column name="lokasi">asknkana</column>
         </table>
+        <table name="tam_lok">
+            <column name="idtambah">tbh00001</column>
+            <column name="nama">test</column>
+            <column name="email">test@gmail.com</column>
+            <column name="judul">yeaaa</column>
+            <column name="artikel">baisida</column>
+            <column name="lokasi">kankasnak</column>
+        </table>
+        <table name="tam_lok">
+            <column name="idtambah">tbh00002</column>
+            <column name="nama">test2</column>
+            <column name="email">test2@gmail.com</column>
+            <column name="judul">dkkadma</column>
+            <column name="artikel">asnakdnak</column>
+            <column name="lokasi">nidkalna</column>
+        </table>
+        <table name="tam_lok">
+            <column name="idtambah">tbh00003</column>
+            <column name="nama">test3</column>
+            <column name="email">test3@gmail.com</column>
+            <column name="judul">cjandaj</column>
+            <column name="artikel">dscnsknc</column>
+            <column name="lokasi">sdncskncsk</column>
+        </table>
         <!-- Table user -->
         <table name="user">
             <column name="iduser">u1001</column>
@@ -250,76 +372,40 @@
             <column name="email">yuda@gmail.com</column>
         </table>
         <table name="user">
-            <column name="iduser">u101</column>
-            <column name="pass">deja</column>
-            <column name="nama">Dezha</column>
-            <column name="email">deja@gmail.com</column>
+            <column name="iduser">usr00003</column>
+            <column name="pass">sssss</column>
+            <column name="nama">tttt</column>
+            <column name="email">test@gmail.com</column>
         </table>
         <table name="user">
-            <column name="iduser">u102</column>
-            <column name="pass">medan</column>
-            <column name="nama">Yudha</column>
-            <column name="email">medan@yahoo.com</column>
+            <column name="iduser">usr00004</column>
+            <column name="pass">bbbaiinaida</column>
+            <column name="nama">test2</column>
+            <column name="email">test2@gmail.com</column>
         </table>
         <table name="user">
-            <column name="iduser">u103</column>
-            <column name="pass">jdankdn</column>
-            <column name="nama">kjandka</column>
-            <column name="email">jnadka</column>
+            <column name="iduser">usr00005</column>
+            <column name="pass">936aa2d51122f82</column>
+            <column name="nama">Laptop</column>
+            <column name="email">coba@gmail.com</column>
         </table>
         <table name="user">
-            <column name="iduser">u104</column>
-            <column name="pass">njadasdn </column>
-            <column name="nama">nmadnas</column>
-            <column name="email">nkankas</column>
+            <column name="iduser">usr00006</column>
+            <column name="pass">saya</column>
+            <column name="nama">coba2</column>
+            <column name="email">coba2@gmail.com</column>
         </table>
         <table name="user">
-            <column name="iduser">u105</column>
-            <column name="pass">ssvs</column>
-            <column name="nama">hrthfgbdf</column>
-            <column name="email">sdfsdjhfbjhs</column>
+            <column name="iduser">usr00007</column>
+            <column name="pass">À©×G±·4ªÍÓôbO</column>
+            <column name="nama">kamu</column>
+            <column name="email">coba3@gmail.com</column>
         </table>
         <table name="user">
-            <column name="iduser">u106</column>
-            <column name="pass">jhkejdecn</column>
-            <column name="nama">nfkjwenfk</column>
-            <column name="email">kjnjkc</column>
-        </table>
-        <table name="user">
-            <column name="iduser">u107</column>
-            <column name="pass">nmkjebckwdew</column>
-            <column name="nama">unsdjkcnsjk</column>
-            <column name="email">njbsdjcbs</column>
-        </table>
-        <table name="user">
-            <column name="iduser">u108</column>
-            <column name="pass">anasna</column>
-            <column name="nama">mndasnm</column>
-            <column name="email">kjndakjna</column>
-        </table>
-        <table name="user">
-            <column name="iduser">u109</column>
-            <column name="pass">andakjndkxa</column>
-            <column name="nama">nmjdqwkj</column>
-            <column name="email">eidjkqndkq</column>
-        </table>
-        <table name="user">
-            <column name="iduser">u110</column>
-            <column name="pass">mnabjhda</column>
-            <column name="nama">jdnjkasdnka</column>
-            <column name="email">nkdnakjsd</column>
-        </table>
-        <table name="user">
-            <column name="iduser">user</column>
-            <column name="pass">user</column>
-            <column name="nama">medan</column>
-            <column name="email">user@gmail.com</column>
-        </table>
-        <table name="user">
-            <column name="iduser">windows</column>
-            <column name="pass">linux</column>
-            <column name="nama">Asus</column>
-            <column name="email">windows@linux.com</column>
+            <column name="iduser">usr00008</column>
+            <column name="pass">£ÒKU[Âîï47}‰</column>
+            <column name="nama">dia</column>
+            <column name="email">coba4@gmail.com</column>
         </table>
     </database>
 </pma_xml_export>
