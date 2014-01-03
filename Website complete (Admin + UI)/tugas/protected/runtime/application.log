@@ -5034,3 +5034,37 @@ in C:\xampp\htdocs\PKTI\tugas\index.php (13)
 2014/01/02 21:30:30 [warning] [application] Failed to set unsafe attribute "gambar" of "Artikel2".
 in C:\xampp\htdocs\PKTI\tugas\protected\controllers\Artikel2Controller.php (134)
 in C:\xampp\htdocs\PKTI\tugas\index.php (13)
+2014/01/03 05:19:16 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\PKTI\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\PKTI\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\PKTI\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\PKTI\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\PKTI\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\PKTI\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\PKTI\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\PKTI\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\PKTI\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\xampp\htdocs\PKTI\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/create')
+#9 C:\xampp\htdocs\PKTI\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\PKTI\tugas\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/pkti/tugas/index.php?r=admin/create
+HTTP_REFERER=http://localhost/pkti/tugas/index.php?r=admin/index
+---
+2014/01/03 07:57:02 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\xampp\htdocs\PKTI\yii\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 C:\xampp\htdocs\PKTI\yii\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\xampp\htdocs\PKTI\yii\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\xampp\htdocs\PKTI\yii\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 C:\xampp\htdocs\PKTI\yii\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\xampp\htdocs\PKTI\yii\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\xampp\htdocs\PKTI\yii\framework\web\CController.php(291): CFilterChain->run()
+#6 C:\xampp\htdocs\PKTI\yii\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\PKTI\yii\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\xampp\htdocs\PKTI\yii\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/create')
+#9 C:\xampp\htdocs\PKTI\yii\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\PKTI\tugas\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/pkti/tugas/index.php?r=admin/create
+HTTP_REFERER=http://localhost/pkti/tugas/index.php?r=admin/index
+---

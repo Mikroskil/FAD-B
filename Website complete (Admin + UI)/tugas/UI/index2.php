@@ -211,6 +211,8 @@ if ($_SESSION['username'] && $_SESSION['password']){
 		include "makasi.php";}
 		else if($_GET['lihat']=="artikel"){
 		include "viewartikel.php";}
+		else if($_GET['lihat']=="komentar"){
+		include "inputkomentar.php";}
 		else{
 		require_once "home.php";}
 	?>
