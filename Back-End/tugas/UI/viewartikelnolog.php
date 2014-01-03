@@ -1,19 +1,11 @@
       <div class="container-fluid">
 
-
-
-
-
-        <!-- Content starts -->
-
         <div class="box-body blog">
           <div class="row-fluid">
 
                         <div class="span8">
                            <div class="posts">
                            
-                              <!-- Each posts should be enclosed inside "entry" class" -->
-                              <!-- Post one -->
                               <?php
 						include "koneksi.php";
 						$tampil=mysql_query("select * from artikel2 where idartikel like '%$_GET[id]%' ");
@@ -73,7 +65,5 @@
 
           </div>
         </div>
-
-        <!-- Content ends -->
 
       </div>

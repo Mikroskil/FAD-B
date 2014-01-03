@@ -1,16 +1,11 @@
 <div class="matter">
       <div class="container-fluid">
-
-        
-        <!-- Content starts -->
-
         <div class="box-body contactus">
 
 
               <div class="row-fluid">
                            <div class="span12">
                               <div class="well">
-                                 <!-- Contact form -->
                                     <h5>Tambah Lokasi</h5>
                                     <hr />
                                     <div class="form">
@@ -64,8 +59,6 @@
                         </div>
 
         </div>
-
-        <!-- Content ends -->
 
       </div>
     </div>

@@ -39,7 +39,7 @@ if ($_SESSION['username'] && $_SESSION['password']){
           <span class="icon-bar"></span>
         </a>
         <div class="nav-collapse collapse">
-        	<form class="form-search s-widget" style="display:inline-block;" method="post" action="index.php?lihat=cari">
+        	<form class="form-search s-widget" style="display:inline-block;" method="post" action="index2.php?lihat=cari">
               <div class="input-append">
                 <input type="search" class="input-small search-query" style="width:300px;" placeholder="Cari Artikel" name="cari">
                 <button type="submit" class="btn btn-danger">Cari</button>
@@ -106,7 +106,7 @@ if ($_SESSION['username'] && $_SESSION['password']){
 						$tampil=mysql_query("select * from kategori");
 						$data=mysql_num_rows($tampil);
 						while($baris=mysql_fetch_array($tampil)){
-                        echo"<li><a href=#>$baris[1]</a></li>";
+                        echo"<li><a href=index2.php?lihat=carikt&cari=$baris[1]>$baris[1]</a></li>";
 						}?>
               </ul>
             </li>  
@@ -194,11 +194,13 @@ if ($_SESSION['username'] && $_SESSION['password']){
 	<?php
 		include "koneksi.php";
 		if ($_GET['lihat']=="home"){
-		include "home.php";}
+		include "home2.php";}
 		else if($_GET['lihat']=="tamlok"){
 		include "tamlok.php";}
 		else if($_GET['lihat']=="cari"){
-		include "cari.php";}
+		include "cari2.php";}
+		else if($_GET['lihat']=="carikt"){
+		include "carikategori2.php";}
 		else if($_GET['lihat']=="login"){
 		include "login.php";}
 		else if($_GET['lihat']=="login2"){
@@ -207,6 +209,8 @@ if ($_SESSION['username'] && $_SESSION['password']){
 		include "register.php";}
 		else if($_GET['lihat']=="makasi"){
 		include "makasi.php";}
+		else if($_GET['lihat']=="artikel"){
+		include "viewartikel.php";}
 		else{
 		require_once "home.php";}
 	?>

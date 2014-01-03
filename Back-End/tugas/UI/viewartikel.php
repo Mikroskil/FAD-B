@@ -1,44 +1,31 @@
       <div class="container-fluid">
 
-
-
-
-
-        <!-- Content starts -->
-
         <div class="box-body blog">
           <div class="row-fluid">
 
                         <div class="span8">
                            <div class="posts">
                            
-                              <!-- Each posts should be enclosed inside "entry" class" -->
-                              <!-- Post one -->
-                              <div class="entry">
-                                 <h2><a href="#">Sed justo scelerisque ut constur scelerisque</a></h2>
+                              <?php
+						include "koneksi.php";
+						$tampil=mysql_query("select * from artikel2 where idartikel like '%$_GET[id]%' ");
+						$data=mysql_num_rows($tampil);
+						while($baris=mysql_fetch_array($tampil)){
+                        echo"
+                              <div class=\"entry\">
+                                 <h2><a href=index.php?lihat=artikel&id=$baris[0]>$baris[3]</a></h2>
                                  
-                                 <!-- Meta details -->
-                                 <div class="meta">
-                                    <i class="icon-calendar"></i> 26-2-2012 <i class="icon-user"></i> Admin 
+                                 <div class=\"meta\">
+                                    <i class=\"icon-calendar\"></i>$baris[8] <i class=\"icon-user\"></i> $baris[9] 
                                  </div>
                                  
-                                 <!-- Thumbnail -->
-                                 <div class="bthumb">
-                                    <a href="#"><img src="img/photos/1.jpg" alt="" /></a>
+                                 <div class=\"bthumb\">
+                                    <a href=#><img src=../upload/$baris[5]></a>
                                  </div>
                                  
-                                 <!-- Para -->
-                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis vulputate eros nec odio egestas in dictum nisi vehicula. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse porttitor luctus imperdiet. <a href="#">Praesent ultricies</a> enim ac ipsum aliquet pellentesque. Nullam justo nunc, dignissim at convallis posuere, sodales eu orci. Duis a risus sed dolor placerat semper quis in urna. Nam risus magna, fringilla sit amet blandit viverra, dignissim eget est. Ut <strong>commodo ullamcorper risus nec</strong> mattis. Fusce imperdiet ornare dignissim. Donec aliquet convallis tortor, et placerat quam posuere posuere. Morbi tincidunt posuere turpis eu laoreet. Nulla facilisi. Aenean at massa leo. Vestibulum in varius arcu.
-                                  <br />
-                                  Nam risus magna, fringilla sit amet blandit viverra, dignissim eget est. Ut <strong>commodo ullamcorper risus nec</strong> mattis. Fusce imperdiet ornare dignissim. Donec aliquet convallis tortor, et placerat quam posuere posuere. Morbi tincidunt posuere turpis eu laoreet. Nulla facilisi. Aenean at massa leo. Vestibulum in varius arcu.</p>
-                              </div>
-                              
-
-  
-
-                               
-
-                               <!-- Comment section -->
+                                 <p style=\"background-color:inherit\">$baris[4]</p>
+                              </div>";
+							  ?>
                   
                               <div class="comments">
                                  
@@ -65,11 +52,9 @@
                                       </li>
                                     </ul>
                               </div>
-                              
-                              <!-- Comment posting -->
-                              
+                                                           
                               <div class="respond well">
-                                 <div class="title"><h5>Post Reply</h5></div>
+                                 <div class="title"><h5>Komentar</h5></div>
                                  
                                  <div class="form">
                                    <form class="form-horizontal">
@@ -114,32 +99,30 @@
 
                         <div class="span4">
 
-                            <!-- Sidebar 2 -->
-
-                           <div class="blog-sidebar">
+                           <?php echo "
+						   <div class=\"blog-sidebar\">
                               <!-- Widget -->
 
-                              <div class="widget">
+                              <div class=\"widget\">
                                  <h4>Lokasi</h4>
-                                 <p>Jalan Gatot Subroto, Medan</p>
+                                 <p>$baris[6]</p>
 
                               </div>
                               
-                              <div class="widget">
+                              <div class=\"widget\">
                                  <h4>Maps</h4>
-                                 <p><iframe width="300" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.id/maps?f=q&amp;source=s_q&amp;hl=id&amp;geocode=&amp;q=Mikroskil,+Medan,+Sumatera+Utara&amp;aq=0&amp;oq=Mikroskil&amp;sll=-2.44565,117.8888&amp;sspn=25.857592,43.286133&amp;ie=UTF8&amp;hq=Mikroskil,+Medan,+Sumatera+Utara&amp;t=m&amp;z=17&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.co.id/maps?f=q&amp;source=embed&amp;hl=id&amp;geocode=&amp;q=Mikroskil,+Medan,+Sumatera+Utara&amp;aq=0&amp;oq=Mikroskil&amp;sll=-2.44565,117.8888&amp;sspn=25.857592,43.286133&amp;ie=UTF8&amp;hq=Mikroskil,+Medan,+Sumatera+Utara&amp;t=m&amp;z=17&amp;iwloc=A" style="color:#0000FF;text-align:left">Lihat Peta Lebih Besar</a></small>
+                                 <p>$baris[7]
                                  
                                  </p>
 
                               </div>
                              
-                           </div>                                                
+                           </div>";
+						}?>                                                
                         </div>
                   
 
           </div>
         </div>
-
-        <!-- Content ends -->
 
       </div>

@@ -1,7 +1,4 @@
 <div class="container-fluid">
-
-        <!-- Content starts -->
-
         <div class="box-body error">
           <div class="row-fluid">
 
@@ -17,7 +14,5 @@
 
           </div>
         </div>
-
-        <!-- Content ends -->
 
       </div>

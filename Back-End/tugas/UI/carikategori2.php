@@ -1,4 +1,5 @@
       <div class="container-fluid">
+
         <div class="page-title">
           <h2>Results</h2>
           <hr />
@@ -9,7 +10,7 @@
 
 			<?php
 						include "koneksi.php";
-						$tampil=mysql_query("select * from artikel2 where judul like '%$_POST[cari]%' ");
+						$tampil=mysql_query("select * from artikel2 where kategori like '%$_GET[cari]%' ");
 						$data=mysql_num_rows($tampil);
 						while($baris=mysql_fetch_array($tampil)){
                         echo"
@@ -19,7 +20,7 @@
                                  <center>$baris[3]</center>
                               </div>
                               <div class=timatter>
-                                 <a href=index.php?lihat=artikel&id=$baris[0]><img src=../upload/$baris[5]></a>
+                                 <a href=index2.php?lihat=artikel&id=$baris[0]><img src=../upload/$baris[5]></a>
                                  <p>Lokasi : $baris[6]</p>
                               </div>
                               <div class=clearfix></div>
@@ -29,8 +30,8 @@
 						}?>
 
 
+
           </div>
         </div>
-
 
       </div>

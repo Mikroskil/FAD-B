@@ -1,20 +1,13 @@
       <div class="container-fluid">
 
-        <!-- Title starts -->
         <div class="page-title">
           <h2>Results</h2>
           <hr />
         </div>
-        <!-- Title ends -->
-
-
-
-        <!-- Content starts -->
 
         <div class="box-body timeline">
           <div class="row-fluid">
 
-            <!-- Note down the calss name before editing -->
 			<?php
 						include "koneksi.php";
 						$tampil=mysql_query("select * from artikel2 where kategori like '%$_GET[cari]%' ");
@@ -40,7 +33,5 @@
 
           </div>
         </div>
-
-        <!-- Content ends -->
 
       </div>

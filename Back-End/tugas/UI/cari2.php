@@ -1,4 +1,5 @@
       <div class="container-fluid">
+
         <div class="page-title">
           <h2>Results</h2>
           <hr />
@@ -19,7 +20,7 @@
                                  <center>$baris[3]</center>
                               </div>
                               <div class=timatter>
-                                 <a href=index.php?lihat=artikel&id=$baris[0]><img src=../upload/$baris[5]></a>
+                                 <a href=index2.php?lihat=artikel&id=$baris[0]><img src=../upload/$baris[5]></a>
                                  <p>Lokasi : $baris[6]</p>
                               </div>
                               <div class=clearfix></div>
@@ -27,6 +28,11 @@
                            
                         </div>";
 						}?>
+ 
+
+
+                     
+
 
 
           </div>
