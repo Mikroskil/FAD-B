@@ -19,8 +19,6 @@
     <link rel="stylesheet" type="text/css" href="<?php echo $baseUrl;?>/css/style1.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo $baseUrl;?>/css/home2.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo $baseUrl;?>/css/style.css" />
-    
-    <script type="text/javascript" src="<?php echo $baseUrl;?>/js/jquery.js"></script>
 
 <script type="text/jscript">
 $(function() {
@@ -62,19 +60,13 @@ $(function() {
         });
    
     });
+	
+	
+
 </script>
-    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    
 
   </head>
 
 <body>
-<div id="container">
 
-<!-- Include the header bar -->
     <?php include_once('header.php');?>
-<!-- /.container -->  
-<!-- /#header -->

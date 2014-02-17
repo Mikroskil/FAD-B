@@ -1,15 +1,5 @@
 @charset "utf-8";
 /* CSS Document */
-
-html, body{
-	margin:0px;
-	padding:0px;
-	background:#36F;
-	overflow:hidden;
-	height:100%;
-	width:100%;
-}
-
 #logo{
 	width:30%;
 	height:60px;
@@ -220,7 +210,7 @@ footer{
 .admin {
 	float:left;
 	display:inline-block;
-	width:200px;
+	width:12em;
 	height:100%;
 	padding:0;
 	margin:0 10px 0 10px;
@@ -228,8 +218,8 @@ footer{
 }
 
 .admin > img {
-	width:120px;
-	height:150px;
+	width:9em;
+	height:11em;
 	padding:0;
 	margin:0 0 0 19%;
 }
@@ -442,23 +432,29 @@ Responsive Setting Area
 
 @media screen and (max-width: 1366px){
 /* CSS styles */
+*{
+	padding: 0;margin: 0;}
+html, body{
+	margin:0px;
+	padding:0px;
+	background:#36F;
+	height:100%;
+	width:100%;
+	overflow:hidden;
+}
+
 header{
-	height:8.8%;
+	height:6.5%;
 	background-color:#222;
 }
-#container{
-width:100%;
-height:700px;
-background-color:red;
-}
 section{
-	height:60%;
+	height:86.5%;
 }
-footer{
-	height:10%;
+
+
 }
 #main-nav{
-	width:95px;
+	width:8%;
 	background:red;
 	height:100%;
 	float:left;
@@ -475,12 +471,13 @@ footer{
 
 #content{
 	background-color:#99F;
-	overflow:auto;
+	overflow-x:hidden;
+	height:100%;
 	font-family:calibri;
+	width:69%;
+	float:left;
 }
-.container{
-	height:400px;
-}
+
 
 
 }
@@ -578,14 +575,15 @@ input{
 #main-nav{
 	background:#222;
 	padding:0em;
+	margin:0em;
 }
 
 #home_icon{
 	background-image:url(../image/t5.png);
 	background-repeat:no-repeat;
-	background-size:70px;
-	width:70px;
-	height:65px;
+	background-size:5.83333em;
+	width:5.83333em;
+	height:5.41667em;
 	margin-top:5px;
 	padding-bottom:5px;
 	/*margin-left:5px;*/
@@ -593,9 +591,9 @@ input{
 #carilokasi_icon{
 	background-image:url(../image/CariLokasi_icon.png);
 	background-repeat:no-repeat;
-	background-size:70px;
-	width:70px;
-	height:65px;
+	background-size:5.83333em;;
+	width:5.83333em;
+	height:5.41667em;
 	margin-top:5px;
 	padding-bottom:5px;
 	/*margin-left:5px;*/
@@ -604,9 +602,9 @@ input{
 #tambahlokasi_icon{
 	background-image:url(../image/TambahLokasi_icon.png);
 	background-repeat:no-repeat;
-	background-size:70px;
-	width:70px;
-	height:65px;
+	background-size:5.83333em;;
+	width:5.83333em;
+	height:5.41667em;
 	margin-top:5px;
 	padding-bottom:5px;
 	/*margin-left:5px;*/
@@ -614,9 +612,9 @@ input{
 #kontak_icon{
 	background-image:url(../image/Kontak_icon.png);
 	background-repeat:no-repeat;
-	background-size:70px;
-	width:70px;
-	height:65px;
+	background-size:5.83333em;;
+	width:5.83333em;
+	height:5.41667em;
 	margin-top:5px;
 	padding-bottom:5px;
 	/*margin-left:5px;*/
@@ -624,9 +622,9 @@ input{
 #tentangkami_icon{
 	background-image:url(../image/Tentang_icon.png);
 	background-repeat:no-repeat;
-	background-size:70px;
-	width:70px;
-	height:65px;
+	background-size:5.83333em;;
+	width:5.83333em;
+	height:5.41667em;
 	margin-top:5px;
 	padding-bottom:5px;
 	/*margin-left:5px;*/
@@ -652,6 +650,7 @@ p {
 #main-nav div a p{
 	text-align:center;
 	font-size:12px;
+	margin-left:0px;
 	}
 #main-nav div{
 	background-position:center;
@@ -706,12 +705,20 @@ p {
 	padding:0px;
 	font-family:sans-serif;
 	text-align:center;
+	height:8%; 
+	width:100%; 
+	background:#333; 
+	margin:0;
+}
+#taqar {
+	padding:0px;
+	font-family:sans-serif;
+	text-align:center;
 	height:7%; 
 	width:100%; 
 	background:#333; 
 	margin:0;
 }
-
 #taq p{
 	color:#FFF;
 }

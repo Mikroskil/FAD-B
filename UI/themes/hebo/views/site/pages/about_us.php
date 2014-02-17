@@ -11,13 +11,13 @@
     			
                 <div id="img_container">
                     <div class="img_about">
-                        <img src="image/medan1.png">
+                        <img src="<?php echo Yii::app()->theme->baseUrl;?>/image/medan1.png" />
                     </div>
                     <div class="img_about" style="margin:0 0 0 6%">
-                        <img src="image/medan2.png">
+                        <img src="<?php echo Yii::app()->theme->baseUrl;?>/image/medan2.png" />
                     </div>
                     <div class="img_about" style="float:right">
-                        <img src="image/medan3.png">
+                        <img src="<?php echo Yii::app()->theme->baseUrl;?>/image/medan3.png" />
                     </div>
                 </div>
                 

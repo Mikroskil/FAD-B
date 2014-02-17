@@ -16,22 +16,22 @@
     
     <div id="kontak_admin">
     	<div class="admin">
-        	<img src="image/no picture.png">
+            <img src="<?php echo Yii::app()->theme->baseUrl;?>/image/cs1.jpg" alt="Admin 1" />
             <p>Admin 1</p>
         </div>
         
         <div class="admin">
-        	<img src="image/no picture.png">
+        	<img src="<?php echo Yii::app()->theme->baseUrl;?>/image/cs2.jpg" alt="Admin 1" />
             <p>Admin 2</p>
         </div>
         
         <div class="admin">
-        	<img src="image/no picture.png">
+        	<img src="<?php echo Yii::app()->theme->baseUrl;?>/image/cs3.jpg" alt="Admin 1" />
             <p>Admin 3</p>
         </div>
      
         <div class="admin">
-        	<img src="image/no picture.png">
+        	<img src="<?php echo Yii::app()->theme->baseUrl;?>/image/cs4.png" alt="Admin 1" />
             <p>Admin 4</p>
         </div>
     </div>
