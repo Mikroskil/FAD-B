@@ -19,6 +19,8 @@
     <link rel="stylesheet" type="text/css" href="<?php echo $baseUrl;?>/css/style1.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo $baseUrl;?>/css/home2.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo $baseUrl;?>/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo $baseUrl;?>/css/post-style.css" />
+
     <link rel="shortcut icon" href="<?php echo $baseUrl;?>/img/favicon.png">
 
 <script type="text/jscript">
@@ -41,7 +43,7 @@ $(function() {
         }
     });
 });
-    $(function() {
+$(function() {
    
         var menu_ul = $('.menu > li > ul'),
                menu_a  = $('.menu > li > a');
@@ -62,8 +64,6 @@ $(function() {
    
     });
 	
-	
-
 </script>
 
   </head>

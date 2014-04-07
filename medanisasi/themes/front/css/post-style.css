@@ -1,0 +1,53 @@
+.contoh{
+	color:red;
+	background-color:#CCC;
+}
+#icon_kalendar{
+	background-image:url(../../../upload/5112-3.jpg);
+}
+
+#utama-post{
+	width:100%;
+	float:left;
+
+}
+#widget{
+	width:35%;
+	float:right;
+
+}
+.home-lokasi{
+	text-align:center;
+	color:#06F;
+	margin:0px;
+	padding:0px;
+	font-size:0.8em;
+}
+.home-namlok{
+	font-size:1em;
+	text-align:center;
+	margin:0px;
+	padding:0px;
+	border-bottom: 1px groove #03F;
+	background-color:#06F;
+}
+.home-namlok a{
+	color:#fff;
+}
+#artikel_depan{
+	border:1px solid #999;
+	width:17%;
+	height:auto;
+	float:left;
+	margin:10px;
+	padding:0px;
+	border-bottom-left-radius:30px;
+	border-bottom-right-radius:30px;
+}
+#artikel_depan_photo a img{
+	width:100%;
+}
+#artikel_depan_photo{
+	padding:0px;
+	height:140px;
+}

@@ -9,6 +9,10 @@ return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Dashboard Medanisasi',
 	'theme'=>'front',
+	'aliases' => array(
+        'bootstrap' => 'application.modules.bootstrap'
+    ),
+
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -17,10 +21,13 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+		'application.modules.cms.models.*',
+    	'application.modules.cms.components.*',
 	),
 
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
+		
 		
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',

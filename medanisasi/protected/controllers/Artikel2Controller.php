@@ -139,7 +139,7 @@ class Artikel2Controller extends Controller
             {
                 if(!empty($uploadedFile))  // check if uploaded file is set or not
                 {
-                    $uploadedFile->saveAs(Yii::app()->basePath.'/../upload/'.$model->gambar);
+                    $uploadedFile->saveAs(Yii::app()->basePath.'/../themes/front/views/site/upload/'.$model->gambar);
                 }
                 //$this->redirect(array('admin'));
 				$this->redirect(array('view','id'=>$model->idartikel));

@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <dwsync>
-<file name="logo.png" server="C:/xampp/htdocs/medan/" local="130338903056685048" remote="130338903050000000" Dst="0" />
 <file name="facebook.png" server="C:/xampp/htdocs/medan/" local="130338903056675047" remote="130338903050000000" Dst="0" />
 <file name="twitter.png" server="C:/xampp/htdocs/medan/" local="130338903056815056" remote="130338903050000000" Dst="0" />
 <file name="t5.png" server="C:/xampp/htdocs/medan/" local="130338903056815056" remote="130338903050000000" Dst="0" />
-<file name="CariLokasi_icon.png" server="C:/xampp/htdocs/medan/" local="130338903056605043" remote="130338903050000000" Dst="0" />
 <file name="TambahLokasi_icon.png" server="C:/xampp/htdocs/medan/" local="130338903056655046" remote="130338903050000000" Dst="0" />
 <file name="Kontak_icon.png" server="C:/xampp/htdocs/medan/" local="130338903056635045" remote="130338903050000000" Dst="0" />
 <file name="Tentang_icon.png" server="C:/xampp/htdocs/medan/" local="130338903056655046" remote="130338903050000000" Dst="0" />
@@ -23,4 +21,15 @@
 <file name="TambahEvent_icon.png" server="C:/xampp/htdocs/medan/" local="130338903056645046" remote="130338903050000000" Dst="0" />
 <file name="facebook.png" server="C:/xampp/htdocs/medanisasi/" local="130338903056675047" remote="130338903050000000" Dst="0" />
 <file name="twitter.png" server="C:/xampp/htdocs/medanisasi/" local="130338903056815056" remote="130338903050000000" Dst="0" />
+<file name="t5.png" server="C:/xampp/htdocs/medanisasi/" local="130338903056815056" remote="130338903050000000" Dst="0" />
+<file name="TambahLokasi_icon.png" server="C:/xampp/htdocs/medanisasi/" local="130338903056655046" remote="130338903050000000" Dst="0" />
+<file name="Kontak_icon.png" server="C:/xampp/htdocs/medanisasi/" local="130338903056635045" remote="130338903050000000" Dst="0" />
+<file name="Tentang_icon.png" server="C:/xampp/htdocs/medanisasi/" local="130338903056655046" remote="130338903050000000" Dst="0" />
+<file name="storyboard.png" server="C:/xampp/htdocs/medanisasi/" local="130338903056775053" remote="130338903050000000" Dst="0" />
+<file name="pilihkategori.png" server="C:/xampp/htdocs/medanisasi/" local="130338903056755052" remote="130338903050000000" Dst="0" />
+<file name="logos.png" server="C:/xampp/htdocs/medanisasi/" local="130392495063051065" remote="130392495060000000" Dst="0" />
+<file name="home.png" server="C:/xampp/htdocs/medanisasi/" local="130392574461610194" remote="130392574460000000" Dst="0" />
+<file name="cari.png" server="C:/xampp/htdocs/medanisasi/" local="130392602929348455" remote="130392602920000000" Dst="0" />
+<file name="tambah.png" server="C:/xampp/htdocs/medanisasi/" local="130392582122578376" remote="130392582120000000" Dst="0" />
+<file name="about.png" server="C:/xampp/htdocs/medanisasi/" local="130392591733158070" remote="130392591730000000" Dst="0" />
 </dwsync>

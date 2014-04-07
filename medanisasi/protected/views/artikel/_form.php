@@ -67,7 +67,7 @@
     
     <?php if($model->isNewRecord!='1'){ ?>
 	<div class="row">
-     <?php echo CHtml::image(Yii::app()->request->baseUrl.'/upload/'.$model->gambar,"gambar",array("width"=>200)); ?> 
+     <?php echo CHtml::image(Yii::app()->request->baseUrl.'/../upload/'.$model->gambar,"gambar",array("width"=>200)); ?> 
 	</div>
     <?php }?>
 

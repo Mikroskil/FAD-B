@@ -118,7 +118,7 @@ class ArtikelController extends Controller
             if($model->save())
             {
 				if($uploadedFile != null){
-                $uploadedFile->saveAs(Yii::app()->basePath.'/../upload/'.$fileName); } // image will uplode to rootDirectory/banner/
+                $uploadedFile->saveAs(Yii::app()->basePath.'/../themes/front/views/site/upload/'.$fileName); } // image will uplode to rootDirectory/banner/
                 //$this->redirect(array('admin'));
 				$this->redirect(array('view','id'=>$model->idartikel));
             }

@@ -27,7 +27,7 @@
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('gambar')); ?>:</b>
 	<?php /*?>	<?php echo CHtml::encode($data->gambar); ?><?php */?>
-	<img src="<?php echo Yii::app()->request->baseUrl.'/upload/'.$data->gambar;?> "  width="100" style="margin-left:5px;"/>
+	<img src="<?php echo Yii::app()->request->baseUrl.'/../upload/'.$data->gambar;?> "  width="100" style="margin-left:5px;"/>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('lokasi')); ?>:</b>

@@ -22,6 +22,13 @@ return array(
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool
 		
+		'nivoSliderManagement'=>array(
+               'columnLayout'=> '/views/',
+               'upload_directory'=> '/upload/slide',
+               'max_file_number'=> '10',
+               'max_file_size'=> '1mb',
+              ),
+		
 		'gii'=>array(
 			'class'=>'system.gii.GiiModule',
 			'password'=>'medanisasi',

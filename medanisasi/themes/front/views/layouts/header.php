@@ -1,9 +1,8 @@
       <header>
-          <div id="logo"><center>
-      <img src="image/t4.png" height="60px" width="100%">
-</div>
+          <a href="index.php?lihat=home"<div id="logo">
+</div></a>
 <div id="panel-above">
-<input type="search" id="form_cari" placeholder="Temukan Lokasi tujuan anda di sini">
+<input type="search" id="form_cari" placeholder="Cari nama lokasi yang anda inginkan">
 <button id="tombol_cari" type="button" >Cari</button>
 
 <div id="loginContainer">
@@ -24,7 +23,7 @@
                             <input type="submit" id="login" value="Sign in" />
                             <img src="../../image/facebook.png" style="float:right; margin-right:10px">
                             <img src="../../image/twitter.png" style="float:right; margin-right:10px;">
-                            <a href="register.html"><input type="button" id="register" value="Register"/></a>
+                            <a href="index.php?lihat=register"><input type="button" id="register" value="Register"/></a>
                             <label for="checkbox"><input type="checkbox" id="checkbox" />Remember me</label>
                         </fieldset>
                         <span><a href="#">Forgot your password?</a></span>
