@@ -651,8 +651,13 @@ input{
 }
 
 p {
-	margin-top:0px;
+
 	padding:0px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+}
+#utama-post p {
+	margin:10px 10px 10px 20px;
 }
 #batas_menu{
 	margin-bottom:10px;
@@ -775,6 +780,8 @@ p {
 .property-content{
 	background-color:#ddd;
 	padding-left:15px;
+	font-family:calibri;
+	font-size:14px;
 	
 }
 #title-article{

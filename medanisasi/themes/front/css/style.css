@@ -35,7 +35,8 @@
 }
 
 #loginButton:hover {
-	background:rgba(108,182,255,1);
+	/*background:rgba(108,182,255,1);*/
+	background:#06F;
 }
 
 /* Login Button Text */
@@ -43,10 +44,10 @@
     color:#AAA; 
     font-size:16px; 
     font-weight:bold;  
-    padding:10px 20px 9px 20px;
+    padding:10px 20px 9px 20px;/*
 	background:rgba(51, 153, 255, 1);
-    background:url(../login/images/loginArrow.png) no-repeat 53px 7px;
-    display:block
+    background:url(../login/images/loginArrow.png) no-repeat 53px 7px;*/
+    display:block;
 }
 
 #loginButton span:hover {
@@ -59,7 +60,7 @@
     top:45px;
     right:0;
     display:none;
-    z-index:29;
+    z-index:1000;
 }
 
 /* If the Login Button has been clicked */    
