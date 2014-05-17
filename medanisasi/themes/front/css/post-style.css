@@ -39,11 +39,12 @@
 	width:17%;
 	height:auto;
 	float:left;
-	margin:10px;
+	margin:10px 13px 10px 13.4px;
 	padding:0px;
-	border-bottom-left-radius:30px;
-	border-bottom-right-radius:30px;
+	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;
 }
+
 #artikel_depan_photo a img{
 	width:100%;
 }

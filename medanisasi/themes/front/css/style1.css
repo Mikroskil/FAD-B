@@ -3,8 +3,8 @@ a {
 }
 
 ul, ul ul {
-    margin: 0;
-    padding: 0;
+    margin: 0px 2px 0px 2px;
+    padding: 0px;
     list-style: none;
 }
 
@@ -24,12 +24,12 @@ ul, ul ul {
 
 .menu > li > a {
     background-color: #616975;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(114, 122, 134)),to(rgb(80, 88, 100)));
+    /*background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(114, 122, 134)),to(rgb(80, 88, 100)));
     background-image: -webkit-linear-gradient(top, rgb(114, 122, 134), rgb(80, 88, 100));
     background-image: -moz-linear-gradient(top, rgb(114, 122, 134), rgb(80, 88, 100));
     background-image: -o-linear-gradient(top, rgb(114, 122, 134), rgb(80, 88, 100));
     background-image: -ms-linear-gradient(top, rgb(114, 122, 134), rgb(80, 88, 100));
-    background-image: linear-gradient(top, rgb(114, 122, 134), rgb(80, 88, 100));
+    background-image: linear-gradient(top, rgb(114, 122, 134), rgb(80, 88, 100));*/
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#727a86', EndColorStr='#505864');
     border-bottom: 1px solid #33373d;
     -webkit-box-shadow: inset 0px 1px 0px 0px #878e98;
@@ -68,12 +68,12 @@ ul, ul ul {
 
 .menu > li > a:hover, .menu > li > a.active {
     background-color: #35afe3;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(69, 199, 235)),to(rgb(38, 152, 219)));
+    /*background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(69, 199, 235)),to(rgb(38, 152, 219)));
     background-image: -webkit-linear-gradient(top, rgb(69, 199, 235), rgb(38, 152, 219));
     background-image: -moz-linear-gradient(top, rgb(69, 199, 235), rgb(38, 152, 219));
     background-image: -o-linear-gradient(top, rgb(69, 199, 235), rgb(38, 152, 219));
     background-image: -ms-linear-gradient(top, rgb(69, 199, 235), rgb(38, 152, 219));
-    background-image: linear-gradient(top, rgb(69, 199, 235), rgb(38, 152, 219));
+    background-image: linear-gradient(top, rgb(69, 199, 235), rgb(38, 152, 219));*/
     filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,StartColorStr='#45c7eb', EndColorStr='#2698db');
     border-bottom: 1px solid #103c56;
     -webkit-box-shadow: inset 0px 1px 0px 0px #6ad2ef;
@@ -183,3 +183,4 @@ ul, ul ul {
     border-radius: 769em;
     text-shadow: 0px 0px 0px rgba(255,255,255,.01));
 }
+	

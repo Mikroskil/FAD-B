@@ -22,7 +22,7 @@
             </div>
        
 
-                    <h3 style="text-align:center; font-size:1.5em; background-color:#06F; color:#fff; font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;">Selamat Datang di Medanisasi.com</h3>
+                    <h3>Selamat Datang di Medanisasi.com</h3>
 
               <ul class="rps-carousel">
                 	<?php
@@ -46,7 +46,6 @@
 				  }?>
                                                                                              
               </ul>
-
               
 
                     
