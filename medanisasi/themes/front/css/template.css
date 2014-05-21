@@ -651,13 +651,10 @@ input{
 }
 
 p {
-
+/*	margin:10px 10px 10px 20px;*/
 	padding:0px;
 	font-family:Verdana, Geneva, sans-serif;
 	font-size:16px;
-}
-#utama-post p {
-	margin:10px 10px 10px 20px;
 }
 #batas_menu{
 	margin-bottom:10px;
@@ -703,6 +700,7 @@ p {
 }
 
 #judulsampinghome2 h3{
+	padding:5px 0px 5px 0px;
 	text-align:center;
 	color:#fff;
 }
@@ -764,8 +762,12 @@ p {
 }
 
 #aside-article h3 {
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-	font-size:25px;
+	width:100%;
+	text-align:center; 
+	font-size:1.5em; 
+	background-color:#06F; 
+	color:#fff; 
+	font-family:'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
 }
 
 #text {
@@ -780,8 +782,6 @@ p {
 .property-content{
 	background-color:#ddd;
 	padding-left:15px;
-	font-family:calibri;
-	font-size:14px;
 	
 }
 #title-article{
