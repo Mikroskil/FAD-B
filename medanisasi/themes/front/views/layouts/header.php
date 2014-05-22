@@ -31,4 +31,6 @@
                 </div></div>
 
 </div>
+<div id="breaking_news"><marquee>Selamat Datang di Medanisasi. Ini merupakan tampilan live uji coba. mohon maaf jika banyak bug yang mengganggu anda - Kami akan berusaha memperbaikinya secepatnya, TERIMA KASIH</marquee>
+</div>
 </header>
