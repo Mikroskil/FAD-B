@@ -1,11 +1,13 @@
       <header>
+      <div id="icon"></div>
           <a href="index.php?lihat=home"<div id="logo">
 </div></a>
 <div id="panel-above">
 <input type="search" id="form_cari" placeholder="Cari nama lokasi yang anda inginkan">
 <button id="tombol_cari" type="button" >Cari</button>
-
+<?php /*?>
 <div id="loginContainer">
+
                 <a href="#" id="loginButton"><span>Login</span><em></em></a>
                 <div style="clear:both"></div>
                 <div id="loginBox">                
@@ -28,7 +30,8 @@
                         </fieldset>
                         <span><a href="#">Forgot your password?</a></span>
                     </form>
-                </div></div>
+                </div><?php */?>
+                </div>
 
 </div>
 <div id="breaking_news"><marquee>Selamat Datang di Medanisasi. Ini merupakan tampilan live uji coba. mohon maaf jika banyak bug yang mengganggu anda - Kami akan berusaha memperbaikinya secepatnya, TERIMA KASIH</marquee>

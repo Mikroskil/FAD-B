@@ -12,8 +12,11 @@
 
 }
 #widget{
-	width:35%;
+	width:34.5%;
 	float:right;
+	background-color:#FAFAD2;
+	padding:2px;
+	min-height:600px;
 
 }
 .home-lokasi{
@@ -47,8 +50,9 @@
 
 #artikel_depan_photo a img{
 	width:100%;
+	margin: 0px 0px -5px 0px;
 }
 #artikel_depan_photo{
 	padding:0px;
-	height:140px;
+	height:100%;
 }

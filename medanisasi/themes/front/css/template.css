@@ -13,6 +13,10 @@
 	float:left;
 	margin-bottom:0px;
 }
+#icon{
+	
+	
+}
 
 #panel-above{
 	width:70%;
@@ -26,20 +30,24 @@
 
 }
 marquee{
-	margin-left:8px;
+	margin-left:3px;
 	padding-left:5px;
 }
 #breaking_news{
+<<<<<<< HEAD
 	float:left;
+	width:70.3%;
+=======
+	float:right;
 	width:71.7%;
+>>>>>>> 7cdd709344b1da5943b739fe52183229b0ddffc2
 	height:22px;
 	border-top:groove 2px #999999;
-	border-bottom:groove 2px #999999;
-	border-bottom:;
-	background:#F30;
+	border-left:groove 2px #999999;
+	background-color:#F30;
 	color:#FFF;
 	margin-top:0px;
-	margin-left:0px;
+	margin-left:18px;
 	padding-left:5px;
 	border-top-left-radius:25px;
 	border-bottom-left-radius:-10px;
@@ -50,6 +58,7 @@ header {
     margin: 0;
     padding: 0;
 	background-color:#222;
+	border-bottom:4px double #999999;
 }
 
 header:before,
@@ -476,7 +485,7 @@ html, body{
 
 
 section{
-	height:94%;
+	height:90%;
 }
 
 
@@ -681,6 +690,7 @@ p {
 	font-family:Verdana, Geneva, sans-serif;
 	font-size:16px;
 }
+
 #utama-post p {
 	margin:10px 10px 10px 20px;
 }
@@ -715,7 +725,7 @@ p {
 #judulsampinghome1,
 #judulsampinghome2 {
 	/*background-image:url(image/storyboard.png);*/
-	height:5%;
+	height:25px;
 	width:100%;
 	background-size:250px 40px;
 	background-repeat:no-repeat;
@@ -777,7 +787,10 @@ p {
 }
 
 #isi{
-	background:#eee;
+	background:#222;
+	float:left;
+	width:100%;
+	height:100%;
 	min-height:702px;
 
 }
@@ -802,19 +815,21 @@ p {
 
 .title-content > a{
 	margin-left:15px;
-	color:#06F;
+	color:#FFF;
+	font-size:2em;
 	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
 }
 .property-content{
-	background-color:#ddd;
-	padding-left:15px;
+	background-color:#267e7e;
+	padding-left:18px;
 	font-family:calibri;
-	font-size:14px;
+	font-size:13px;
+	color:wheat;
+	border-bottom:medium solid #222;
 	
 }
 #title-article{
-	background-color:#ccc;
-	border-bottom:ridge #ccc;
+	background-color:#342CD;
 }
 
 #icon_calendar{
@@ -836,7 +851,11 @@ p {
 }
 #content-cover{
 	min-height:600px;
-	border-right:solid 2px #999999;
-	width:63%;
+	width:64%;
 	float:left;
+	margin-left:3px;
+	background-color:#FAFAD2;
+}
+.title-content{
+	background-color:#339;
 }
