@@ -21,7 +21,7 @@
 }
 .home-lokasi{
 	text-align:center;
-	color:#06F;
+	color:#FFF;
 	margin:0px;
 	padding:0px;
 	font-size:0.8em;
@@ -31,25 +31,29 @@
 	text-align:center;
 	margin:0px;
 	padding:0px;
-	border-bottom: 1px groove #03F;
-	background-color:#06F;
+	background-color:#008fff;
+	border-bottom: solid 2px #222;
+	border-top: solid 2px #222;
 }
 .home-namlok a{
 	color:#fff;
+	font-size:15.5px;
 }
 #artikel_depan{
-	border:1px solid #999;
+/*	border:1px solid #999;*/
 	width:17%;
 	height:auto;
 	float:left;
 	margin:1% 1.4% 1% 1.3%;
 	padding:0px;
-	border-bottom-left-radius:5px;
-	border-bottom-right-radius:5px;
+	background:#206CDD;
+/*	border-bottom-left-radius:5px;
+	border-bottom-right-radius:5px;*/
 }
 
 #artikel_depan_photo a img{
-	width:100%;
+	width:90%;
+	margin:7px 6px 7px 8px;
 }
 #artikel_depan_photo{
 	padding:0px;

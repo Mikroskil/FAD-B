@@ -505,7 +505,7 @@ section{
 	background: #696969;
 	} 
 ::-webkit-scrollbar-thumb {
-	background-color: #222;
+	background-color: #444;
 	-moz-border-radius: 1px;
 	border-radius: 1px;
 	} 
@@ -734,6 +734,7 @@ p {
 #judulsampinghome2 h3{
 	text-align:center;
 	color:#fff;
+	padding-top:5px;
 }
 
 
@@ -852,4 +853,9 @@ p {
 }
 .title-content{
 	background-color:#339;
+}
+
+.rps-carousel{
+	width: 100%;
+	margin-left: 8px;
 }
