@@ -26,9 +26,9 @@
 	?>
               </ul> 
       </article>
-                
-            </article>
-<footer id="taq">
+                <div style=" width:100%; background:#222; display:inline-block; border-top:ridge #06f; color:#fff; text-align:center;">
                 <p>All right reserved, &copy; 2013. Medanisasi.com.<br>Develeopment by <strong>FAD-B Team</strong></p>
-            </footer>      
+            </div>
+            </article>
+    
         </div>

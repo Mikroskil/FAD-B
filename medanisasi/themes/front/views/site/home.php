@@ -1,3 +1,4 @@
+<div style="background:#222;">
 <div id="slider">
 <?php 
 		$Mslide=Slide::model()->findAll();
@@ -19,8 +20,8 @@
 	<?php endif; ?>	
 	</div>
  
-            </div>
-       
+ </div>           
+       <div id="latar_depan" style="padding-top:5px;">
 
                     <h3>Selamat Datang di Medanisasi.com</h3>
 
@@ -31,14 +32,14 @@
 					$data=mysql_num_rows($tampil);
 					while($baris=mysql_fetch_array($tampil)){
                     echo"              
-                  <li]>
+                  <li>
 				  <div id='artikel_depan'>
                         <div id='artikel_depan_photo'>        
                           <a href=index.php?lihat=artikel&id=$baris[0]><img src=/medanisasi/upload/$baris[5]></a>
                         </div>
 						
                         <div class=\"\">
-                          <h6 class=\"home-namlok\"><a href=index.php?r=artikel&id=$baris[0]>$baris[3] </a></h6>
+                          <h6 class=\"home-namlok\"><a href=index.php?lihat=artikel&id=$baris[0]>$baris[3] </a></h6>
                           <p class=\"home-lokasi\">Lokasi : $baris[6]</p>         
                         </div>
 						</div>                
@@ -46,7 +47,9 @@
 				  }?>
                                                                                              
               </ul>
-              
-
-                    
+              <div style=" width:100%; background:#999; display:inline-block;">
                 
+            </div>
+
+
+                    </div></div>

@@ -1,6 +1,8 @@
 <?php require_once('second_nav.php')?>
   
     	<div id="content">
+        <div id="isi">
+        <div id="tambah-cover">
            
                     <h3 style="text-align:center; font-size:2.5em; color:#fff; background-color:#339;">Form Tambah Lokasi</h3>
 
@@ -16,4 +18,4 @@
   <footer id="taq">
                 <p style="padding-top:0.4%">All right reserved, &copy; 2013. Medanisasi.com.<br>Develeopment by <strong>FAD-B Team</strong></p>
             </footer>
-        </div>
+        </div></div></div>

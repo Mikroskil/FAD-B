@@ -476,7 +476,7 @@ Responsive Setting Area
 html, body{
 	margin-bottom:0px;
 	padding:0px;
-	background:#36F;
+	background:#222;
 	height:100%;
 	width:100%;
 	overflow:hidden;
@@ -484,7 +484,7 @@ html, body{
 
 
 section{
-	height:94%;
+	height:88%;
 }
 
 
@@ -515,7 +515,6 @@ section{
 	} 
 
 #content{
-	background-color:#FAFAD2;
 	overflow-x:hidden;
 	height:100%;
 	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -704,7 +703,8 @@ p {
 }
 #main-nav div a{
 	text-decoration:none;
-	color:#39F;
+	
+	color:#06f;
 	font-size:14px;
 	}
 	
@@ -786,11 +786,11 @@ p {
 }
 
 #isi{
-	background:#222;
+	background:#06f;
 	float:left;
 	width:100%;
 	height:100%;
-	min-height:702px;
+	min-height:602px;
 
 }
 
@@ -803,7 +803,7 @@ p {
 #aside-article h3 {
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	font-size:25px;
-	background-color:#03F;
+	background-color:#06F;
 	text-align:center;
 	color:#fff;
 }
@@ -849,11 +849,18 @@ p {
 	display:inline-block;
 }
 #content-cover{
+	background:none repeat scroll 0% 0% rgba(254, 255, 233, 0.7);
 	min-height:600px;
 	width:64%;
 	float:left;
 	margin-left:3px;
-	background-color:#FAFAD2;
+}
+#tambah-cover{
+	background:none repeat scroll 0% 0% rgba(254, 255, 233, 0.7);
+	min-height:600px;
+	width:100%;
+	float:left;
+	margin-left:3px;
 }
 .title-content{
 	background-color:#339;
@@ -957,7 +964,8 @@ input[type="radio"], input[type="checkbox"] {
 }
 
 .form-horizontal{
-	background:none repeat scroll 0% 0% #E6E6E6;
+	background:none repeat scroll 0% 0% #00779E;
+	color:lightcyan;
 	width:60%;
 	margin:auto;
 	margin-bottom:10px;
