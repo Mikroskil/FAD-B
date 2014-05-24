@@ -19,7 +19,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo $baseUrl;?>/css/style1.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo $baseUrl;?>/css/home2.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo $baseUrl;?>/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="<?php echo $baseUrl;?>/css/post-style.css" />
+    <link rel="stylesheet" type="text/css" href="<?php echo $baseUrl;?>/css/post-style.css" /> 
 
     <link rel="shortcut icon" href="<?php echo $baseUrl;?>/img/favicon.png">
 

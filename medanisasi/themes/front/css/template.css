@@ -39,7 +39,7 @@ marquee{
 	height:22px;
 	border-top:groove 2px #999999;
 	border-left:groove 2px #999999;
-	background-color:#F30;
+	background-color:#Fa0;
 	color:#FFF;
 	margin-top:0px;
 	margin-left:18px;
@@ -80,24 +80,28 @@ header:after {
 	padding:0;
 	margin:0;
 	float:left;
-	background-color: #616975;
+	border-bottom:1px solid #33373D;
+	box-shadow:0px 1px 0px 0px #878E98 inset;
+	text-shadow:0px 1px 0px rgba(0, 0, 0, 0.5);
+	background-color:#616975;
+/*	background-color: #616975;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(114, 122, 134)),to(rgb(80, 88, 100)));
     background-image: -webkit-linear-gradient(top, rgb(114, 122, 134), rgb(80, 88, 100));
     background-image: -moz-linear-gradient(top, rgb(114, 122, 134), rgb(80, 88, 100));
     background-image: -o-linear-gradient(top, rgb(114, 122, 134), rgb(80, 88, 100));
     background-image: -ms-linear-gradient(top, rgb(114, 122, 134), rgb(80, 88, 100));
     background-image: linear-gradient(top, rgb(114, 122, 134), rgb(80, 88, 100));
-	border-bottom: 1px solid #33373d;
+	border-bottom: 1px solid #33373d;*/
 }
 
 .submenu:hover {
-	background-color: #35afe3;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(69, 199, 235)),to(rgb(38, 152, 219)));
+	background-color:#06f;
+    /*background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(69, 199, 235)),to(rgb(38, 152, 219)));
     background-image: -webkit-linear-gradient(top, rgb(69, 199, 235), rgb(38, 152, 219));
     background-image: -moz-linear-gradient(top, rgb(69, 199, 235), rgb(38, 152, 219));
     background-image: -o-linear-gradient(top, rgb(69, 199, 235), rgb(38, 152, 219));
     background-image: -ms-linear-gradient(top, rgb(69, 199, 235), rgb(38, 152, 219));
-    background-image: linear-gradient(top, rgb(69, 199, 235), rgb(38, 152, 219));
+    background-image: linear-gradient(top, rgb(69, 199, 235), rgb(38, 152, 219));*/
 }
 
 .image, .info {
@@ -108,13 +112,13 @@ header:after {
 	width:70px;
 	height:70px;
 	background:#C4530F;
-	border:3px solid #C4C4C4;
+	border:1.7px solid rgba(212, 200, 225, 1);
 	border-radius:5px;
 	margin:7px 10px 10px 10px;
 	padding:0;
 }
 
-.image > img {
+.image a img {
 	width:100%; 
 	height:100%;
 }
@@ -143,8 +147,8 @@ header:after {
 
 .info > p,
 .info2 > p {
-	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
-	font-weight:bold;
+	font-family:Verdana,Geneva,sans-serif;
+	color:#CCC;
 }
 
 #slider{
@@ -480,7 +484,7 @@ html, body{
 
 
 section{
-	height:90%;
+	height:94%;
 }
 
 
@@ -505,13 +509,13 @@ section{
 	background: #696969;
 	} 
 ::-webkit-scrollbar-thumb {
-	background-color: #444;
+	background-color: #222;
 	-moz-border-radius: 1px;
 	border-radius: 1px;
 	} 
 
 #content{
-	background-color:#99F;
+	background-color:#FAFAD2;
 	overflow-x:hidden;
 	height:100%;
 	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -727,14 +731,14 @@ p {
 	background-color:#444;
 }
 
-#judulsampinghome1 {
-	background-image:url(../image/storyboard.png);
+#judulsampinghome1 h3 {
+	text-align:center;
+	color:#fff;
 }
 
 #judulsampinghome2 h3{
 	text-align:center;
 	color:#fff;
-	padding-top:5px;
 }
 
 
@@ -858,4 +862,105 @@ p {
 .rps-carousel{
 	width: 100%;
 	margin-left: 8px;
+}
+
+form input, form button, form textarea{
+	font-size:12px !important;
+	margin:5px 0px;
+}
+
+form{
+	/*margin-top: 10px;*/
+}
+
+form label{
+	font-size: 14px;
+	line-height: 17px;
+}
+
+.form-inline button{
+	margin-left: 5px;
+}
+
+.form-horizontal button{
+font-size:12px;
+}
+
+.form-horizontal .control-label {
+width: 100px;
+}
+
+.form-horizontal .controls {
+margin-left: 110px;
+}
+
+.form-horizontal .controls:first-child {
+*padding-left: 100px;
+}
+
+.form-horizontal .form-actions {
+padding-left: 110px;
+}
+
+.form-actions {
+padding: 5px 20px 5px;
+background:transparent;
+border-top:0px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin: 0px 0px 0px;
+    line-height: normal;
+}
+
+.form-horizontal .control-group {
+  margin-bottom: 20px;
+  *zoom: 1;
+}
+.form-horizontal .control-group:before,
+.form-horizontal .control-group:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.form-horizontal .control-group:after {
+  clear: both;
+}
+.form-horizontal .control-label {
+  float: left;
+  width: 160px;
+  padding-top: 5px;
+  text-align: right;
+}
+.form-horizontal .controls {
+  *display: inline-block;
+  *padding-left: 20px;
+  margin-left: 180px;
+  *margin-left: 0;
+}
+.form-horizontal .controls:first-child {
+  *padding-left: 180px;
+}
+.form-horizontal .help-block {
+  margin-bottom: 0;
+}
+.form-horizontal input + .help-block,
+.form-horizontal select + .help-block,
+.form-horizontal textarea + .help-block,
+.form-horizontal .uneditable-input + .help-block,
+.form-horizontal .input-prepend + .help-block,
+.form-horizontal .input-append + .help-block {
+  margin-top: 10px;
+}
+.form-horizontal .form-actions {
+  padding-left: 180px;
+}
+
+.form-horizontal{
+	background:none repeat scroll 0% 0% #E6E6E6;
+	width:60%;
+	margin:auto;
+	margin-bottom:10px;
+	border:5px ridge rgba(229, 245, 167, 1);
+	padding:10px;
 }

@@ -67,7 +67,7 @@ ul, ul ul {
 }
 
 .menu > li > a:hover, .menu > li > a.active {
-    background-color: #35afe3;
+    background-color: #06f;
     /*background-image: -webkit-gradient(linear, left top, left bottom, from(rgb(69, 199, 235)),to(rgb(38, 152, 219)));
     background-image: -webkit-linear-gradient(top, rgb(69, 199, 235), rgb(38, 152, 219));
     background-image: -moz-linear-gradient(top, rgb(69, 199, 235), rgb(38, 152, 219));

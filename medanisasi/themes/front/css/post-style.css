@@ -59,3 +59,22 @@
 	padding:0px;
 	height:140px;
 }
+
+
+.nav-lokasi{
+	text-align:center;
+	font-family:Verdana,Geneva,sans-serif;
+	color:#06f;
+	margin:7px;
+	padding:0px;
+	font-size:0.8em;
+}
+.nav-namlok{
+	font-size:1em;
+	margin:5px;
+	padding:0px;
+}
+.nav-namlok a{
+	color:#fff;
+	font-size:1.2em;
+}
