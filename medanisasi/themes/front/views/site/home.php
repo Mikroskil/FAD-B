@@ -23,7 +23,7 @@
  </div>           
        <div id="latar_depan" style="padding-top:5px;">
 
-                    <h3>Selamat Datang di Medanisasi.com</h3>
+                    <h3 style="text-align:center; font-size:2.5em; color:#fff; background-color:#06f;">Welcome to Medanisasi</h3>
 
               <ul class="rps-carousel">
                 	<?php

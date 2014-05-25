@@ -2,11 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Medanisasi - Sensasi Teknology Mencari Lokasi</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="Simpson Moyo - Webapplicationthemes.com">
-	
+    <title>Medanisasi - Solusi Cari Lokasi</title>
+     <meta content='Medanisasi adalah sebuah website yang hadir untuk membantu anda dalam menemukan informasi lokasi, profile, peta, dan rating lokasi wisata dan tempat umum populer di kota Medan.' name='description'/>
+	<meta content='jalan di medan, cari lokasi, tempat wisata, tempat umum, fasilitas umum, kota medan, peta medan, wisata medan, jalan medan' name='keywords'/>
+    <meta name="author" content="Bambang - Deja - Febryco - Javent">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<?php
 	  $baseUrl = Yii::app()->theme->baseUrl; 
 	  $cs = Yii::app()->getClientScript();
@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="<?php echo $baseUrl;?>/css/style.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo $baseUrl;?>/css/post-style.css" /> 
 
-    <link rel="shortcut icon" href="<?php echo $baseUrl;?>/img/favicon.png">
+    <link rel="shortcut icon" href="<?php echo $baseUrl;?>/image/favicon.ico">
 
 <script type="text/jscript">
 $(function() {

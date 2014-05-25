@@ -1,5 +1,4 @@
 <?php require_once('pages/kategoria.php')?>
-
 <div id="content">
      <article id="aside-article">
                 <article id="isi" style="float:left; width:100%; height:100%;">
@@ -7,7 +6,10 @@
  
           
                     <ul>
+                    
      <?php
+	
+
 		include "koneksi.php";
 		if($_GET['lihat']=="artikel"){
 			include "viewartikelnolog.php";}
