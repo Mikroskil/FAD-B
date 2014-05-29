@@ -19,9 +19,14 @@
     <link rel="stylesheet" type="text/css" href="<?php echo $baseUrl;?>/css/style1.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo $baseUrl;?>/css/home2.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo $baseUrl;?>/css/style.css" />
-    <link rel="stylesheet" type="text/css" href="<?php echo $baseUrl;?>/css/post-style.css" /> 
+    <link rel="stylesheet" type="text/css" href="<?php echo $baseUrl;?>/css/post-style.css" />
+    
+    
+    <link rel="stylesheet" type="text/css" href="<?php echo $baseUrl;?>/nav/style.css" />
 
+     
     <link rel="shortcut icon" href="<?php echo $baseUrl;?>/image/favicon.ico">
+    <script src="<?php echo $baseUrl;?>/js/js.js"></script>
 
 <script type="text/jscript">
 $(function() {

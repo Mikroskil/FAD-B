@@ -1,0 +1,198 @@
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    *zoom: 1;
+}
+
+/* Basic Styles */
+body {
+	background-color: #ece8e5;
+}
+#menus{
+	display:none;
+	height:1px;
+}
+.clearfix {
+	height: 40px;
+	width: 100%;
+	background: #455868;
+	font-size: 11pt;
+	font-family: 'PT Sans', Arial, sans-serif;
+	font-weight: bold;
+	position: relative;
+	border-bottom: 2px solid #283744;
+}
+.clearfix ul {
+	padding: 0;
+	margin: 0 auto;
+	width: 570px;
+	height: 40px;
+}
+.clearfix li {
+	display: inline;
+	float: left;
+}
+.clearfix a {
+	color: #fff;
+	display: inline-block;
+	width: 130px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 40px;
+	text-shadow: 1px 1px 0px #283744;
+}
+.clearfix li a {
+	border-right: 1px solid #576979;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+}
+.clearfix li:last-child a {
+	border-right: 0;
+}
+.clearfix a:hover, .clearfix a:active {
+	background-color: #06f;
+}
+.clearfix a#pull {
+	display: none;
+}
+
+/*Styles for screen 600px and lower*/
+
+@media screen and (max-width: 979px) {
+	#form_cari{
+	height:36px;
+	margin-top:3px;
+
+}
+	#tombol_cari{
+		height:38px;
+	}
+	#logo{
+		height:48px;
+	}
+	#main-nav{
+		display:none;
+	}
+	#menu{
+		height:40px;
+		z-index:100;
+	}
+	#menus{
+		display:inline;
+		
+}
+	#content{
+		width:77%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#slider{
+		display:none;
+	}
+	#main-title{
+	font-size:1.5em; 
+	}
+	.home-namlok a {
+		font-size:0.76em;
+	}
+	.home-lokasi {
+		font-size:0.7em;
+	}
+	#artikel_depan {
+		height:175px;
+	}
+	.clearfix { 
+  		height: auto;
+  	}
+  	.clearfix ul {
+  		width: 100%;
+  		display: block;
+  		height: auto;
+  	}
+  	.clearfix li {
+  		width: 50%;
+  		float: left;
+  		position: relative;
+  	}
+  	.clearfix li a {
+		border-bottom: 1px solid #576979;
+		border-right: 1px solid #576979;
+	}
+  	.clearfix a {
+	  	text-align: left;
+	  	width: 100%;
+	  	text-indent: 25px;
+  	}
+
+
+}
+
+/*Styles for screen 515px and lower*/
+@media only screen and (max-width : 480px) {
+	#form_cari{
+	width:75%;
+	height:36px;
+	margin-top:5px;
+	margin-left:3px;
+	text-indent:5px;	
+	border-right:none !important;
+}
+	#tombol_cari{
+		height:38px;
+		width:20%;
+	}
+	
+	#menus{
+		width:100%;
+		z-index:1000;
+	}
+	#sosmed{
+		display:none !important;
+	}
+	.clearfix {
+		border-bottom: 0;
+	}
+	.clearfix ul {
+		display: none;
+		height: auto;
+	}
+	.clearfix a#pull {
+		display: block;
+		background-color: #283744;
+		width: 100%;
+		position: relative;
+	}
+	.clearfix a#pull:after {
+		content:"";
+		background: url('nav-icon.png') no-repeat;
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		position: absolute;
+		right: 15px;
+		top: 10px;
+		z-index:1000;
+	}
+}
+
+/*Smartphone*/
+@media only screen and (max-width : 320px) {
+	.clearfix li {
+		display: block;
+		float: none;
+		width: 100%;
+	}
+	.clearfix li a {
+		border-bottom: 1px solid #576979;
+	}
+
+}

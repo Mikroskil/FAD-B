@@ -34,6 +34,7 @@
 	background-color:#008fff;
 	border-bottom: solid 2px #222;
 	border-top: solid 2px #222;
+	min-height:1.7em;
 }
 .home-namlok a{
 	color:#fff;
@@ -42,7 +43,7 @@
 #artikel_depan{
 /*	border:1px solid #999;*/
 	width:17%;
-	height:auto;
+	height:200px;
 	float:left;
 	margin:1% 1.4% 1% 1.3%;
 	padding:0px;
@@ -57,7 +58,6 @@
 }
 #artikel_depan_photo{
 	padding:0px;
-	height:140px;
 }
 
 
@@ -83,7 +83,6 @@
 }
 .bthumb{
 	border:3px groove #333;
-	height:100%;
 	width:98%;
 	padding:0px;
 	margin:0px;

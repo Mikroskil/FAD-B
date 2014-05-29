@@ -19,12 +19,12 @@
 }
 
 #panel-above{
-	width:70%;
+	width:71%;
 	padding-top:0px;
 	background:#222;
 	height:50px;
 	float:left;
-	margin-left:12px;
+	margin-left:1%;
 	margin-top:3px;
 	margin-bottom:-5px;
 
@@ -581,9 +581,9 @@ input{
 }
 
 #form_cari{
-	width:300px;
-	height:30px;
-	margin-top:5px;
+	width:36%;
+	height:38px;
+	margin-top:12px;
 	margin-left:3px;
 	text-indent:5px;	
 	border-right:none !important;
@@ -594,8 +594,8 @@ input{
 	font-size:16px;
 	font-weight:bold;
 	color:rgba(204,204,204,1);
-	height:30px;
-	width:50px;
+	height:40px;
+	width:60px;
 	margin-left:-14px;
 	background:#222;
 	/*-------background:linear-gradient(rgba(253,65,2,1),rgba(252,108,3,1));*/
@@ -805,13 +805,7 @@ p {
 #aside-article #isi h3{
 	margin-left:0px;
 }
-#aside-article h3 {
-	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-	font-size:25px;
-	background-color:#06F;
-	text-align:center;
-	color:#fff;
-}
+
 
 #text {
 	margin:10px;
@@ -994,4 +988,16 @@ input[type="radio"], input[type="checkbox"] {
 	padding:10px;
 	color:#000;
 	font-family:"Segoe UI Light", "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+#sosmed a img{
+	float:right;
+	margin:3%;
+	
+}
+#main-title{
+	text-align:center; 
+	font-size:2.5em; 
+	color:#fff; 
+	background-color:#06f;
 }

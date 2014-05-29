@@ -23,7 +23,7 @@
  </div>           
        <div id="latar_depan" style="padding-top:5px;">
 
-                    <h3 style="text-align:center; font-size:2.5em; color:#fff; background-color:#06f;">Welcome to Medanisasi</h3>
+                    <h3 id="main-title">Welcome to Medanisasi</h3>
 
               <ul class="rps-carousel">
                 	<?php
@@ -35,7 +35,7 @@
                   <li>
 				  <div id='artikel_depan'>
                         <div id='artikel_depan_photo'>        
-                          <a href=index.php?lihat=artikel&id=$baris[0]><img src=/medanisasi/upload/$baris[5]></a>
+                          <a href=index.php?lihat=artikel&id=$baris[0]><img src=medanisasi/upload/$baris[5]></a>
                         </div>
 						
                         <div class=\"\">

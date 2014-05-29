@@ -4,7 +4,7 @@
 <a href="index.php?lihat=home">
   <div>
       <div id="carilokasi_icon"></div>
-      <a href="index.php?lihat=home"><p>TEMUKAN LOKASI</p></a>
+      <p>TEMUKAN LOKASI</p>
       </div></a></div>
 
 <!--<div id="batas_menu">
@@ -25,7 +25,7 @@
             <!--<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
 			array('label'=>'Add Lokasi', 'url'=>array('/site/page', 'view'=>'tambah_lokasi')),       )));?>-->
-      <a href="index.php?r=site/page&view=tambah_lokasi"><p>TAMBAH LOKASI</p></a>
+      <p>TAMBAH LOKASI</p>
       </div></a></div>
       
 <div id="batas_menu">
@@ -35,6 +35,7 @@
             <!--<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
 			array('label'=>'Tentang Kami', 'url'=>array('/site/page', 'view'=>'about_us')),      )));?>-->
-      <a href="index.php?r=site/page&view=about_us"><p>TENTANG KAMI</p></a>
-      </div></a></div>  
+      <p>TENTANG KAMI</p>
+      </div></a></div>
+
 </nav>
